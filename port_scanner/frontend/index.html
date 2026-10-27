@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Explainable AI Network Vulnerability Detection Framework</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Mobile Top Navigation Bar -->
+    <div class="mobile-navbar">
+        <div class="brand-logo">
+            <div class="brand-icon"><i class="fas fa-shield-halved"></i></div>
+            <div class="brand-text">
+                <h2>PortIntel XAI</h2>
+            </div>
+        </div>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="brand-logo">
+                <div class="brand-icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="brand-text">
+                    <h2>PortIntel XAI</h2>
+                    <span>AI Vulnerability Framework</span>
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <button data-tab="dashboard"><i class="fas fa-chart-pie"></i> Dashboard</button>
+                </li>
+                <li class="nav-item">
+                    <button data-tab="ports"><i class="fas fa-network-wired"></i> Port Intelligence</button>
+                </li>
+                <li class="nav-item">
+                    <button data-tab="xai"><i class="fas fa-brain"></i> Explainable AI (XAI)</button>
+                </li>
+                <li class="nav-item">
+                    <button data-tab="vulnerability"><i class="fas fa-bug"></i> Vulnerability Analysis</button>
+                </li>
+                <li class="nav-item">
+                    <button data-tab="reports"><i class="fas fa-file-contract"></i> Security Reports</button>
+                </li>
+                <li class="nav-item">
+                    <button data-tab="settings"><i class="fas fa-sliders"></i> System & Model</button>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="status-pill" id="system-status-indicator">
+                    <span class="pulse-dot"></span> AI Engine: Active
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="page-title">
+                    <h1>Network Vulnerability Intelligence Dashboard</h1>
+                    <p>Explainable AI (XAI) Framework for Real-Time Network Security & Defensive Analysis</p>
+                </div>
+                <div class="header-actions">
+                    <span class="status-pill" style="background:rgba(56,189,248,0.1);border-color:rgba(56,189,248,0.3);color:var(--accent-cyan);">
+                        <i class="fas fa-crosshairs"></i> Target: <span id="header-current-target" style="color:#fff;font-weight:600;margin-left:4px;">192.168.1.10</span>
+                    </span>
+                    <button class="btn btn-demo btn-sm" id="btn-demo-scan">
+                        <i class="fas fa-bolt"></i> Demo Scan
+                    </button>
+                </div>
+            </header>
+
+            <!-- Target Analysis Control Bar -->
+            <section class="target-bar-card">
+                <div class="target-form">
+                    <div class="form-group">
+                        <label><i class="fas fa-network-wired"></i> Target Host / IP</label>
+                        <input type="text" id="target-input" class="input-control" value="192.168.1.10" placeholder="e.g. 192.168.1.10 or scanme.nmap.org">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-sliders-h"></i> Demo Scenario Preset</label>
+                        <select id="preset-select" class="select-control">
+                            <option value="enterprise">Enterprise Web & Database Bastion (192.168.1.10)</option>
+                            <option value="scada">Industrial SCADA / OT Node (10.0.4.55)</option>
+                            <option value="cloud">Cloud Native Microservices Node (172.24.0.12)</option>
+                            <option value="hardened">Hardened Defense Perimeter (10.10.10.1)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-satellite-dish"></i> Analysis Mode</label>
+                        <select id="scan-type-select" class="select-control">
+                            <option value="demo">Demo / Authorized Mode</option>
+                            <option value="live">Safe Network Socket Probe</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="btn-start-scan">
+                            <i class="fas fa-play"></i> Start Analysis
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 1: DASHBOARD -->
+            <div class="tab-content active" id="tab-dashboard">
+                <!-- Metrics Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-title">Ports Analyzed</span>
+                            <i class="fas fa-cubes metric-icon"></i>
+                        </div>
+                        <div class="metric-value" id="metric-total-ports">0</div>
+                        <div class="metric-sub">Full Protocol Scan</div>
+                    </div>
+                    <div class="metric-card open">
+                        <div class="metric-header">
+                            <span class="metric-title">Open Ports</span>
+                            <i class="fas fa-door-open metric-icon" style="color:var(--accent-blue);"></i>
+                        </div>
+                        <div class="metric-value" id="metric-open-ports">0</div>
+                        <div class="metric-sub">Active Socket Listeners</div>
+                    </div>
+                    <div class="metric-card vuln">
+                        <div class="metric-header">
+                            <span class="metric-title">Vulnerable Ports</span>
+                            <i class="fas fa-triangle-exclamation metric-icon" style="color:var(--accent-orange);"></i>
+                        </div>
+                        <div class="metric-value" id="metric-vuln-ports">0</div>
+                        <div class="metric-sub">Risk Level &ge; High</div>
+                    </div>
+                    <div class="metric-card critical">
+                        <div class="metric-header">
+                            <span class="metric-title">Critical Risks</span>
+                            <i class="fas fa-skull-crossbones metric-icon" style="color:var(--accent-red);"></i>
+                        </div>
+                        <div class="metric-value" id="metric-critical-ports">0</div>
+                        <div class="metric-sub">Immediate Action Required</div>
+                    </div>
+                    <div class="metric-card score">
+                        <div class="metric-header">
+                            <span class="metric-title">Recorded Scans</span>
+                            <i class="fas fa-database metric-icon" style="color:var(--accent-purple);"></i>
+                        </div>
+                        <div class="metric-value" id="stat-total-scans">1</div>
+                        <div class="metric-sub">SQLite Audit History</div>
+                    </div>
+                </div>
+
+                <!-- Visuals Grid -->
+                <div class="visuals-grid">
+                    <!-- Overall Risk Score Card -->
+                    <div class="card">
+                        <div class="card-title">
+                            <span><i class="fas fa-gauge-high"></i> Overall Network Risk Posture</span>
+                            <span>Score: 0 - 100</span>
+                        </div>
+                        <div class="gauge-wrapper" style="height: 200px;">
+                            <canvas id="risk-gauge-canvas"></canvas>
+                            <div class="gauge-score-display">
+                                <div class="gauge-score-number" id="gauge-score-value">0</div>
+                                <div class="gauge-score-tier" id="gauge-tier-value">CALCULATING</div>
+                            </div>
+                        </div>
+                        <div style="height: 110px; margin-top: 10px;">
+                            <canvas id="risk-distribution-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Real-Time Activity Feed -->
+                    <div class="card">
+                        <div class="card-title">
+                            <span><i class="fas fa-terminal"></i> Real-Time Network Intelligence Feed</span>
+                            <span class="pulse-dot"></span>
+                        </div>
+                        <div class="activity-feed" id="live-activity-feed">
+                            <div class="activity-item safe">
+                                <span class="activity-time">READY</span>
+                                <span class="activity-text">System initialized. Awaiting target analysis command.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Scans / Quick Port List -->
+                <div class="card">
+                    <div class="card-title">
+                        <span><i class="fas fa-list-check"></i> Discovered Port Intelligence & AI Risk Classification</span>
+                        <button class="btn btn-secondary btn-sm" onclick="Dashboard.switchTab('ports')">View Full Inventory</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="cyber-table">
+                            <thead>
+                                <tr>
+                                    <th>Port</th>
+                                    <th>Protocol</th>
+                                    <th>Service</th>
+                                    <th>State</th>
+                                    <th>Version</th>
+                                    <th>AI Risk</th>
+                                    <th>Confidence</th>
+                                    <th>Explain</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ports-table-body">
+                                <!-- Populated dynamically by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: PORT INTELLIGENCE -->
+            <div class="tab-content" id="tab-ports">
+                <div class="card">
+                    <div class="card-title">
+                        <span><i class="fas fa-network-wired"></i> Full Port Intelligence & Fingerprinting Inventory</span>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                            <input type="text" id="port-search-input" class="input-control" placeholder="Search port, service, version..." style="width:200px;min-height:36px;padding:6px 10px;">
+                            <select id="risk-filter-select" class="select-control" style="width:140px;min-height:36px;padding:6px 10px;">
+                                <option value="All">All Risks</option>
+                                <option value="Critical">Critical</option>
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Low">Low</option>
+                                <option value="Safe">Safe</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="cyber-table">
+                            <thead>
+                                <tr>
+                                    <th>Port</th>
+                                    <th>Protocol</th>
+                                    <th>Service</th>
+                                    <th>State</th>
+                                    <th>Version</th>
+                                    <th>AI Risk</th>
+                                    <th>Confidence</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ports-table-body-full">
+                                <!-- Mirrors table body -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: EXPLAINABLE AI (XAI) -->
+            <div class="tab-content" id="tab-xai">
+                <!-- Port Specific Explanation Hero -->
+                <div class="card xai-card">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:12px;">
+                        <div class="xai-badge"><i class="fas fa-brain"></i> Instance-Level Explainable AI (XAI)</div>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <label style="font-size:12px;color:var(--text-secondary);">Select Port to Explain:</label>
+                            <select id="xai-port-select" class="select-control" style="width:200px;min-height:36px;padding:6px 10px;">
+                                <!-- Dynamic Options -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="xai-selected-port-title" style="margin-bottom:12px;font-size:15px;color:#fff;"></div>
+                    <h3 style="font-size:14px;color:var(--accent-cyan);margin-top:14px;text-transform:uppercase;letter-spacing:0.5px;">
+                        <i class="fas fa-question-circle"></i> Why was this port classified into this risk category?
+                    </h3>
+
+                    <ul class="xai-reasons-list" id="xai-selected-reasons"></ul>
+
+                    <div class="xai-quote-box" id="xai-selected-quote"></div>
+                </div>
+
+                <!-- XAI Visualizations Grid -->
+                <div class="visuals-grid">
+                    <!-- Local Waterfall Chart -->
+                    <div class="card">
+                        <div class="card-title">
+                            <span><i class="fas fa-chart-waterfall"></i> Local Feature Risk Contributions (%)</span>
+                            <span>Selected Port Impact</span>
+                        </div>
+                        <div style="height: 280px;">
+                            <canvas id="local-xai-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Global Feature Importance Chart -->
+                    <div class="card">
+                        <div class="card-title">
+                            <span><i class="fas fa-chart-bar"></i> Global Model Feature Importance</span>
+                            <span>Random Forest Weights</span>
+                        </div>
+                        <div style="height: 280px;">
+                            <canvas id="global-xai-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: VULNERABILITY ANALYSIS -->
+            <div class="tab-content" id="tab-vulnerability">
+                <div class="card">
+                    <div class="card-title">
+                        <span><i class="fas fa-shield-virus"></i> Vulnerability Indicators & Defensive Remediation Matrix</span>
+                    </div>
+                    <p style="color:var(--text-secondary);font-size:13px;margin-bottom:20px;">
+                        The defensive framework translates raw port intelligence, service version disclosures, and unencrypted transmission vectors into prioritized defensive hardening directives.
+                    </p>
+                    <div id="vulnerability-cards-container" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:16px;">
+                        <!-- Rendered via JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 5: SECURITY REPORTS -->
+            <div class="tab-content" id="tab-reports">
+                <div class="card" style="margin-bottom:20px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                        <div>
+                            <h3 style="font-size:16px;color:#fff;">Executive Cybersecurity Assessment Report</h3>
+                            <p style="font-size:12px;color:var(--text-secondary);">Comprehensive report with XAI justifications and remediation roadmap.</p>
+                        </div>
+                        <div style="display:flex;gap:10px;">
+                            <button class="btn btn-primary" id="btn-export-pdf">
+                                <i class="fas fa-file-pdf"></i> Export as PDF / Print
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="report-container">
+                    <!-- Printable report template rendered dynamically -->
+                </div>
+            </div>
+
+            <!-- TAB 6: SETTINGS & SYSTEM INFO -->
+            <div class="tab-content" id="tab-settings">
+                <div class="visuals-grid">
+                    <div class="card">
+                        <div class="card-title">
+                            <span><i class="fas fa-microchip"></i> Machine Learning Architecture</span>
+                        </div>
+                        <table class="cyber-table">
+                            <tr><td><strong>Algorithm:</strong></td><td>Random Forest Multi-Class Classifier (120 Estimators)</td></tr>
+                            <tr><td><strong>Target Classes:</strong></td><td><code>Safe</code>, <code>Low</code>, <code>Medium</code>, <code>High</code>, <code>Critical</code></td></tr>
+                            <tr><td><strong>Feature Transformer:</strong></td><td>ColumnTransformer (OneHotEncoder + StandardScaler)</td></tr>
+                            <tr><td><strong>Explainability (XAI):</strong></td><td>Local Tree Feature Attribution + Global Gini Importance</td></tr>
+                            <tr><td><strong>Storage:</strong></td><td>SQLite 3 embedded database (vulnerability.db)</td></tr>
+                        </table>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">
+                            <span><i class="fas fa-mobile-screen"></i> Android Compatibility & Deployment</span>
+                        </div>
+                        <div style="font-size:13px;color:var(--text-secondary);line-height:1.7;">
+                            <p><strong>Mobile Access via Local Network:</strong></p>
+                            <ol style="margin-left:18px;margin-top:6px;">
+                                <li>Ensure Android phone and PC are connected to the same Wi-Fi network.</li>
+                                <li>Launch server: <code>python backend/app.py</code></li>
+                                <li>Open Chrome Mobile on Android and navigate to: <code>http://&lt;PC-LAN-IP&gt;:5000</code></li>
+                                <li>The interface is responsive with touch gestures, collapsible mobile drawer, and dynamic Chart.js canvas scaling.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:20px;">
+                    <div class="card-title">
+                        <span><i class="fas fa-history"></i> Recent SQLite Scan Sessions</span>
+                    </div>
+                    <div class="activity-feed" id="historical-scans-list">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Port Inspection Modal Drawer -->
+    <div class="modal-overlay" id="port-inspect-modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="modal-port-title">Vulnerability Analysis</h3>
+                <button onclick="Dashboard.closeModal()" style="background:transparent;border:none;color:#fff;font-size:20px;cursor:pointer;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-port-body">
+                <!-- Dynamic Content -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="Dashboard.closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/charts.js"></script>
+    <script src="js/analyzer.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

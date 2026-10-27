@@ -1,0 +1,3001 @@
+port,protocol,service,port_state,service_version_risk,exposure_level,known_vuln_indicator,cvss_baseline,banner_flags,encryption_detected,risk_level
+22,TCP,SSH,Open,0.89,Internal,0,3.5,None,1,Low
+3306,TCP,MySQL,Open,0.2,Internal,1,8.8,Default Credentials Risk,1,Medium
+389,TCP,LDAP,Filtered,0.16,Internal,1,6.8,Cleartext Auth,0,Medium
+161,UDP,SNMP,Open,0.34,Internal,0,9.0,None,0,High
+5432,TCP,PostgreSQL,Open,0.83,External,1,8.0,Default Credentials Risk,0,Critical
+38861,TCP,Microservice,Closed,0.86,Internal,1,6.3,Default Credentials Risk,0,Safe
+5432,TCP,PostgreSQL,Open,0.27,External,1,8.0,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Closed,0.64,External,1,8.8,Default Credentials Risk,0,Safe
+25,TCP,SMTP,Open,0.91,External,1,6.3,None,0,Critical
+161,UDP,SNMP,Open,0.26,Internal,0,7.0,Default Credentials Risk,0,Medium
+445,TCP,SMB,Open,1.0,External,0,9.8,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Open,0.06,Internal,0,5.0,None,0,Medium
+5432,TCP,PostgreSQL,Open,0.72,External,1,7.7,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.0,External,0,2.4,None,1,Low
+445,TCP,SMB,Open,0.63,External,1,7.4,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Filtered,0.53,External,0,4.3,Cleartext Auth,0,Medium
+636,TCP,LDAPS,Filtered,0.31,External,0,1.4,None,1,Low
+69,UDP,TFTP,Filtered,0.13,Internal,0,5.8,Anonymized,1,Low
+27017,TCP,MongoDB,Closed,0.93,External,1,9.3,Default Credentials Risk,0,Safe
+587,TCP,SMTP-Submission,Filtered,0.45,External,0,1.9,None,1,Low
+53,UDP,DNS,Open,0.07,Internal,0,2.1,None,0,Low
+389,TCP,LDAP,Open,0.49,External,1,7.7,Cleartext Auth,1,High
+5900,TCP,VNC,Open,0.66,External,1,8.3,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.8,External,0,5.6,Obsolete Cipher,0,High
+143,TCP,IMAP,Open,0.25,External,0,4.6,Cleartext Auth,0,High
+30065,TCP,Custom-Service,Open,0.49,Internal,0,8.8,Cleartext Auth,0,High
+25,TCP,SMTP,Filtered,0.46,External,0,5.0,None,0,Medium
+27017,TCP,MongoDB,Closed,0.58,External,1,9.1,Cleartext Auth,0,Safe
+25,TCP,SMTP,Open,0.06,External,0,4.3,None,1,Medium
+139,TCP,NetBIOS,Closed,0.57,Internal,1,8.2,Cleartext Auth,1,Safe
+69,UDP,TFTP,Closed,0.2,Internal,1,6.2,Cleartext Auth,0,Safe
+2049,TCP,NFS,Closed,0.94,Internal,0,6.7,None,0,Safe
+80,TCP,HTTP,Filtered,0.88,External,0,5.9,Default Credentials Risk,1,Medium
+135,TCP,MSRPC,Closed,0.81,Internal,1,9.1,Default Credentials Risk,0,Safe
+27017,TCP,MongoDB,Open,0.12,External,0,9.0,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.26,External,0,1.1,None,1,Low
+25,TCP,SMTP,Open,0.77,External,1,6.3,None,1,High
+3389,TCP,RDP,Closed,0.69,External,0,6.6,None,1,Safe
+1433,TCP,MSSQL,Filtered,0.8,Internal,1,8.8,Default Credentials Risk,0,Medium
+14791,TCP,Microservice,Closed,0.75,External,1,7.4,Obsolete Cipher,0,Safe
+135,TCP,MSRPC,Open,0.74,Internal,0,5.2,Default Credentials Risk,0,Medium
+2375,TCP,Docker-Daemon,Open,0.79,External,0,8.5,Cleartext Auth,0,Critical
+57292,UDP,Unknown-App,Open,0.66,External,0,3.3,Cleartext Auth,0,High
+465,TCP,SMTPS,Open,0.4,External,0,2.4,None,1,Medium
+36165,UDP,Custom-Service,Open,0.6,External,0,1.7,Default Credentials Risk,0,Medium
+636,TCP,LDAPS,Open,0.04,Internal,0,2.7,Anonymized,1,Safe
+8443,TCP,HTTPS-Alt,Open,0.67,External,0,2.7,None,1,Medium
+53,UDP,DNS,Open,0.12,Internal,0,3.4,None,0,Medium
+34258,UDP,Microservice,Open,0.19,External,0,3.8,Default Credentials Risk,1,Medium
+1521,TCP,Oracle-DB,Open,0.55,External,0,8.1,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Open,0.68,External,1,7.4,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.09,Internal,1,6.5,Default Credentials Risk,0,High
+587,TCP,SMTP-Submission,Open,0.77,Internal,0,2.3,Obsolete Cipher,1,Low
+143,TCP,IMAP,Open,0.69,External,1,7.1,Cleartext Auth,0,Critical
+59053,TCP,RPC-Node,Open,0.56,Internal,1,7.6,Anonymized,0,High
+110,TCP,POP3,Open,0.95,External,1,7.3,Cleartext Auth,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.86,External,0,5.0,Obsolete Cipher,0,High
+443,TCP,HTTPS,Open,0.24,External,0,2.1,None,1,Low
+502,TCP,Modbus,Open,0.15,External,1,8.6,Cleartext Auth,0,Critical
+161,UDP,SNMP,Open,0.21,Internal,1,6.8,Default Credentials Risk,1,Medium
+39302,TCP,Peer2Peer,Open,0.39,External,0,0.1,Default Credentials Risk,1,Low
+55794,UDP,Peer2Peer,Open,0.39,External,0,2.1,Obsolete Cipher,0,Medium
+2049,TCP,NFS,Closed,0.53,Internal,1,7.6,None,0,Safe
+22,TCP,SSH,Open,0.26,External,0,4.0,None,0,Medium
+5432,TCP,PostgreSQL,Filtered,0.83,External,0,9.1,Default Credentials Risk,0,Medium
+22,TCP,SSH,Open,0.96,External,0,2.2,None,1,Medium
+22,TCP,SSH,Open,0.47,Internal,0,2.7,None,1,Low
+161,UDP,SNMP,Open,0.96,Internal,1,7.8,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.91,Internal,1,8.2,Default Credentials Risk,0,Critical
+14021,TCP,Peer2Peer,Filtered,0.6,Internal,0,6.6,Default Credentials Risk,0,Medium
+52314,TCP,Web-Hook,Open,0.01,DMZ,0,3.5,Anonymized,1,Low
+6379,TCP,Redis,Filtered,0.71,External,1,8.7,Default Credentials Risk,0,High
+465,TCP,SMTPS,Open,0.83,External,0,2.0,None,1,Medium
+636,TCP,LDAPS,Open,0.46,Internal,0,0.9,Obsolete Cipher,1,Safe
+1521,TCP,Oracle-DB,Open,0.35,External,0,7.2,Default Credentials Risk,0,High
+465,TCP,SMTPS,Open,0.49,External,0,3.0,Cleartext Auth,1,Medium
+5900,TCP,VNC,Open,0.22,External,1,9.9,Cleartext Auth,0,Critical
+1433,TCP,MSSQL,Open,0.33,External,1,8.5,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.95,External,1,10.0,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Open,0.98,External,1,8.9,Cleartext Auth,0,Critical
+1433,TCP,MSSQL,Closed,0.55,DMZ,1,8.0,None,0,Safe
+6379,TCP,Redis,Open,0.18,External,0,9.6,Default Credentials Risk,0,Critical
+32332,TCP,Custom-Service,Open,0.81,External,0,0.7,None,1,Low
+6606,TCP,Custom-Service,Open,0.52,DMZ,0,5.7,Anonymized,1,Medium
+3389,TCP,RDP,Open,0.06,External,1,9.3,Obsolete Cipher,1,High
+161,UDP,SNMP,Open,0.08,Internal,0,7.5,Cleartext Auth,0,Medium
+5900,TCP,VNC,Filtered,0.07,DMZ,0,10.0,Cleartext Auth,0,Medium
+143,TCP,IMAP,Closed,0.83,External,0,3.4,Cleartext Auth,0,Safe
+135,TCP,MSRPC,Closed,0.44,Internal,1,8.0,Default Credentials Risk,0,Safe
+2049,TCP,NFS,Open,0.04,Internal,1,7.1,None,0,High
+445,TCP,SMB,Open,0.95,DMZ,1,9.0,Default Credentials Risk,1,High
+465,TCP,SMTPS,Open,0.92,External,0,2.3,Anonymized,1,Medium
+3306,TCP,MySQL,Open,0.32,External,0,6.9,Default Credentials Risk,0,Critical
+2375,TCP,Docker-Daemon,Filtered,0.55,External,1,9.6,Cleartext Auth,0,High
+636,TCP,LDAPS,Filtered,0.0,Internal,0,2.4,None,1,Safe
+31300,UDP,Custom-Service,Open,0.76,DMZ,0,3.4,Obsolete Cipher,0,Medium
+27017,TCP,MongoDB,Open,0.03,External,1,10.0,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.12,External,1,6.7,None,0,High
+502,TCP,Modbus,Closed,0.24,External,1,8.2,Cleartext Auth,0,Safe
+8080,TCP,HTTP-Proxy,Filtered,0.41,Internal,1,6.3,Obsolete Cipher,0,Medium
+21,TCP,FTP,Closed,0.49,External,0,8.4,Cleartext Auth,0,Safe
+995,TCP,POP3S,Closed,0.87,External,0,2.2,None,1,Safe
+16674,UDP,Unknown-App,Open,0.81,Internal,0,3.0,Obsolete Cipher,1,Low
+123,UDP,NTP,Open,0.1,DMZ,0,2.0,None,0,Medium
+80,TCP,HTTP,Open,0.65,External,0,7.0,Obsolete Cipher,0,High
+445,TCP,SMB,Filtered,0.85,External,1,9.4,Default Credentials Risk,0,High
+636,TCP,LDAPS,Open,0.62,Internal,0,3.0,None,1,Low
+502,TCP,Modbus,Open,0.63,External,1,8.3,Cleartext Auth,0,Critical
+587,TCP,SMTP-Submission,Open,0.15,Internal,0,2.5,None,1,Safe
+139,TCP,NetBIOS,Open,0.91,External,0,7.4,Cleartext Auth,0,Critical
+445,TCP,SMB,Open,0.29,External,1,7.8,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.46,External,0,2.2,None,1,Medium
+1521,TCP,Oracle-DB,Open,0.99,External,0,8.7,Default Credentials Risk,0,Critical
+44161,UDP,Web-Hook,Closed,0.75,DMZ,1,8.2,None,0,Safe
+51862,TCP,Peer2Peer,Open,0.76,Internal,1,6.0,Anonymized,1,Medium
+110,TCP,POP3,Open,0.44,External,1,7.0,Cleartext Auth,0,Critical
+69,UDP,TFTP,Open,0.79,Internal,1,6.6,Cleartext Auth,0,High
+8080,TCP,HTTP-Proxy,Filtered,0.48,External,0,5.4,Obsolete Cipher,0,Medium
+993,TCP,IMAPS,Filtered,0.72,External,0,1.5,Cleartext Auth,1,Low
+64414,UDP,Custom-Service,Open,0.67,Internal,0,2.5,None,1,Low
+1521,TCP,Oracle-DB,Open,0.62,External,1,8.1,Cleartext Auth,0,Critical
+389,TCP,LDAP,Open,0.65,Internal,0,5.4,Cleartext Auth,0,Medium
+23,TCP,Telnet,Open,0.89,External,0,8.6,Cleartext Auth,0,Critical
+9200,TCP,Elasticsearch,Open,0.83,External,1,9.1,Obsolete Cipher,0,Critical
+19357,TCP,Microservice,Filtered,0.1,Internal,0,4.2,Cleartext Auth,1,Safe
+9200,TCP,Elasticsearch,Open,0.12,External,1,10.0,Default Credentials Risk,0,Critical
+161,UDP,SNMP,Open,0.13,Internal,1,7.7,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Open,0.9,Internal,0,9.3,Default Credentials Risk,0,High
+10506,TCP,Peer2Peer,Open,0.36,Internal,0,1.0,None,1,Safe
+636,TCP,LDAPS,Open,0.75,Internal,0,1.9,Obsolete Cipher,0,Medium
+1433,TCP,MSSQL,Open,0.73,DMZ,1,6.7,Default Credentials Risk,0,High
+587,TCP,SMTP-Submission,Filtered,0.43,External,0,2.8,Obsolete Cipher,1,Low
+3389,TCP,RDP,Open,0.63,DMZ,1,7.9,Cleartext Auth,0,Critical
+8443,TCP,HTTPS-Alt,Filtered,0.11,External,0,5.0,None,1,Low
+27017,TCP,MongoDB,Open,0.83,External,1,8.8,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.92,Internal,0,2.3,None,1,Low
+69,UDP,TFTP,Open,0.06,DMZ,1,6.8,Cleartext Auth,1,Medium
+88,TCP,Kerberos,Open,0.92,Internal,0,1.8,None,1,Low
+502,TCP,Modbus,Open,0.66,External,0,10.0,Cleartext Auth,0,Critical
+27017,TCP,MongoDB,Filtered,0.85,External,1,9.8,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Open,0.18,External,1,9.8,Default Credentials Risk,1,Critical
+993,TCP,IMAPS,Open,0.14,Internal,0,1.0,None,1,Safe
+22,TCP,SSH,Open,0.16,External,0,4.4,None,0,High
+636,TCP,LDAPS,Open,0.75,Internal,0,0.6,None,1,Low
+69,UDP,TFTP,Open,0.27,Internal,1,7.4,Cleartext Auth,0,High
+3306,TCP,MySQL,Open,0.31,External,0,10.0,Default Credentials Risk,0,Critical
+4614,TCP,Unknown-App,Open,0.12,Internal,1,7.3,Default Credentials Risk,1,Medium
+110,TCP,POP3,Filtered,0.81,External,0,6.0,Cleartext Auth,0,Medium
+3796,UDP,Custom-Service,Open,0.4,Internal,1,8.2,Anonymized,1,Medium
+2049,TCP,NFS,Open,0.83,Internal,1,6.4,None,1,Medium
+80,TCP,HTTP,Open,0.31,External,1,6.6,Obsolete Cipher,0,Critical
+135,TCP,MSRPC,Open,0.78,Internal,1,6.7,Default Credentials Risk,1,Medium
+43323,TCP,Unknown-App,Open,0.76,Internal,0,2.4,Cleartext Auth,0,Medium
+139,TCP,NetBIOS,Open,0.58,Internal,1,6.2,Cleartext Auth,0,High
+43163,UDP,Microservice,Open,0.3,Internal,0,4.2,Obsolete Cipher,1,Low
+25,TCP,SMTP,Open,0.83,External,0,5.6,None,0,High
+69,UDP,TFTP,Open,0.79,Internal,0,5.7,Cleartext Auth,0,Medium
+30497,TCP,Web-Hook,Open,0.81,DMZ,0,1.4,None,1,Low
+69,UDP,TFTP,Closed,0.52,Internal,1,7.3,Cleartext Auth,0,Safe
+502,TCP,Modbus,Open,0.63,External,1,8.1,Cleartext Auth,0,Critical
+27017,TCP,MongoDB,Open,0.91,External,1,10.0,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.13,Internal,0,1.7,None,0,Low
+69,UDP,TFTP,Filtered,0.67,Internal,1,6.5,Cleartext Auth,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.31,External,0,3.3,None,0,Medium
+23419,UDP,Unknown-App,Filtered,0.1,Internal,0,1.5,Default Credentials Risk,0,Safe
+8443,TCP,HTTPS-Alt,Open,0.38,External,0,1.3,None,0,Medium
+135,TCP,MSRPC,Open,0.44,External,0,7.4,Default Credentials Risk,0,High
+3389,TCP,RDP,Open,0.68,External,1,9.1,Obsolete Cipher,1,Critical
+502,TCP,Modbus,Open,0.2,External,1,7.4,Cleartext Auth,0,Critical
+4443,UDP,Web-Hook,Open,0.76,DMZ,0,8.0,None,0,High
+10680,UDP,Custom-Service,Open,0.4,External,1,8.4,None,0,Critical
+69,UDP,TFTP,Open,0.79,Internal,0,7.0,Cleartext Auth,0,High
+5900,TCP,VNC,Open,0.91,DMZ,0,8.8,Cleartext Auth,0,Critical
+123,UDP,NTP,Open,0.29,Internal,0,3.3,None,0,Medium
+25,TCP,SMTP,Open,0.84,External,0,4.3,None,0,High
+9200,TCP,Elasticsearch,Open,0.43,External,1,7.4,Default Credentials Risk,1,High
+2375,TCP,Docker-Daemon,Open,0.95,External,1,10.0,Cleartext Auth,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.98,External,0,7.1,Obsolete Cipher,0,Critical
+53,UDP,DNS,Filtered,0.74,Internal,0,3.8,None,0,Low
+23,TCP,Telnet,Filtered,0.68,External,1,9.1,Cleartext Auth,0,High
+139,TCP,NetBIOS,Open,0.2,External,0,7.1,Cleartext Auth,0,High
+34800,UDP,Peer2Peer,Open,0.86,External,0,0.3,Cleartext Auth,1,Low
+993,TCP,IMAPS,Open,0.44,External,0,2.1,None,1,Medium
+23243,TCP,RPC-Node,Open,0.08,External,1,8.8,Anonymized,1,High
+139,TCP,NetBIOS,Open,0.6,Internal,1,8.1,Default Credentials Risk,0,High
+995,TCP,POP3S,Open,0.43,External,0,1.2,None,1,Low
+25,TCP,SMTP,Filtered,0.68,External,1,7.4,None,1,Medium
+3389,TCP,RDP,Open,0.57,DMZ,1,8.3,Obsolete Cipher,0,Critical
+1433,TCP,MSSQL,Open,0.4,External,1,7.4,Default Credentials Risk,0,Critical
+88,TCP,Kerberos,Open,0.26,DMZ,0,3.7,None,0,Medium
+3389,TCP,RDP,Closed,0.2,External,0,6.8,Obsolete Cipher,1,Safe
+139,TCP,NetBIOS,Open,0.71,Internal,1,8.6,Default Credentials Risk,0,Critical
+587,TCP,SMTP-Submission,Open,0.79,External,0,4.0,None,1,Medium
+88,TCP,Kerberos,Open,0.36,Internal,0,2.2,None,1,Low
+5432,TCP,PostgreSQL,Open,0.31,External,1,9.2,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.32,External,0,2.9,None,1,Medium
+5432,TCP,PostgreSQL,Filtered,0.64,External,0,9.0,Default Credentials Risk,0,Medium
+29376,TCP,Custom-Service,Closed,0.23,External,0,1.6,Default Credentials Risk,0,Safe
+35030,UDP,Custom-Service,Open,0.63,Internal,1,6.0,Anonymized,1,Medium
+135,TCP,MSRPC,Open,0.61,Internal,1,9.1,Anonymized,0,Critical
+22,TCP,SSH,Open,0.21,External,0,2.8,None,0,Medium
+22,TCP,SSH,Closed,0.48,External,0,2.2,None,1,Safe
+2049,TCP,NFS,Open,0.2,Internal,1,6.1,Obsolete Cipher,0,High
+636,TCP,LDAPS,Open,0.37,Internal,0,1.2,None,1,Safe
+636,TCP,LDAPS,Open,0.29,External,0,1.9,None,1,Low
+2375,TCP,Docker-Daemon,Closed,0.72,External,0,10.0,Default Credentials Risk,0,Safe
+8080,TCP,HTTP-Proxy,Open,0.39,External,1,7.1,Obsolete Cipher,0,Critical
+995,TCP,POP3S,Filtered,0.67,External,0,2.7,None,0,Medium
+21,TCP,FTP,Open,0.76,External,1,7.5,Cleartext Auth,0,Critical
+27017,TCP,MongoDB,Open,0.55,External,1,10.0,Anonymized,0,Critical
+88,TCP,Kerberos,Open,0.94,External,0,2.7,None,1,Medium
+143,TCP,IMAP,Open,0.33,External,1,8.7,None,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.62,External,1,7.4,Obsolete Cipher,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.82,External,0,5.9,Obsolete Cipher,0,High
+88,TCP,Kerberos,Open,0.69,Internal,0,1.9,None,1,Low
+5900,TCP,VNC,Open,0.23,External,0,9.0,Cleartext Auth,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.68,External,0,2.3,None,1,Medium
+88,TCP,Kerberos,Open,0.2,Internal,0,3.7,None,1,Low
+5900,TCP,VNC,Open,0.56,External,1,9.0,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.77,DMZ,1,8.3,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.94,Internal,1,8.5,Default Credentials Risk,0,Critical
+161,UDP,SNMP,Open,0.93,Internal,0,6.0,Default Credentials Risk,0,High
+502,TCP,Modbus,Closed,0.82,External,1,8.6,Cleartext Auth,0,Safe
+502,TCP,Modbus,Open,0.75,External,0,9.9,Obsolete Cipher,1,Critical
+465,TCP,SMTPS,Open,0.24,External,0,2.4,Anonymized,1,Low
+8443,TCP,HTTPS-Alt,Open,0.1,Internal,0,1.3,None,1,Safe
+21,TCP,FTP,Open,0.2,External,1,7.7,Obsolete Cipher,0,Critical
+25,TCP,SMTP,Open,0.85,DMZ,0,5.9,None,0,High
+139,TCP,NetBIOS,Open,0.84,Internal,1,6.9,Cleartext Auth,0,High
+502,TCP,Modbus,Closed,0.34,DMZ,1,9.2,Cleartext Auth,0,Safe
+8443,TCP,HTTPS-Alt,Open,0.19,External,0,2.6,None,1,Low
+135,TCP,MSRPC,Open,0.34,Internal,0,6.1,Default Credentials Risk,0,Medium
+143,TCP,IMAP,Filtered,0.52,External,0,6.4,Cleartext Auth,0,Medium
+139,TCP,NetBIOS,Open,0.38,Internal,1,8.4,Cleartext Auth,0,High
+993,TCP,IMAPS,Open,0.06,External,0,3.0,Default Credentials Risk,1,Low
+587,TCP,SMTP-Submission,Filtered,0.77,External,0,3.9,None,1,Low
+502,TCP,Modbus,Open,0.99,Internal,1,7.6,Cleartext Auth,0,Critical
+5900,TCP,VNC,Filtered,0.68,External,1,7.6,Cleartext Auth,0,High
+8443,TCP,HTTPS-Alt,Open,0.83,External,0,3.0,Anonymized,1,Medium
+14272,TCP,Unknown-App,Open,0.49,DMZ,0,4.2,Cleartext Auth,1,Medium
+30219,TCP,RPC-Node,Open,0.46,DMZ,0,3.9,Anonymized,0,Medium
+22,TCP,SSH,Open,0.05,External,0,3.5,None,1,Low
+53,UDP,DNS,Open,0.29,Internal,0,4.0,None,0,Medium
+110,TCP,POP3,Open,0.99,External,1,10.0,Cleartext Auth,0,Critical
+60449,UDP,RPC-Node,Open,0.86,DMZ,0,9.2,Anonymized,0,Critical
+26783,TCP,Microservice,Open,0.72,Internal,1,7.2,Default Credentials Risk,0,High
+389,TCP,LDAP,Closed,0.73,Internal,0,6.8,Cleartext Auth,0,Safe
+2375,TCP,Docker-Daemon,Open,0.07,External,1,10.0,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.86,External,0,6.5,None,0,High
+502,TCP,Modbus,Open,0.77,External,1,9.7,Cleartext Auth,0,Critical
+123,UDP,NTP,Open,0.56,Internal,0,2.2,None,0,Medium
+139,TCP,NetBIOS,Closed,0.94,Internal,1,8.6,Cleartext Auth,0,Safe
+636,TCP,LDAPS,Open,0.54,Internal,0,1.2,None,1,Safe
+389,TCP,LDAP,Closed,0.56,Internal,0,6.0,Cleartext Auth,0,Safe
+37546,TCP,RPC-Node,Closed,0.85,External,0,1.9,None,0,Safe
+143,TCP,IMAP,Open,0.07,External,0,5.5,Cleartext Auth,1,Medium
+27017,TCP,MongoDB,Closed,0.21,External,0,9.1,Default Credentials Risk,0,Safe
+5900,TCP,VNC,Open,0.24,External,1,10.0,Cleartext Auth,0,Critical
+5432,TCP,PostgreSQL,Open,0.5,External,0,6.3,Default Credentials Risk,0,High
+31792,UDP,Unknown-App,Filtered,0.74,External,0,3.9,Anonymized,1,Low
+27017,TCP,MongoDB,Open,0.33,External,1,9.7,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Filtered,0.49,External,1,7.6,Default Credentials Risk,0,High
+5432,TCP,PostgreSQL,Open,0.92,External,1,7.7,Anonymized,0,Critical
+25,TCP,SMTP,Filtered,0.41,External,1,6.6,None,0,Medium
+123,UDP,NTP,Open,0.67,Internal,0,2.6,None,1,Low
+5900,TCP,VNC,Open,0.53,DMZ,0,7.4,Cleartext Auth,0,High
+2147,UDP,Unknown-App,Open,0.53,Internal,0,5.0,Cleartext Auth,0,Medium
+465,TCP,SMTPS,Open,0.7,External,0,1.5,None,1,Medium
+69,UDP,TFTP,Open,0.38,Internal,1,7.5,Cleartext Auth,0,High
+21,TCP,FTP,Open,0.98,External,1,6.8,Cleartext Auth,0,Critical
+61261,TCP,Unknown-App,Open,0.92,DMZ,1,8.4,Obsolete Cipher,0,Critical
+9200,TCP,Elasticsearch,Open,0.75,External,1,8.9,Cleartext Auth,0,Critical
+53,UDP,DNS,Filtered,0.68,Internal,0,3.5,None,0,Low
+1521,TCP,Oracle-DB,Open,0.97,DMZ,0,7.7,Default Credentials Risk,0,High
+53,UDP,DNS,Open,0.77,Internal,0,5.6,None,0,Medium
+465,TCP,SMTPS,Open,0.38,External,0,2.8,None,1,Medium
+1521,TCP,Oracle-DB,Open,0.08,External,0,6.4,Default Credentials Risk,1,Medium
+123,UDP,NTP,Closed,0.44,Internal,0,2.7,None,0,Safe
+80,TCP,HTTP,Open,0.1,External,0,5.8,Obsolete Cipher,0,High
+27017,TCP,MongoDB,Open,0.29,External,1,9.9,Default Credentials Risk,1,Critical
+27017,TCP,MongoDB,Open,0.38,External,0,8.2,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Open,0.08,External,0,9.1,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Closed,0.33,Internal,1,9.7,None,0,Safe
+993,TCP,IMAPS,Open,0.59,External,0,2.8,None,1,Medium
+143,TCP,IMAP,Open,0.69,External,0,4.8,Cleartext Auth,0,High
+443,TCP,HTTPS,Open,0.93,External,0,1.5,None,1,Medium
+9200,TCP,Elasticsearch,Closed,0.21,External,1,8.2,Obsolete Cipher,0,Safe
+53,UDP,DNS,Open,0.63,Internal,0,2.8,None,0,Medium
+123,UDP,NTP,Open,0.4,Internal,0,4.3,Anonymized,0,Medium
+2375,TCP,Docker-Daemon,Filtered,0.54,External,1,10.0,Cleartext Auth,0,High
+443,TCP,HTTPS,Open,0.98,External,0,0.5,None,1,Medium
+2049,TCP,NFS,Open,0.1,Internal,0,7.9,None,0,Medium
+27017,TCP,MongoDB,Open,0.77,External,1,10.0,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Closed,0.09,External,0,2.9,None,1,Safe
+123,UDP,NTP,Open,0.35,Internal,0,1.0,None,0,Low
+3389,TCP,RDP,Open,0.85,External,1,7.3,Obsolete Cipher,1,High
+135,TCP,MSRPC,Open,0.33,Internal,1,8.5,Default Credentials Risk,0,High
+2049,TCP,NFS,Open,0.61,DMZ,0,6.3,None,0,High
+1521,TCP,Oracle-DB,Filtered,0.06,External,0,8.8,Default Credentials Risk,1,Medium
+13276,UDP,Web-Hook,Open,0.64,External,0,1.1,Obsolete Cipher,0,Medium
+2049,TCP,NFS,Open,0.81,Internal,1,7.8,None,0,High
+69,UDP,TFTP,Open,0.37,Internal,0,5.9,Cleartext Auth,0,Medium
+1521,TCP,Oracle-DB,Open,0.54,External,1,8.3,Default Credentials Risk,0,Critical
+12377,TCP,RPC-Node,Open,0.87,Internal,0,1.8,Obsolete Cipher,1,Low
+32783,TCP,Unknown-App,Open,0.49,DMZ,0,4.8,Obsolete Cipher,1,Medium
+3389,TCP,RDP,Open,0.03,Internal,0,4.6,Obsolete Cipher,1,Low
+502,TCP,Modbus,Filtered,0.55,External,0,8.0,Cleartext Auth,0,High
+9200,TCP,Elasticsearch,Open,0.72,External,1,8.4,Default Credentials Risk,0,Critical
+7735,TCP,Web-Hook,Open,0.99,External,0,2.5,None,0,High
+443,TCP,HTTPS,Filtered,0.61,External,0,0.6,None,1,Low
+110,TCP,POP3,Open,0.53,External,1,8.6,Cleartext Auth,0,Critical
+502,TCP,Modbus,Closed,0.68,External,0,7.6,Cleartext Auth,0,Safe
+52515,UDP,Custom-Service,Open,0.71,DMZ,0,1.2,Cleartext Auth,1,Low
+2049,TCP,NFS,Open,0.45,Internal,1,6.6,None,0,High
+7125,UDP,Peer2Peer,Open,0.49,DMZ,1,8.9,Default Credentials Risk,1,High
+56543,TCP,Microservice,Filtered,0.8,DMZ,1,6.3,Default Credentials Risk,1,Medium
+55081,TCP,RPC-Node,Open,0.13,External,1,7.9,Default Credentials Risk,1,High
+25,TCP,SMTP,Open,0.93,External,0,5.6,None,1,High
+5432,TCP,PostgreSQL,Open,0.13,External,1,9.6,Default Credentials Risk,1,High
+465,TCP,SMTPS,Open,0.63,External,0,0.8,Cleartext Auth,0,Medium
+389,TCP,LDAP,Open,0.59,Internal,1,7.4,Obsolete Cipher,0,High
+21,TCP,FTP,Open,0.13,External,0,7.5,Cleartext Auth,0,Critical
+80,TCP,HTTP,Open,0.81,External,0,5.5,Obsolete Cipher,0,High
+43070,TCP,Custom-Service,Open,0.21,DMZ,1,6.2,Obsolete Cipher,0,High
+41399,UDP,Unknown-App,Open,0.38,Internal,0,1.3,None,0,Low
+21635,TCP,Unknown-App,Open,0.72,DMZ,0,0.8,Anonymized,1,Low
+22,TCP,SSH,Open,0.51,External,0,3.5,None,1,Medium
+502,TCP,Modbus,Open,0.39,External,0,9.2,Cleartext Auth,0,Critical
+53,UDP,DNS,Closed,0.13,Internal,0,2.9,None,0,Safe
+38273,UDP,Web-Hook,Open,0.07,External,0,9.1,None,0,High
+25,TCP,SMTP,Open,0.77,External,0,5.6,None,0,High
+2049,TCP,NFS,Open,0.31,Internal,1,6.6,None,1,Medium
+123,UDP,NTP,Filtered,0.68,Internal,0,2.6,None,0,Low
+3306,TCP,MySQL,Closed,0.12,External,1,9.6,None,0,Safe
+139,TCP,NetBIOS,Open,0.95,Internal,1,9.4,Cleartext Auth,0,Critical
+445,TCP,SMB,Open,0.9,External,1,8.1,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.46,External,0,4.6,None,0,High
+6379,TCP,Redis,Open,0.57,Internal,1,7.2,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Open,0.38,External,0,6.6,None,1,Medium
+57220,TCP,Peer2Peer,Closed,0.32,Internal,0,3.1,Obsolete Cipher,1,Safe
+1433,TCP,MSSQL,Filtered,0.98,External,1,9.2,Cleartext Auth,0,High
+5432,TCP,PostgreSQL,Open,0.46,External,1,8.5,Default Credentials Risk,0,Critical
+587,TCP,SMTP-Submission,Open,0.77,External,0,2.2,None,1,Medium
+9200,TCP,Elasticsearch,Open,0.54,Internal,1,8.5,Default Credentials Risk,0,High
+21,TCP,FTP,Open,0.31,DMZ,0,7.0,Cleartext Auth,0,High
+28537,UDP,Custom-Service,Closed,0.9,DMZ,0,2.7,None,0,Safe
+1433,TCP,MSSQL,Open,0.64,External,1,8.0,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Open,0.32,External,1,6.3,None,0,Critical
+636,TCP,LDAPS,Open,0.77,Internal,0,2.4,Cleartext Auth,1,Low
+80,TCP,HTTP,Open,0.96,External,0,5.8,Obsolete Cipher,0,High
+587,TCP,SMTP-Submission,Filtered,0.7,External,0,3.7,Default Credentials Risk,1,Low
+636,TCP,LDAPS,Open,0.05,Internal,0,2.3,None,1,Safe
+139,TCP,NetBIOS,Open,0.25,Internal,1,8.6,Cleartext Auth,1,Medium
+110,TCP,POP3,Open,0.63,Internal,1,7.6,Obsolete Cipher,0,High
+445,TCP,SMB,Filtered,0.09,Internal,1,8.5,Obsolete Cipher,0,Medium
+88,TCP,Kerberos,Open,0.72,Internal,0,2.4,Anonymized,0,Medium
+1521,TCP,Oracle-DB,Open,0.45,Internal,0,9.1,Default Credentials Risk,0,High
+443,TCP,HTTPS,Open,0.09,External,0,2.4,None,1,Low
+2375,TCP,Docker-Daemon,Open,0.8,External,1,9.8,Cleartext Auth,0,Critical
+52267,UDP,RPC-Node,Open,0.27,External,0,8.7,Anonymized,1,High
+22,TCP,SSH,Open,0.77,External,0,3.1,Obsolete Cipher,1,Medium
+64854,TCP,Custom-Service,Filtered,0.92,DMZ,0,2.3,Anonymized,0,Low
+389,TCP,LDAP,Closed,0.99,Internal,0,7.5,Cleartext Auth,0,Safe
+636,TCP,LDAPS,Open,0.7,Internal,0,1.4,None,1,Low
+37960,TCP,Peer2Peer,Open,0.09,External,0,5.2,Cleartext Auth,0,High
+389,TCP,LDAP,Open,0.81,Internal,1,6.7,Cleartext Auth,1,Medium
+636,TCP,LDAPS,Filtered,0.85,DMZ,0,1.8,None,0,Low
+63975,TCP,Web-Hook,Open,0.98,DMZ,0,1.0,Default Credentials Risk,1,Low
+3306,TCP,MySQL,Open,0.97,External,1,8.7,Default Credentials Risk,0,Critical
+52600,UDP,Unknown-App,Open,0.73,External,0,2.9,Default Credentials Risk,0,High
+63197,UDP,Peer2Peer,Open,0.57,Internal,0,5.7,Anonymized,0,Medium
+10241,UDP,Microservice,Open,0.89,Internal,0,3.3,Default Credentials Risk,0,Medium
+993,TCP,IMAPS,Open,0.26,External,0,3.0,None,1,Medium
+21,TCP,FTP,Open,0.41,External,1,8.3,Cleartext Auth,1,Critical
+1521,TCP,Oracle-DB,Open,0.69,External,0,9.2,Default Credentials Risk,0,Critical
+23,TCP,Telnet,Open,0.17,External,1,10.0,Cleartext Auth,0,Critical
+27017,TCP,MongoDB,Closed,0.89,External,1,9.0,Default Credentials Risk,0,Safe
+135,TCP,MSRPC,Open,0.19,Internal,1,7.9,Default Credentials Risk,0,High
+9200,TCP,Elasticsearch,Open,0.57,External,1,8.4,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.1,DMZ,0,8.9,Default Credentials Risk,1,Medium
+69,UDP,TFTP,Filtered,0.27,External,1,6.7,Cleartext Auth,0,Medium
+1433,TCP,MSSQL,Open,0.47,External,0,8.7,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Filtered,0.41,External,1,6.1,Default Credentials Risk,0,Medium
+25,TCP,SMTP,Open,0.87,External,0,4.7,None,0,High
+443,TCP,HTTPS,Closed,0.8,DMZ,0,3.9,Anonymized,1,Safe
+123,UDP,NTP,Closed,0.81,Internal,0,1.5,Cleartext Auth,0,Safe
+3306,TCP,MySQL,Filtered,0.15,External,1,7.7,Default Credentials Risk,1,Medium
+53,UDP,DNS,Filtered,0.52,Internal,0,4.7,None,1,Low
+1834,UDP,Custom-Service,Open,0.96,Internal,0,1.4,Anonymized,1,Low
+80,TCP,HTTP,Filtered,0.88,External,0,7.3,Obsolete Cipher,0,Medium
+5900,TCP,VNC,Open,0.4,External,1,9.1,Anonymized,1,Critical
+46277,TCP,Custom-Service,Open,0.79,External,1,8.5,None,1,Critical
+80,TCP,HTTP,Open,0.83,External,0,7.1,Obsolete Cipher,0,Critical
+69,UDP,TFTP,Filtered,0.87,External,1,6.8,Cleartext Auth,0,High
+135,TCP,MSRPC,Filtered,0.52,Internal,1,6.3,Default Credentials Risk,1,Low
+143,TCP,IMAP,Open,0.27,External,1,6.1,Default Credentials Risk,0,High
+88,TCP,Kerberos,Open,0.87,External,0,2.3,None,1,Medium
+995,TCP,POP3S,Filtered,0.09,External,0,2.9,None,1,Low
+25,TCP,SMTP,Filtered,0.65,External,0,5.4,None,0,Medium
+465,TCP,SMTPS,Closed,0.68,External,0,1.4,None,1,Safe
+110,TCP,POP3,Open,0.94,External,1,6.7,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.47,External,0,2.6,None,1,Medium
+2049,TCP,NFS,Filtered,0.56,DMZ,1,6.4,None,0,Medium
+80,TCP,HTTP,Open,0.28,External,0,5.7,Obsolete Cipher,0,High
+587,TCP,SMTP-Submission,Open,0.86,External,0,3.0,None,1,Medium
+2049,TCP,NFS,Open,1.0,Internal,0,7.2,None,0,High
+1521,TCP,Oracle-DB,Filtered,0.34,External,1,7.9,Default Credentials Risk,0,Medium
+5900,TCP,VNC,Filtered,0.84,External,1,8.0,Cleartext Auth,0,High
+80,TCP,HTTP,Open,0.91,External,1,6.7,Obsolete Cipher,0,Critical
+43913,TCP,Unknown-App,Open,0.89,Internal,1,7.1,Default Credentials Risk,1,High
+5432,TCP,PostgreSQL,Open,0.94,External,0,6.8,Default Credentials Risk,0,Critical
+33823,TCP,Microservice,Filtered,0.15,DMZ,0,2.8,None,1,Safe
+23481,UDP,Peer2Peer,Filtered,0.49,Internal,0,3.0,Cleartext Auth,1,Safe
+139,TCP,NetBIOS,Filtered,0.17,External,1,6.4,Cleartext Auth,0,Medium
+69,UDP,TFTP,Open,0.48,Internal,0,6.1,Cleartext Auth,0,Medium
+1433,TCP,MSSQL,Open,0.02,External,0,8.4,Default Credentials Risk,0,Critical
+389,TCP,LDAP,Open,0.31,Internal,0,6.5,Obsolete Cipher,0,Medium
+502,TCP,Modbus,Open,0.69,External,0,10.0,Cleartext Auth,0,Critical
+33148,UDP,Unknown-App,Open,0.13,External,0,0.2,Cleartext Auth,0,Medium
+8080,TCP,HTTP-Proxy,Open,0.88,External,0,7.7,Obsolete Cipher,0,Critical
+25,TCP,SMTP,Open,0.69,Internal,0,5.3,None,0,Medium
+1521,TCP,Oracle-DB,Open,0.69,External,0,8.4,Default Credentials Risk,0,Critical
+80,TCP,HTTP,Open,0.83,External,0,5.5,Obsolete Cipher,0,High
+88,TCP,Kerberos,Open,0.78,Internal,0,3.0,None,1,Low
+143,TCP,IMAP,Open,0.21,External,0,5.7,Anonymized,0,High
+22690,TCP,Custom-Service,Filtered,0.67,DMZ,0,0.8,None,0,Low
+69,UDP,TFTP,Open,0.46,DMZ,1,7.1,Default Credentials Risk,0,High
+25,TCP,SMTP,Open,0.68,Internal,0,4.7,None,1,Low
+88,TCP,Kerberos,Open,0.17,Internal,0,3.5,Cleartext Auth,0,Medium
+3389,TCP,RDP,Open,0.34,External,0,9.3,Obsolete Cipher,1,High
+5432,TCP,PostgreSQL,Filtered,0.65,External,1,8.1,Default Credentials Risk,0,High
+25,TCP,SMTP,Open,0.57,External,0,5.9,Anonymized,0,High
+1521,TCP,Oracle-DB,Filtered,0.73,External,1,9.1,Default Credentials Risk,0,High
+6379,TCP,Redis,Open,0.01,External,1,8.8,Default Credentials Risk,0,Critical
+389,TCP,LDAP,Open,0.7,Internal,0,6.4,Cleartext Auth,0,High
+443,TCP,HTTPS,Open,0.83,External,0,1.8,None,1,Medium
+41191,TCP,Custom-Service,Filtered,0.07,DMZ,1,8.1,Obsolete Cipher,0,Medium
+465,TCP,SMTPS,Filtered,0.08,DMZ,0,2.3,None,0,Low
+3389,TCP,RDP,Closed,0.75,External,0,7.0,Obsolete Cipher,0,Safe
+23,TCP,Telnet,Closed,0.64,Internal,1,8.8,Cleartext Auth,0,Safe
+5432,TCP,PostgreSQL,Filtered,0.33,External,1,8.7,Cleartext Auth,0,High
+1433,TCP,MSSQL,Open,0.83,DMZ,1,10.0,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Filtered,0.74,Internal,0,3.5,None,1,Low
+445,TCP,SMB,Filtered,0.19,External,1,10.0,Default Credentials Risk,0,High
+23,TCP,Telnet,Filtered,0.45,External,1,8.0,Cleartext Auth,0,High
+9847,UDP,Custom-Service,Open,0.51,DMZ,1,8.9,Anonymized,0,Critical
+139,TCP,NetBIOS,Open,0.32,External,1,8.7,Cleartext Auth,0,Critical
+443,TCP,HTTPS,Open,0.13,External,0,2.0,None,1,Low
+8080,TCP,HTTP-Proxy,Open,0.94,External,1,9.0,Obsolete Cipher,0,Critical
+502,TCP,Modbus,Open,0.69,External,1,8.2,Cleartext Auth,0,Critical
+995,TCP,POP3S,Open,0.67,External,0,1.1,None,1,Low
+36013,UDP,RPC-Node,Open,0.67,DMZ,0,1.0,Obsolete Cipher,0,Medium
+135,TCP,MSRPC,Open,0.3,Internal,1,6.6,None,0,High
+3389,TCP,RDP,Filtered,0.74,External,0,5.7,Obsolete Cipher,1,Medium
+443,TCP,HTTPS,Open,0.05,External,0,1.3,None,1,Low
+2375,TCP,Docker-Daemon,Open,0.01,External,0,9.0,Cleartext Auth,0,Critical
+3389,TCP,RDP,Open,0.76,External,1,8.0,Obsolete Cipher,1,High
+143,TCP,IMAP,Open,0.12,DMZ,0,6.3,Cleartext Auth,0,Medium
+445,TCP,SMB,Open,0.71,External,0,10.0,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Filtered,0.3,Internal,0,3.0,None,1,Safe
+27017,TCP,MongoDB,Open,0.18,External,0,8.4,Default Credentials Risk,0,Critical
+2375,TCP,Docker-Daemon,Filtered,0.66,External,1,8.9,Cleartext Auth,0,High
+8443,TCP,HTTPS-Alt,Open,0.11,External,0,3.0,None,1,Low
+443,TCP,HTTPS,Closed,0.68,External,0,0.5,None,1,Safe
+88,TCP,Kerberos,Closed,0.82,Internal,0,4.8,None,1,Safe
+8080,TCP,HTTP-Proxy,Open,0.1,DMZ,1,8.0,Anonymized,0,High
+9200,TCP,Elasticsearch,Open,0.69,DMZ,1,8.2,Default Credentials Risk,1,High
+3306,TCP,MySQL,Open,0.46,External,1,7.2,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Closed,0.41,External,1,6.9,Cleartext Auth,0,Safe
+636,TCP,LDAPS,Open,0.62,Internal,0,1.9,None,0,Medium
+23,TCP,Telnet,Open,0.28,DMZ,1,10.0,Default Credentials Risk,0,Critical
+22,TCP,SSH,Filtered,0.85,External,0,1.4,Obsolete Cipher,1,Low
+123,UDP,NTP,Filtered,0.65,Internal,0,1.9,None,0,Low
+1754,TCP,Custom-Service,Open,0.95,Internal,0,5.4,Obsolete Cipher,0,High
+995,TCP,POP3S,Open,0.18,External,0,1.9,None,1,Low
+445,TCP,SMB,Filtered,0.93,DMZ,1,9.3,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Open,0.58,External,1,8.5,Default Credentials Risk,1,Critical
+443,TCP,HTTPS,Open,0.45,External,0,2.4,None,1,Medium
+587,TCP,SMTP-Submission,Open,0.43,DMZ,0,1.7,None,1,Low
+443,TCP,HTTPS,Open,0.36,External,0,1.7,None,1,Low
+993,TCP,IMAPS,Open,0.55,External,0,2.0,None,1,Medium
+69,UDP,TFTP,Open,0.73,Internal,1,7.3,Anonymized,0,High
+22,TCP,SSH,Open,0.77,External,0,3.7,None,1,Medium
+23,TCP,Telnet,Open,0.78,External,1,7.7,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.66,External,1,7.5,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.97,Internal,1,8.5,Anonymized,0,Critical
+995,TCP,POP3S,Open,0.23,External,0,2.2,None,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.05,External,0,1.8,None,1,Low
+22262,TCP,Microservice,Open,0.38,DMZ,0,2.5,Anonymized,1,Low
+53,UDP,DNS,Open,0.35,Internal,0,5.1,None,0,Medium
+32930,UDP,Peer2Peer,Open,0.08,DMZ,1,8.4,Obsolete Cipher,0,High
+139,TCP,NetBIOS,Open,0.41,Internal,1,7.9,Cleartext Auth,0,High
+5900,TCP,VNC,Open,0.24,External,0,9.7,Cleartext Auth,0,Critical
+110,TCP,POP3,Open,0.18,DMZ,1,7.1,Cleartext Auth,0,High
+22,TCP,SSH,Closed,0.22,External,0,5.1,None,1,Safe
+5900,TCP,VNC,Filtered,0.82,External,0,10.0,Cleartext Auth,0,High
+445,TCP,SMB,Open,0.07,External,1,9.1,Default Credentials Risk,0,Critical
+22,TCP,SSH,Open,0.15,External,0,4.0,None,1,Medium
+5900,TCP,VNC,Open,0.75,External,0,9.1,Cleartext Auth,0,Critical
+9200,TCP,Elasticsearch,Open,0.52,External,1,10.0,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Filtered,0.35,External,0,1.5,None,1,Low
+80,TCP,HTTP,Closed,0.08,External,1,7.2,Obsolete Cipher,0,Safe
+445,TCP,SMB,Open,0.12,External,0,10.0,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.85,External,0,0.2,None,1,Low
+1433,TCP,MSSQL,Open,0.55,External,1,7.4,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.71,External,1,7.0,Default Credentials Risk,0,Critical
+44230,TCP,Microservice,Open,0.51,External,1,7.4,Cleartext Auth,0,Critical
+25,TCP,SMTP,Filtered,0.47,External,0,5.2,None,0,Medium
+69,UDP,TFTP,Open,0.93,Internal,1,7.5,Cleartext Auth,1,High
+502,TCP,Modbus,Filtered,0.64,External,1,10.0,Cleartext Auth,0,High
+8443,TCP,HTTPS-Alt,Open,0.62,DMZ,0,2.6,None,1,Low
+1433,TCP,MSSQL,Filtered,0.35,Internal,1,10.0,Default Credentials Risk,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.73,External,0,1.1,None,0,Medium
+995,TCP,POP3S,Closed,0.45,External,0,0.2,None,1,Safe
+21,TCP,FTP,Open,0.34,External,0,7.4,None,0,Critical
+445,TCP,SMB,Open,0.97,External,1,9.7,Default Credentials Risk,0,Critical
+993,TCP,IMAPS,Open,0.03,External,0,1.9,None,1,Low
+53,UDP,DNS,Open,0.8,Internal,0,1.4,None,0,Medium
+995,TCP,POP3S,Open,0.67,External,0,1.8,None,1,Medium
+53,UDP,DNS,Filtered,0.27,External,0,2.2,None,0,Low
+45792,TCP,RPC-Node,Open,0.2,Internal,0,7.0,Default Credentials Risk,0,Medium
+123,UDP,NTP,Open,0.61,Internal,0,3.2,None,0,Medium
+9200,TCP,Elasticsearch,Open,0.9,External,1,9.1,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.22,External,0,1.3,None,1,Low
+25,TCP,SMTP,Open,0.35,External,0,5.0,None,0,High
+51873,TCP,RPC-Node,Open,0.01,DMZ,0,4.9,Default Credentials Risk,0,Medium
+80,TCP,HTTP,Open,0.24,External,0,5.4,Obsolete Cipher,0,High
+993,TCP,IMAPS,Open,0.37,External,0,1.8,None,1,Low
+19349,UDP,Unknown-App,Open,0.8,DMZ,1,6.5,None,0,Critical
+13873,TCP,Microservice,Open,0.13,External,1,7.7,Cleartext Auth,0,Critical
+9200,TCP,Elasticsearch,Open,0.57,External,1,9.7,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Open,0.74,External,0,4.5,None,0,High
+1433,TCP,MSSQL,Open,0.12,External,1,9.1,Default Credentials Risk,0,Critical
+14062,TCP,Web-Hook,Filtered,0.45,External,0,6.4,Obsolete Cipher,1,Low
+5432,TCP,PostgreSQL,Closed,0.42,Internal,1,7.7,Default Credentials Risk,0,Safe
+53,UDP,DNS,Open,0.71,Internal,0,2.7,None,1,Low
+2049,TCP,NFS,Open,0.59,Internal,1,6.9,None,0,High
+139,TCP,NetBIOS,Closed,0.7,Internal,0,6.8,Cleartext Auth,0,Safe
+80,TCP,HTTP,Open,0.77,External,0,5.9,Obsolete Cipher,1,High
+69,UDP,TFTP,Open,0.25,Internal,0,5.6,Obsolete Cipher,0,Medium
+110,TCP,POP3,Filtered,0.33,External,1,9.0,Default Credentials Risk,0,High
+36451,UDP,Peer2Peer,Open,0.6,Internal,1,9.2,Anonymized,1,High
+3306,TCP,MySQL,Open,0.54,External,1,8.9,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.47,Internal,0,7.9,Cleartext Auth,0,High
+63083,UDP,Web-Hook,Open,0.01,External,1,7.6,Anonymized,0,Critical
+27017,TCP,MongoDB,Open,0.38,DMZ,0,9.2,Default Credentials Risk,0,High
+443,TCP,HTTPS,Open,0.27,External,0,1.7,None,1,Low
+9200,TCP,Elasticsearch,Open,0.29,External,1,8.5,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.97,External,0,2.8,None,1,Medium
+80,TCP,HTTP,Open,0.15,External,1,7.3,Obsolete Cipher,0,Critical
+587,TCP,SMTP-Submission,Open,0.03,External,0,2.3,None,1,Low
+123,UDP,NTP,Open,0.9,Internal,0,1.9,Obsolete Cipher,1,Low
+1521,TCP,Oracle-DB,Filtered,0.44,DMZ,1,8.1,Default Credentials Risk,0,Medium
+5432,TCP,PostgreSQL,Open,0.68,DMZ,0,5.9,Default Credentials Risk,0,High
+636,TCP,LDAPS,Open,0.12,Internal,0,0.5,None,1,Safe
+587,TCP,SMTP-Submission,Open,0.11,External,0,4.2,None,1,Medium
+636,TCP,LDAPS,Open,0.24,Internal,0,3.6,None,0,Medium
+39105,UDP,Microservice,Open,0.09,External,1,7.3,Cleartext Auth,0,Critical
+50802,TCP,Custom-Service,Filtered,0.13,DMZ,0,1.5,Anonymized,1,Safe
+27017,TCP,MongoDB,Open,0.19,External,1,8.8,Default Credentials Risk,0,Critical
+110,TCP,POP3,Open,0.7,DMZ,0,7.6,Cleartext Auth,0,High
+995,TCP,POP3S,Open,0.86,External,0,2.2,None,1,Medium
+8443,TCP,HTTPS-Alt,Open,0.0,External,0,5.6,None,1,Medium
+1521,TCP,Oracle-DB,Open,0.62,External,1,9.5,Default Credentials Risk,0,Critical
+9200,TCP,Elasticsearch,Open,0.61,DMZ,1,8.6,Default Credentials Risk,0,Critical
+88,TCP,Kerberos,Open,0.03,Internal,0,2.0,Cleartext Auth,0,Low
+143,TCP,IMAP,Open,0.53,External,0,4.4,Cleartext Auth,1,Medium
+445,TCP,SMB,Open,0.93,DMZ,1,9.5,Cleartext Auth,1,High
+25,TCP,SMTP,Filtered,0.79,External,0,4.7,None,0,Medium
+465,TCP,SMTPS,Open,0.22,External,0,0.8,None,1,Low
+80,TCP,HTTP,Open,0.57,External,0,5.9,Anonymized,0,High
+37620,UDP,Microservice,Open,0.43,DMZ,0,5.5,Obsolete Cipher,0,High
+139,TCP,NetBIOS,Open,0.6,Internal,1,6.7,Cleartext Auth,0,High
+37074,UDP,Web-Hook,Open,0.56,DMZ,0,4.1,Default Credentials Risk,1,Medium
+27017,TCP,MongoDB,Open,0.4,External,1,10.0,Default Credentials Risk,0,Critical
+40067,TCP,Peer2Peer,Open,0.31,External,0,0.1,Cleartext Auth,0,Medium
+465,TCP,SMTPS,Open,0.09,External,0,3.1,None,1,Low
+123,UDP,NTP,Open,0.81,Internal,0,2.5,None,0,Medium
+2049,TCP,NFS,Filtered,0.17,Internal,1,8.5,None,0,Medium
+80,TCP,HTTP,Open,0.08,External,0,6.6,Obsolete Cipher,0,High
+995,TCP,POP3S,Open,0.77,External,0,1.0,None,1,Medium
+21,TCP,FTP,Open,0.54,External,0,9.0,Anonymized,0,Critical
+389,TCP,LDAP,Closed,0.75,Internal,1,6.7,Cleartext Auth,0,Safe
+3306,TCP,MySQL,Open,0.75,External,1,7.9,None,0,Critical
+2049,TCP,NFS,Open,0.2,Internal,1,6.8,Cleartext Auth,0,High
+27017,TCP,MongoDB,Open,0.78,External,1,8.1,Default Credentials Risk,0,Critical
+6895,TCP,Microservice,Open,0.59,External,0,3.5,Cleartext Auth,1,Medium
+587,TCP,SMTP-Submission,Filtered,0.62,External,0,1.4,None,1,Low
+389,TCP,LDAP,Filtered,0.11,Internal,0,7.1,Cleartext Auth,0,Low
+61758,TCP,Web-Hook,Open,0.47,External,1,6.6,None,0,Critical
+161,UDP,SNMP,Open,0.73,Internal,0,9.4,Default Credentials Risk,0,High
+22,TCP,SSH,Open,0.06,External,0,1.6,None,1,Low
+465,TCP,SMTPS,Open,0.66,External,0,2.8,Obsolete Cipher,0,High
+24631,TCP,Custom-Service,Open,0.71,DMZ,0,3.7,Obsolete Cipher,1,Medium
+32786,TCP,Unknown-App,Closed,0.02,DMZ,0,9.2,Anonymized,0,Safe
+993,TCP,IMAPS,Open,0.3,External,0,1.2,Default Credentials Risk,1,Low
+65156,UDP,Custom-Service,Closed,0.95,External,0,8.5,None,1,Safe
+2049,TCP,NFS,Open,0.87,External,1,6.5,None,0,Critical
+123,UDP,NTP,Open,0.13,Internal,0,1.9,None,0,Low
+9200,TCP,Elasticsearch,Open,0.52,Internal,0,7.8,Default Credentials Risk,0,High
+64972,TCP,Microservice,Closed,0.12,External,0,0.6,Anonymized,0,Safe
+123,UDP,NTP,Open,0.41,Internal,0,2.5,None,0,Medium
+465,TCP,SMTPS,Open,0.61,Internal,0,1.4,Anonymized,1,Low
+389,TCP,LDAP,Open,0.5,Internal,1,6.5,Cleartext Auth,0,High
+1433,TCP,MSSQL,Open,0.23,External,1,8.5,Default Credentials Risk,0,Critical
+61673,UDP,RPC-Node,Filtered,0.07,DMZ,1,6.4,Cleartext Auth,0,Medium
+57852,UDP,Microservice,Open,0.04,External,1,8.4,Obsolete Cipher,1,High
+636,TCP,LDAPS,Open,0.64,Internal,0,1.8,None,1,Low
+23,TCP,Telnet,Open,1.0,External,1,7.9,Cleartext Auth,0,Critical
+23,TCP,Telnet,Open,0.29,External,1,8.2,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.52,External,0,9.8,Cleartext Auth,0,Critical
+3389,TCP,RDP,Closed,0.7,External,0,8.3,Anonymized,0,Safe
+3389,TCP,RDP,Filtered,0.88,External,0,6.8,Obsolete Cipher,0,Medium
+135,TCP,MSRPC,Open,0.09,Internal,1,7.3,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Filtered,0.91,DMZ,1,7.6,Obsolete Cipher,0,Medium
+123,UDP,NTP,Open,0.77,DMZ,0,0.8,Default Credentials Risk,0,Medium
+139,TCP,NetBIOS,Open,0.5,Internal,1,8.3,Default Credentials Risk,0,High
+6379,TCP,Redis,Open,0.08,External,1,8.5,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.18,External,0,9.6,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.92,Internal,0,1.7,None,0,Medium
+2375,TCP,Docker-Daemon,Open,0.59,External,1,8.0,Cleartext Auth,0,Critical
+5432,TCP,PostgreSQL,Open,0.9,External,1,6.6,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.41,External,0,9.0,Default Credentials Risk,1,High
+25,TCP,SMTP,Closed,0.48,External,0,5.8,None,0,Safe
+502,TCP,Modbus,Open,0.62,External,1,8.1,Cleartext Auth,0,Critical
+6379,TCP,Redis,Open,0.61,External,1,9.8,Default Credentials Risk,0,Critical
+1127,TCP,Custom-Service,Filtered,1.0,DMZ,1,7.6,Cleartext Auth,1,Medium
+27017,TCP,MongoDB,Open,0.79,DMZ,1,7.3,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.62,External,0,1.9,None,1,Medium
+139,TCP,NetBIOS,Open,0.47,Internal,0,6.6,Cleartext Auth,0,Medium
+123,UDP,NTP,Open,0.78,Internal,0,1.8,None,0,Medium
+25,TCP,SMTP,Open,0.54,External,0,5.5,None,0,High
+993,TCP,IMAPS,Closed,0.28,External,0,1.0,None,1,Safe
+1521,TCP,Oracle-DB,Open,0.6,External,1,8.0,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.83,Internal,0,3.0,Cleartext Auth,1,Low
+8443,TCP,HTTPS-Alt,Closed,0.44,Internal,0,1.9,None,1,Safe
+5900,TCP,VNC,Open,0.52,External,1,9.3,Cleartext Auth,0,Critical
+80,TCP,HTTP,Open,0.72,External,0,5.4,Obsolete Cipher,0,High
+8443,TCP,HTTPS-Alt,Filtered,0.33,External,0,3.0,Anonymized,1,Low
+7780,UDP,Custom-Service,Open,0.29,DMZ,1,8.5,Default Credentials Risk,1,High
+88,TCP,Kerberos,Open,0.1,Internal,0,4.4,Anonymized,1,Low
+27017,TCP,MongoDB,Open,0.17,DMZ,1,6.5,Default Credentials Risk,0,High
+36451,UDP,Custom-Service,Open,0.05,Internal,0,4.5,None,0,Medium
+139,TCP,NetBIOS,Open,0.45,Internal,1,7.0,Cleartext Auth,0,High
+143,TCP,IMAP,Closed,0.76,External,1,6.6,Cleartext Auth,0,Safe
+5432,TCP,PostgreSQL,Filtered,0.47,External,1,8.0,Default Credentials Risk,1,Medium
+445,TCP,SMB,Open,0.79,External,1,9.7,Default Credentials Risk,0,Critical
+22,TCP,SSH,Open,0.77,External,0,2.4,None,0,High
+110,TCP,POP3,Open,0.56,External,0,7.1,Cleartext Auth,0,High
+5432,TCP,PostgreSQL,Open,0.97,External,1,8.0,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Open,0.24,External,1,10.0,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Open,0.45,External,1,9.5,Default Credentials Risk,0,Critical
+80,TCP,HTTP,Open,0.64,External,0,6.8,Obsolete Cipher,0,High
+110,TCP,POP3,Open,0.15,External,0,6.6,Cleartext Auth,0,High
+1521,TCP,Oracle-DB,Filtered,0.3,External,1,7.9,Default Credentials Risk,0,Medium
+3306,TCP,MySQL,Open,0.61,External,1,8.5,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Open,0.56,External,1,9.4,Cleartext Auth,1,Critical
+502,TCP,Modbus,Open,0.71,DMZ,1,8.6,Cleartext Auth,0,Critical
+161,UDP,SNMP,Filtered,0.36,Internal,1,7.8,Obsolete Cipher,0,Medium
+110,TCP,POP3,Open,0.97,Internal,0,9.1,Obsolete Cipher,0,High
+2375,TCP,Docker-Daemon,Closed,0.62,External,1,10.0,Cleartext Auth,0,Safe
+3389,TCP,RDP,Open,0.85,External,0,7.5,Obsolete Cipher,1,High
+2375,TCP,Docker-Daemon,Open,0.7,External,0,10.0,None,0,Critical
+69,UDP,TFTP,Closed,0.78,Internal,1,6.4,Cleartext Auth,0,Safe
+69,UDP,TFTP,Open,0.68,Internal,0,4.8,Cleartext Auth,0,Medium
+587,TCP,SMTP-Submission,Open,0.45,External,0,1.8,None,1,Low
+38639,UDP,RPC-Node,Open,0.6,External,0,2.7,None,1,Medium
+445,TCP,SMB,Open,0.29,External,1,7.4,None,1,High
+6379,TCP,Redis,Open,0.13,External,0,8.8,Default Credentials Risk,1,High
+1954,TCP,Peer2Peer,Open,0.18,DMZ,1,7.0,Obsolete Cipher,0,High
+139,TCP,NetBIOS,Open,0.15,Internal,1,7.8,Cleartext Auth,0,High
+6379,TCP,Redis,Open,0.73,External,0,10.0,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.46,External,0,2.2,None,0,Medium
+5900,TCP,VNC,Open,0.71,External,1,8.3,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.96,External,1,9.7,Default Credentials Risk,1,Critical
+9200,TCP,Elasticsearch,Closed,0.86,External,1,6.5,Default Credentials Risk,0,Safe
+80,TCP,HTTP,Open,0.24,External,1,6.7,Obsolete Cipher,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.01,External,0,3.3,Anonymized,1,Low
+2375,TCP,Docker-Daemon,Open,0.25,External,0,8.3,Cleartext Auth,1,High
+25,TCP,SMTP,Closed,0.64,External,1,6.6,None,0,Safe
+110,TCP,POP3,Filtered,0.18,External,0,7.3,Cleartext Auth,0,Medium
+502,TCP,Modbus,Closed,0.28,External,1,8.6,Cleartext Auth,0,Safe
+51478,UDP,Web-Hook,Open,0.33,Internal,0,2.6,None,0,Medium
+445,TCP,SMB,Open,0.49,Internal,0,9.9,Default Credentials Risk,0,High
+161,UDP,SNMP,Open,0.07,External,1,9.8,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Open,0.04,External,1,8.0,Obsolete Cipher,0,Critical
+993,TCP,IMAPS,Closed,0.49,External,0,2.1,None,1,Safe
+53,UDP,DNS,Open,0.57,DMZ,0,3.0,None,0,Medium
+24546,UDP,Microservice,Open,0.85,External,0,0.5,None,1,Low
+5432,TCP,PostgreSQL,Open,0.97,External,1,7.4,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Open,0.63,External,1,9.2,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Open,0.79,External,0,5.1,Cleartext Auth,1,Medium
+6379,TCP,Redis,Closed,0.04,External,0,9.3,Default Credentials Risk,0,Safe
+23,TCP,Telnet,Open,0.68,DMZ,1,8.3,Cleartext Auth,0,Critical
+389,TCP,LDAP,Open,0.91,Internal,1,6.7,Cleartext Auth,0,High
+110,TCP,POP3,Filtered,0.1,External,1,7.3,Cleartext Auth,1,Medium
+53,UDP,DNS,Open,0.06,External,0,4.5,None,0,Medium
+993,TCP,IMAPS,Open,0.98,External,0,1.4,None,1,Medium
+110,TCP,POP3,Open,0.17,External,0,6.7,Cleartext Auth,0,High
+2375,TCP,Docker-Daemon,Closed,0.04,External,0,8.8,Cleartext Auth,0,Safe
+1521,TCP,Oracle-DB,Open,0.09,External,1,8.0,None,0,Critical
+28301,UDP,Microservice,Open,0.41,Internal,0,1.4,Default Credentials Risk,0,Low
+41036,TCP,Peer2Peer,Open,0.78,DMZ,0,4.7,None,0,High
+21,TCP,FTP,Open,0.86,DMZ,1,7.9,Cleartext Auth,0,Critical
+5432,TCP,PostgreSQL,Open,0.8,External,1,9.0,Default Credentials Risk,0,Critical
+32115,UDP,Unknown-App,Open,0.29,DMZ,1,8.8,None,0,Critical
+5432,TCP,PostgreSQL,Open,0.79,External,1,7.3,Default Credentials Risk,1,High
+443,TCP,HTTPS,Open,0.68,External,0,2.7,None,1,Medium
+88,TCP,Kerberos,Open,0.89,DMZ,0,4.4,None,1,Medium
+6379,TCP,Redis,Open,0.18,External,1,9.6,Default Credentials Risk,1,Critical
+143,TCP,IMAP,Open,0.69,External,0,7.9,Cleartext Auth,0,Critical
+5432,TCP,PostgreSQL,Open,0.16,External,1,7.4,Default Credentials Risk,0,Critical
+60371,TCP,Peer2Peer,Open,1.0,Internal,0,3.9,Anonymized,0,Medium
+5432,TCP,PostgreSQL,Open,0.33,External,1,7.0,Default Credentials Risk,0,Critical
+39806,TCP,Peer2Peer,Closed,0.73,External,1,9.3,None,0,Safe
+2049,TCP,NFS,Open,0.24,Internal,0,5.2,None,0,Medium
+21,TCP,FTP,Open,0.24,External,1,9.0,Cleartext Auth,0,Critical
+587,TCP,SMTP-Submission,Open,0.98,External,0,3.5,None,1,Medium
+110,TCP,POP3,Open,0.46,External,1,6.9,Cleartext Auth,0,Critical
+5657,UDP,Microservice,Filtered,0.7,DMZ,0,0.3,Obsolete Cipher,1,Safe
+161,UDP,SNMP,Open,0.95,External,1,7.8,Default Credentials Risk,0,Critical
+8296,UDP,Web-Hook,Open,0.56,DMZ,0,0.4,Default Credentials Risk,1,Low
+161,UDP,SNMP,Open,0.74,Internal,1,6.4,Default Credentials Risk,0,High
+47085,TCP,Microservice,Open,0.42,External,0,3.4,Default Credentials Risk,0,Medium
+1433,TCP,MSSQL,Open,0.71,External,1,10.0,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Open,0.98,External,1,9.1,Cleartext Auth,0,Critical
+5432,TCP,PostgreSQL,Open,0.28,External,1,8.3,None,1,High
+161,UDP,SNMP,Closed,0.54,Internal,0,8.2,Default Credentials Risk,0,Safe
+3389,TCP,RDP,Filtered,0.52,Internal,1,8.3,Cleartext Auth,1,Medium
+636,TCP,LDAPS,Open,0.46,Internal,0,2.2,None,1,Low
+587,TCP,SMTP-Submission,Closed,0.77,External,0,2.0,None,1,Safe
+995,TCP,POP3S,Open,0.54,External,0,2.4,None,1,Medium
+139,TCP,NetBIOS,Open,0.24,Internal,0,9.7,Cleartext Auth,0,High
+110,TCP,POP3,Open,0.67,External,1,8.3,Cleartext Auth,0,Critical
+3389,TCP,RDP,Open,0.5,External,0,9.4,None,1,High
+636,TCP,LDAPS,Open,0.65,Internal,0,1.5,None,1,Low
+502,TCP,Modbus,Open,0.8,External,1,8.0,Cleartext Auth,0,Critical
+23220,TCP,Microservice,Open,0.02,Internal,0,1.3,Anonymized,1,Safe
+389,TCP,LDAP,Open,0.53,Internal,1,6.1,Cleartext Auth,0,High
+143,TCP,IMAP,Open,0.09,External,1,6.1,Cleartext Auth,1,High
+636,TCP,LDAPS,Open,0.72,Internal,0,3.1,Default Credentials Risk,1,Low
+1521,TCP,Oracle-DB,Closed,0.87,External,0,6.7,Default Credentials Risk,0,Safe
+3389,TCP,RDP,Open,0.73,External,1,9.3,Obsolete Cipher,1,Critical
+2375,TCP,Docker-Daemon,Open,0.99,External,1,9.6,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.56,External,1,8.0,Default Credentials Risk,1,High
+110,TCP,POP3,Open,0.82,External,0,6.0,Cleartext Auth,0,High
+587,TCP,SMTP-Submission,Filtered,0.15,External,0,1.1,None,1,Safe
+5900,TCP,VNC,Open,0.91,External,1,9.3,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.48,External,0,2.3,None,1,Medium
+445,TCP,SMB,Open,0.51,External,1,8.0,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.16,External,0,5.9,Default Credentials Risk,0,High
+2375,TCP,Docker-Daemon,Open,0.94,External,1,9.5,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Filtered,0.83,Internal,1,9.5,Default Credentials Risk,0,Medium
+1433,TCP,MSSQL,Open,0.52,External,1,8.3,Default Credentials Risk,1,Critical
+993,TCP,IMAPS,Filtered,0.8,Internal,0,0.4,Cleartext Auth,1,Safe
+8443,TCP,HTTPS-Alt,Filtered,0.42,External,0,2.3,None,1,Low
+8663,TCP,Custom-Service,Open,0.44,External,0,3.0,Default Credentials Risk,1,Medium
+35307,UDP,Unknown-App,Open,0.86,Internal,0,7.1,None,1,Medium
+110,TCP,POP3,Filtered,0.11,External,0,6.7,Cleartext Auth,0,Medium
+3306,TCP,MySQL,Open,0.12,DMZ,0,6.2,Default Credentials Risk,1,Medium
+21,TCP,FTP,Open,0.9,External,0,7.4,Cleartext Auth,0,Critical
+69,UDP,TFTP,Open,0.35,Internal,1,6.6,Cleartext Auth,0,High
+443,TCP,HTTPS,Open,0.72,DMZ,0,2.5,None,1,Low
+12281,TCP,Microservice,Open,0.59,Internal,1,8.7,Obsolete Cipher,0,High
+12876,UDP,RPC-Node,Open,0.98,Internal,0,4.9,Obsolete Cipher,1,Medium
+88,TCP,Kerberos,Open,0.72,Internal,0,4.8,None,1,Medium
+6379,TCP,Redis,Open,0.98,External,1,10.0,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Filtered,0.8,External,1,8.7,Cleartext Auth,0,High
+21,TCP,FTP,Open,0.68,External,0,6.4,Obsolete Cipher,0,Critical
+80,TCP,HTTP,Closed,0.34,External,1,9.1,Default Credentials Risk,0,Safe
+9069,TCP,RPC-Node,Open,0.76,External,1,7.3,Anonymized,1,High
+24361,UDP,Microservice,Filtered,0.11,External,0,4.9,Cleartext Auth,1,Low
+6379,TCP,Redis,Filtered,0.5,External,0,9.3,None,0,High
+636,TCP,LDAPS,Open,0.52,Internal,0,2.0,None,1,Low
+5432,TCP,PostgreSQL,Open,0.34,External,1,8.2,Default Credentials Risk,0,Critical
+23,TCP,Telnet,Open,0.38,External,1,9.0,Obsolete Cipher,0,Critical
+27017,TCP,MongoDB,Open,0.43,External,1,8.9,Default Credentials Risk,0,Critical
+88,TCP,Kerberos,Open,0.47,Internal,0,2.4,None,1,Low
+135,TCP,MSRPC,Closed,0.62,Internal,1,6.7,Default Credentials Risk,0,Safe
+22027,TCP,Custom-Service,Filtered,0.58,Internal,1,8.0,Default Credentials Risk,0,Medium
+1521,TCP,Oracle-DB,Open,0.66,External,0,8.4,Default Credentials Risk,1,High
+69,UDP,TFTP,Open,0.33,External,1,6.3,Cleartext Auth,0,Critical
+38251,UDP,Web-Hook,Closed,0.38,DMZ,0,4.5,None,0,Safe
+80,TCP,HTTP,Open,0.81,DMZ,0,5.8,Obsolete Cipher,0,High
+135,TCP,MSRPC,Open,0.85,Internal,1,7.3,Default Credentials Risk,0,High
+9200,TCP,Elasticsearch,Open,0.8,External,1,8.4,Default Credentials Risk,0,Critical
+48059,TCP,Peer2Peer,Open,0.21,External,0,0.6,Anonymized,1,Low
+587,TCP,SMTP-Submission,Open,0.41,External,0,4.3,None,1,Medium
+8080,TCP,HTTP-Proxy,Open,0.52,External,0,4.1,None,0,High
+6379,TCP,Redis,Open,0.94,External,1,10.0,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Open,0.15,External,0,10.0,Cleartext Auth,0,Critical
+587,TCP,SMTP-Submission,Closed,0.63,External,0,0.7,None,1,Safe
+465,TCP,SMTPS,Open,0.41,External,0,1.9,None,1,Low
+143,TCP,IMAP,Open,0.99,External,0,5.6,Cleartext Auth,1,High
+23,TCP,Telnet,Open,0.18,External,1,7.4,Default Credentials Risk,0,Critical
+32864,TCP,Custom-Service,Closed,0.41,External,0,5.7,None,0,Safe
+69,UDP,TFTP,Open,0.57,Internal,1,6.0,Cleartext Auth,0,High
+8443,TCP,HTTPS-Alt,Open,0.81,External,0,1.4,None,1,Medium
+1521,TCP,Oracle-DB,Open,0.11,External,0,10.0,Default Credentials Risk,0,Critical
+2375,TCP,Docker-Daemon,Open,0.95,External,1,10.0,Cleartext Auth,0,Critical
+443,TCP,HTTPS,Open,0.72,External,0,3.1,None,1,Medium
+22,TCP,SSH,Open,0.79,External,0,3.7,None,1,Medium
+27017,TCP,MongoDB,Closed,0.69,External,1,7.9,Default Credentials Risk,0,Safe
+3389,TCP,RDP,Closed,0.26,External,0,7.3,Obsolete Cipher,1,Safe
+443,TCP,HTTPS,Open,0.88,External,0,2.3,Obsolete Cipher,1,Medium
+2375,TCP,Docker-Daemon,Open,0.41,External,1,8.6,Obsolete Cipher,0,Critical
+80,TCP,HTTP,Open,0.6,External,1,7.2,Obsolete Cipher,0,Critical
+5432,TCP,PostgreSQL,Open,0.44,External,1,8.0,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Open,0.71,External,0,5.6,Cleartext Auth,0,High
+110,TCP,POP3,Open,0.48,External,1,7.7,Cleartext Auth,0,Critical
+636,TCP,LDAPS,Open,0.38,External,0,2.4,None,1,Medium
+389,TCP,LDAP,Open,0.91,DMZ,0,5.8,Cleartext Auth,1,Medium
+14017,UDP,Microservice,Open,0.15,Internal,0,3.8,Obsolete Cipher,0,Medium
+12173,TCP,Custom-Service,Open,0.71,External,0,7.9,Obsolete Cipher,1,High
+52281,UDP,Web-Hook,Open,1.0,External,0,1.2,Cleartext Auth,1,Medium
+143,TCP,IMAP,Closed,0.24,External,1,7.2,Default Credentials Risk,0,Safe
+5432,TCP,PostgreSQL,Closed,0.4,External,0,7.1,Default Credentials Risk,1,Safe
+3306,TCP,MySQL,Open,0.93,External,1,9.5,None,0,Critical
+23,TCP,Telnet,Closed,0.67,External,0,9.4,Cleartext Auth,1,Safe
+3719,TCP,Web-Hook,Filtered,0.13,DMZ,0,4.7,Default Credentials Risk,0,Low
+8443,TCP,HTTPS-Alt,Closed,0.5,External,0,2.2,None,1,Safe
+19439,UDP,RPC-Node,Open,0.44,External,0,5.8,Default Credentials Risk,1,Medium
+6379,TCP,Redis,Open,0.19,DMZ,0,9.5,Default Credentials Risk,0,High
+5900,TCP,VNC,Closed,0.93,External,0,7.2,Cleartext Auth,0,Safe
+27017,TCP,MongoDB,Filtered,0.12,External,0,9.9,Default Credentials Risk,0,High
+12863,TCP,Microservice,Open,1.0,DMZ,0,8.5,Anonymized,1,High
+139,TCP,NetBIOS,Filtered,0.03,External,1,7.6,Cleartext Auth,0,Medium
+2049,TCP,NFS,Open,0.08,Internal,1,6.5,Default Credentials Risk,0,High
+5432,TCP,PostgreSQL,Open,0.04,External,1,9.2,Default Credentials Risk,0,Critical
+110,TCP,POP3,Filtered,0.74,DMZ,1,6.3,Cleartext Auth,0,Medium
+69,UDP,TFTP,Open,0.78,External,0,5.4,Cleartext Auth,0,High
+123,UDP,NTP,Filtered,0.31,Internal,0,0.9,None,0,Low
+110,TCP,POP3,Open,0.89,External,1,7.6,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.63,External,0,7.6,Default Credentials Risk,1,High
+5432,TCP,PostgreSQL,Closed,0.53,External,1,10.0,Default Credentials Risk,0,Safe
+5432,TCP,PostgreSQL,Open,0.13,External,1,6.1,Default Credentials Risk,0,High
+8443,TCP,HTTPS-Alt,Closed,0.51,External,0,4.2,None,1,Safe
+2375,TCP,Docker-Daemon,Open,0.25,External,0,10.0,Cleartext Auth,1,High
+88,TCP,Kerberos,Filtered,0.05,Internal,0,2.9,None,1,Safe
+587,TCP,SMTP-Submission,Open,0.81,External,0,2.3,None,1,Medium
+139,TCP,NetBIOS,Open,0.43,DMZ,0,8.2,Cleartext Auth,0,High
+21,TCP,FTP,Filtered,0.97,External,1,7.5,Cleartext Auth,0,High
+1433,TCP,MSSQL,Filtered,0.09,External,0,9.7,Default Credentials Risk,0,High
+22,TCP,SSH,Open,0.65,Internal,0,3.1,None,1,Low
+9200,TCP,Elasticsearch,Open,0.02,External,0,8.9,Default Credentials Risk,0,High
+3389,TCP,RDP,Open,0.2,External,1,7.4,Obsolete Cipher,1,High
+25,TCP,SMTP,Open,0.5,DMZ,0,5.4,None,0,High
+27017,TCP,MongoDB,Open,0.61,External,1,9.3,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Open,0.06,Internal,1,7.5,Default Credentials Risk,0,High
+5900,TCP,VNC,Open,0.44,External,0,7.2,Cleartext Auth,0,Critical
+5900,TCP,VNC,Open,0.92,Internal,1,9.2,Cleartext Auth,0,Critical
+5432,TCP,PostgreSQL,Closed,0.83,External,1,8.4,Default Credentials Risk,0,Safe
+5900,TCP,VNC,Open,0.75,External,1,8.3,Cleartext Auth,0,Critical
+143,TCP,IMAP,Closed,0.49,External,0,6.0,Cleartext Auth,0,Safe
+22,TCP,SSH,Open,0.86,External,0,3.3,None,1,Medium
+53,UDP,DNS,Open,0.99,Internal,0,3.0,Cleartext Auth,0,Medium
+23,TCP,Telnet,Filtered,0.87,External,1,8.0,Cleartext Auth,0,High
+25,TCP,SMTP,Filtered,0.11,External,0,5.7,None,0,Medium
+80,TCP,HTTP,Filtered,0.91,Internal,0,5.5,None,0,Medium
+502,TCP,Modbus,Filtered,0.15,External,1,9.4,Cleartext Auth,0,High
+88,TCP,Kerberos,Filtered,0.25,Internal,0,1.3,None,1,Safe
+993,TCP,IMAPS,Filtered,0.36,External,0,2.9,None,1,Low
+123,UDP,NTP,Open,0.43,Internal,0,3.0,None,0,Medium
+59879,UDP,Peer2Peer,Open,0.52,Internal,0,4.2,None,1,Low
+993,TCP,IMAPS,Open,0.04,External,0,2.2,None,1,Low
+10916,TCP,Microservice,Filtered,0.72,External,0,3.8,Anonymized,1,Low
+995,TCP,POP3S,Closed,0.7,External,0,2.9,None,0,Safe
+161,UDP,SNMP,Open,0.35,Internal,1,9.2,Default Credentials Risk,0,High
+143,TCP,IMAP,Open,0.74,DMZ,0,7.0,Cleartext Auth,0,High
+19631,TCP,Custom-Service,Open,0.89,DMZ,0,3.2,Cleartext Auth,1,Medium
+445,TCP,SMB,Closed,0.11,External,0,7.5,Default Credentials Risk,0,Safe
+8080,TCP,HTTP-Proxy,Open,0.57,DMZ,0,5.5,Obsolete Cipher,0,High
+993,TCP,IMAPS,Open,0.89,External,0,1.3,None,1,Medium
+9200,TCP,Elasticsearch,Filtered,0.71,External,1,8.7,Default Credentials Risk,0,High
+8443,TCP,HTTPS-Alt,Filtered,0.36,DMZ,0,3.0,None,1,Low
+3306,TCP,MySQL,Open,0.21,Internal,0,8.2,Default Credentials Risk,0,High
+2049,TCP,NFS,Open,0.5,Internal,1,7.2,None,0,High
+6379,TCP,Redis,Open,0.71,External,0,8.4,Anonymized,0,Critical
+8443,TCP,HTTPS-Alt,Closed,0.37,External,0,1.9,Cleartext Auth,1,Safe
+40450,UDP,Custom-Service,Open,0.12,External,0,5.4,None,0,High
+1433,TCP,MSSQL,Open,0.59,External,0,7.2,Default Credentials Risk,0,Critical
+59289,UDP,Unknown-App,Open,0.07,DMZ,0,4.6,None,0,Medium
+5900,TCP,VNC,Filtered,0.48,External,1,7.6,Cleartext Auth,0,High
+110,TCP,POP3,Open,0.87,External,0,5.6,Cleartext Auth,0,High
+2375,TCP,Docker-Daemon,Open,0.67,External,1,8.8,Cleartext Auth,0,Critical
+69,UDP,TFTP,Filtered,0.71,Internal,1,7.9,Cleartext Auth,0,Medium
+27017,TCP,MongoDB,Filtered,0.96,External,1,8.1,Default Credentials Risk,1,High
+8080,TCP,HTTP-Proxy,Open,0.21,DMZ,1,9.4,None,0,Critical
+3389,TCP,RDP,Open,0.49,External,1,8.3,Obsolete Cipher,0,Critical
+139,TCP,NetBIOS,Open,0.11,Internal,0,8.0,Cleartext Auth,0,Medium
+123,UDP,NTP,Open,0.06,Internal,0,1.6,Obsolete Cipher,0,Low
+12916,TCP,Microservice,Open,0.89,External,0,3.7,Default Credentials Risk,0,High
+88,TCP,Kerberos,Open,0.75,DMZ,0,3.7,None,0,Medium
+88,TCP,Kerberos,Open,0.03,Internal,0,2.4,None,1,Safe
+22,TCP,SSH,Open,0.55,External,0,3.1,None,1,Medium
+587,TCP,SMTP-Submission,Open,0.78,External,0,5.4,None,1,Medium
+9200,TCP,Elasticsearch,Open,0.91,External,1,8.6,Default Credentials Risk,0,Critical
+5432,TCP,PostgreSQL,Open,0.06,External,1,9.3,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.59,External,1,8.6,Default Credentials Risk,0,Critical
+9200,TCP,Elasticsearch,Open,0.14,External,1,8.7,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Filtered,0.95,External,1,10.0,Default Credentials Risk,0,High
+47407,UDP,Web-Hook,Open,0.96,DMZ,1,9.3,Default Credentials Risk,0,Critical
+9787,TCP,Peer2Peer,Open,0.9,Internal,1,8.6,Cleartext Auth,1,High
+9200,TCP,Elasticsearch,Open,0.89,External,1,8.1,Default Credentials Risk,1,Critical
+88,TCP,Kerberos,Open,0.18,Internal,0,4.8,None,1,Low
+21,TCP,FTP,Open,0.02,External,0,8.2,None,0,Critical
+24474,TCP,Custom-Service,Closed,0.04,DMZ,0,2.1,Obsolete Cipher,1,Safe
+161,UDP,SNMP,Open,0.28,Internal,1,6.9,Default Credentials Risk,1,Medium
+143,TCP,IMAP,Open,0.07,External,0,6.6,Cleartext Auth,0,High
+445,TCP,SMB,Open,0.27,External,1,10.0,Default Credentials Risk,0,Critical
+9200,TCP,Elasticsearch,Open,0.43,External,1,9.3,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.47,Internal,0,0.4,None,1,Safe
+23,TCP,Telnet,Open,0.32,External,1,8.1,Cleartext Auth,0,Critical
+22,TCP,SSH,Open,0.25,DMZ,0,2.8,None,1,Low
+587,TCP,SMTP-Submission,Filtered,0.59,External,0,2.7,Obsolete Cipher,0,Medium
+993,TCP,IMAPS,Open,0.05,External,0,2.5,None,1,Low
+443,TCP,HTTPS,Filtered,0.63,External,0,2.0,None,1,Low
+69,UDP,TFTP,Filtered,0.69,Internal,0,5.5,Cleartext Auth,0,Low
+25,TCP,SMTP,Open,0.07,External,0,5.9,None,0,High
+27017,TCP,MongoDB,Open,0.41,External,1,9.6,Default Credentials Risk,1,Critical
+21,TCP,FTP,Open,0.1,External,1,8.1,Cleartext Auth,0,Critical
+22,TCP,SSH,Open,0.71,External,0,4.1,None,1,Medium
+143,TCP,IMAP,Open,0.72,DMZ,1,6.8,Cleartext Auth,0,Critical
+23,TCP,Telnet,Closed,0.75,External,1,9.3,Cleartext Auth,1,Safe
+51846,TCP,Unknown-App,Open,0.01,External,0,5.7,Default Credentials Risk,1,Medium
+123,UDP,NTP,Filtered,0.42,Internal,0,2.4,None,1,Safe
+143,TCP,IMAP,Open,0.69,Internal,0,4.3,Cleartext Auth,0,Medium
+40330,UDP,Peer2Peer,Open,0.45,DMZ,0,2.8,Default Credentials Risk,1,Low
+23,TCP,Telnet,Open,0.47,External,0,9.2,Cleartext Auth,0,Critical
+993,TCP,IMAPS,Filtered,0.01,External,0,2.1,None,1,Low
+995,TCP,POP3S,Open,0.91,External,0,2.2,None,0,High
+22,TCP,SSH,Open,0.17,External,0,1.7,None,1,Low
+443,TCP,HTTPS,Open,0.68,External,0,0.7,None,1,Low
+88,TCP,Kerberos,Filtered,0.66,External,0,4.1,None,1,Low
+65059,UDP,Microservice,Filtered,0.19,Internal,0,1.4,Cleartext Auth,0,Low
+1433,TCP,MSSQL,Closed,0.76,External,1,8.6,Default Credentials Risk,0,Safe
+20303,TCP,Web-Hook,Filtered,0.85,Internal,0,6.0,Default Credentials Risk,0,Medium
+59078,UDP,Unknown-App,Open,0.51,External,1,7.5,Anonymized,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.48,External,1,7.5,Default Credentials Risk,0,Critical
+2049,TCP,NFS,Open,0.89,Internal,1,7.0,None,0,High
+161,UDP,SNMP,Closed,0.37,Internal,1,7.5,Default Credentials Risk,0,Safe
+69,UDP,TFTP,Open,0.51,Internal,1,7.7,Cleartext Auth,0,High
+3306,TCP,MySQL,Open,0.18,External,0,8.4,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.08,External,0,2.0,None,1,Low
+389,TCP,LDAP,Open,0.68,Internal,0,5.7,Cleartext Auth,1,Medium
+465,TCP,SMTPS,Closed,0.01,External,0,1.8,Anonymized,1,Safe
+995,TCP,POP3S,Open,0.66,External,0,1.6,None,1,Medium
+8080,TCP,HTTP-Proxy,Open,0.72,External,0,7.0,Obsolete Cipher,0,High
+27017,TCP,MongoDB,Filtered,0.31,External,0,8.5,Default Credentials Risk,0,Medium
+2375,TCP,Docker-Daemon,Open,0.58,External,0,10.0,Cleartext Auth,0,Critical
+1658,UDP,Microservice,Open,0.4,External,0,2.1,Obsolete Cipher,1,Low
+9200,TCP,Elasticsearch,Open,0.14,External,1,7.8,Default Credentials Risk,0,Critical
+38260,UDP,RPC-Node,Open,0.11,External,0,0.6,Obsolete Cipher,0,Medium
+3389,TCP,RDP,Open,0.83,External,1,7.6,Anonymized,1,High
+143,TCP,IMAP,Open,0.66,External,0,5.6,Cleartext Auth,1,Medium
+25,TCP,SMTP,Open,0.16,External,0,6.9,None,0,High
+5900,TCP,VNC,Open,0.87,External,1,8.7,Cleartext Auth,0,Critical
+5900,TCP,VNC,Open,0.72,External,1,9.5,Cleartext Auth,0,Critical
+123,UDP,NTP,Open,0.33,Internal,0,1.0,None,0,Low
+6379,TCP,Redis,Open,0.88,External,1,9.5,Default Credentials Risk,0,Critical
+587,TCP,SMTP-Submission,Open,0.18,External,0,3.7,None,1,Medium
+3306,TCP,MySQL,Open,0.7,External,0,9.0,Anonymized,0,Critical
+11374,UDP,Microservice,Closed,0.41,DMZ,1,8.7,Cleartext Auth,1,Safe
+1433,TCP,MSSQL,Open,0.21,External,0,9.7,Default Credentials Risk,1,High
+5432,TCP,PostgreSQL,Open,0.01,External,0,7.7,Default Credentials Risk,0,High
+22461,UDP,RPC-Node,Open,0.44,Internal,0,0.8,Cleartext Auth,1,Safe
+465,TCP,SMTPS,Open,0.12,Internal,0,3.6,None,1,Low
+135,TCP,MSRPC,Open,0.36,Internal,0,9.5,Default Credentials Risk,1,Medium
+9200,TCP,Elasticsearch,Filtered,0.64,External,1,8.3,Default Credentials Risk,0,High
+26623,UDP,RPC-Node,Filtered,0.93,DMZ,0,0.0,Obsolete Cipher,0,Low
+443,TCP,HTTPS,Open,0.19,Internal,0,1.4,None,1,Safe
+389,TCP,LDAP,Open,0.51,DMZ,1,7.7,Cleartext Auth,0,Critical
+143,TCP,IMAP,Open,0.23,External,0,7.6,Cleartext Auth,0,High
+21,TCP,FTP,Open,0.07,External,1,7.0,Cleartext Auth,0,Critical
+1433,TCP,MSSQL,Filtered,0.5,External,1,8.2,Default Credentials Risk,1,Medium
+135,TCP,MSRPC,Open,0.68,External,1,6.9,Default Credentials Risk,0,Critical
+993,TCP,IMAPS,Closed,0.67,External,0,0.6,None,1,Safe
+22,TCP,SSH,Open,0.23,External,0,2.1,None,1,Low
+21,TCP,FTP,Open,0.74,External,1,6.5,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.64,External,0,4.7,None,0,High
+3389,TCP,RDP,Open,0.76,External,1,7.8,Obsolete Cipher,1,High
+43494,UDP,Custom-Service,Open,0.05,DMZ,0,3.1,Cleartext Auth,0,Medium
+17299,TCP,Peer2Peer,Open,0.06,DMZ,0,3.1,Obsolete Cipher,1,Low
+143,TCP,IMAP,Open,0.17,External,1,6.2,Cleartext Auth,1,High
+161,UDP,SNMP,Open,0.2,DMZ,1,9.1,Default Credentials Risk,0,Critical
+587,TCP,SMTP-Submission,Open,0.78,External,0,1.8,None,1,Medium
+1433,TCP,MSSQL,Open,0.43,External,0,9.6,Default Credentials Risk,0,Critical
+32612,TCP,RPC-Node,Open,0.15,Internal,1,7.2,Default Credentials Risk,1,Medium
+5432,TCP,PostgreSQL,Open,0.33,External,1,8.0,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Open,0.4,External,0,6.0,Cleartext Auth,1,Medium
+2049,TCP,NFS,Open,0.59,Internal,1,7.7,None,0,High
+88,TCP,Kerberos,Closed,0.77,Internal,0,1.9,Obsolete Cipher,1,Safe
+995,TCP,POP3S,Open,0.65,External,0,2.3,None,1,Medium
+49236,TCP,Unknown-App,Open,0.68,Internal,1,8.8,Default Credentials Risk,1,High
+445,TCP,SMB,Open,0.95,External,1,9.5,Cleartext Auth,0,Critical
+69,UDP,TFTP,Open,0.9,Internal,1,7.3,Cleartext Auth,0,High
+3306,TCP,MySQL,Open,0.53,External,1,9.2,Default Credentials Risk,0,Critical
+2375,TCP,Docker-Daemon,Open,0.57,External,1,10.0,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.99,External,0,1.6,None,1,Medium
+21,TCP,FTP,Open,0.29,External,1,7.0,Cleartext Auth,1,High
+139,TCP,NetBIOS,Open,0.57,Internal,0,7.2,Cleartext Auth,0,High
+139,TCP,NetBIOS,Closed,0.11,External,1,7.2,Cleartext Auth,0,Safe
+69,UDP,TFTP,Open,0.48,Internal,1,6.2,Cleartext Auth,0,High
+25,TCP,SMTP,Filtered,0.04,External,0,6.7,None,0,Medium
+1521,TCP,Oracle-DB,Closed,0.47,External,1,9.8,Default Credentials Risk,0,Safe
+1433,TCP,MSSQL,Open,0.36,External,1,8.0,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.89,External,0,1.1,Obsolete Cipher,1,Medium
+88,TCP,Kerberos,Filtered,0.37,Internal,0,3.5,None,1,Safe
+5900,TCP,VNC,Open,0.36,External,0,7.9,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.08,External,0,2.6,None,1,Low
+5900,TCP,VNC,Open,0.29,External,0,8.7,Cleartext Auth,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.5,External,0,1.0,None,1,Low
+27017,TCP,MongoDB,Closed,0.48,External,1,10.0,Default Credentials Risk,0,Safe
+135,TCP,MSRPC,Closed,0.03,Internal,1,9.0,Obsolete Cipher,0,Safe
+1521,TCP,Oracle-DB,Closed,0.67,External,1,7.8,Default Credentials Risk,0,Safe
+42544,UDP,Custom-Service,Open,0.34,Internal,1,8.9,Anonymized,1,High
+1521,TCP,Oracle-DB,Open,0.23,External,0,8.0,Default Credentials Risk,0,High
+88,TCP,Kerberos,Open,0.12,Internal,0,3.3,None,0,Medium
+636,TCP,LDAPS,Open,0.19,Internal,0,2.3,None,1,Safe
+3306,TCP,MySQL,Filtered,0.52,External,1,9.6,Default Credentials Risk,0,High
+2049,TCP,NFS,Filtered,0.3,Internal,0,9.0,None,1,Low
+123,UDP,NTP,Filtered,0.03,DMZ,0,2.3,None,0,Low
+8080,TCP,HTTP-Proxy,Open,0.22,DMZ,0,6.0,Obsolete Cipher,0,Medium
+4878,UDP,Unknown-App,Open,0.05,DMZ,1,8.9,Cleartext Auth,0,High
+6379,TCP,Redis,Closed,0.16,External,0,7.8,Default Credentials Risk,0,Safe
+3306,TCP,MySQL,Open,0.53,External,0,8.2,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Filtered,0.58,External,0,6.0,Default Credentials Risk,0,Medium
+587,TCP,SMTP-Submission,Open,0.9,Internal,0,4.6,None,1,Medium
+143,TCP,IMAP,Open,0.79,DMZ,0,5.5,Cleartext Auth,0,High
+25701,UDP,Microservice,Open,0.05,Internal,0,0.9,Obsolete Cipher,0,Low
+43628,UDP,Peer2Peer,Open,0.12,Internal,0,6.0,Obsolete Cipher,1,Low
+587,TCP,SMTP-Submission,Open,0.69,External,0,3.0,None,1,Medium
+69,UDP,TFTP,Open,0.65,Internal,1,6.8,Cleartext Auth,0,High
+69,UDP,TFTP,Open,0.59,Internal,1,8.0,Cleartext Auth,0,High
+80,TCP,HTTP,Open,0.3,External,0,9.0,Obsolete Cipher,0,Critical
+9200,TCP,Elasticsearch,Filtered,0.78,External,1,8.2,Anonymized,0,High
+9200,TCP,Elasticsearch,Closed,0.9,External,0,8.2,Cleartext Auth,0,Safe
+139,TCP,NetBIOS,Open,0.58,Internal,1,8.8,Cleartext Auth,1,High
+445,TCP,SMB,Open,0.54,Internal,1,10.0,Default Credentials Risk,0,Critical
+1029,TCP,Web-Hook,Open,0.44,DMZ,1,8.6,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.69,External,0,4.3,None,1,Medium
+23,TCP,Telnet,Open,0.13,External,1,9.4,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.65,External,0,1.8,Default Credentials Risk,1,Medium
+5432,TCP,PostgreSQL,Open,0.54,External,0,8.8,Default Credentials Risk,1,High
+143,TCP,IMAP,Open,0.16,External,1,7.1,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.53,External,1,9.7,Default Credentials Risk,0,Critical
+993,TCP,IMAPS,Open,0.87,External,0,2.4,None,1,Medium
+21,TCP,FTP,Closed,0.78,External,0,8.6,Cleartext Auth,1,Safe
+587,TCP,SMTP-Submission,Open,0.87,External,0,4.0,Default Credentials Risk,1,Medium
+80,TCP,HTTP,Open,0.88,External,1,7.9,Anonymized,0,Critical
+445,TCP,SMB,Open,0.57,External,0,9.9,Cleartext Auth,1,Critical
+42914,UDP,Microservice,Open,0.99,DMZ,0,5.8,Obsolete Cipher,0,High
+8080,TCP,HTTP-Proxy,Open,0.92,External,0,6.6,Obsolete Cipher,0,Critical
+69,UDP,TFTP,Open,0.08,Internal,1,6.9,Cleartext Auth,0,High
+11844,TCP,Custom-Service,Closed,0.42,DMZ,1,8.8,None,1,Safe
+5900,TCP,VNC,Open,0.12,External,0,9.7,Cleartext Auth,0,Critical
+21,TCP,FTP,Open,0.74,External,1,6.7,Cleartext Auth,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.88,External,0,2.9,None,1,Medium
+389,TCP,LDAP,Closed,0.42,Internal,0,5.8,Default Credentials Risk,0,Safe
+1433,TCP,MSSQL,Filtered,0.85,External,1,8.6,Default Credentials Risk,0,High
+5900,TCP,VNC,Open,0.92,DMZ,1,9.8,Cleartext Auth,0,Critical
+34809,TCP,RPC-Node,Open,0.3,Internal,0,3.4,Anonymized,1,Low
+995,TCP,POP3S,Open,0.08,External,0,2.1,Obsolete Cipher,1,Low
+123,UDP,NTP,Open,0.4,Internal,0,2.5,Default Credentials Risk,0,Medium
+3306,TCP,MySQL,Closed,0.66,External,1,7.5,Default Credentials Risk,0,Safe
+3306,TCP,MySQL,Open,0.28,External,0,9.6,Default Credentials Risk,1,High
+993,TCP,IMAPS,Closed,0.98,Internal,0,2.5,None,1,Safe
+6379,TCP,Redis,Open,0.76,External,1,10.0,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Open,0.34,External,0,8.1,Default Credentials Risk,0,High
+25,TCP,SMTP,Open,0.43,External,0,5.7,None,0,High
+6379,TCP,Redis,Open,0.19,External,0,9.4,Default Credentials Risk,1,High
+445,TCP,SMB,Open,0.5,External,0,10.0,None,0,Critical
+39768,TCP,Unknown-App,Closed,0.93,Internal,0,3.8,Default Credentials Risk,0,Safe
+143,TCP,IMAP,Open,0.98,External,0,5.9,Cleartext Auth,1,High
+3306,TCP,MySQL,Open,0.27,External,0,9.2,Default Credentials Risk,0,Critical
+2375,TCP,Docker-Daemon,Open,0.74,External,0,10.0,None,0,Critical
+80,TCP,HTTP,Open,0.11,External,1,6.7,Obsolete Cipher,0,High
+110,TCP,POP3,Filtered,0.53,External,1,6.6,Cleartext Auth,0,Medium
+161,UDP,SNMP,Open,0.59,Internal,1,7.7,Anonymized,0,High
+143,TCP,IMAP,Open,0.3,External,1,7.1,Anonymized,0,Critical
+9200,TCP,Elasticsearch,Open,0.89,Internal,1,7.7,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Open,0.91,External,0,9.1,Default Credentials Risk,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.05,External,1,6.1,Obsolete Cipher,0,High
+143,TCP,IMAP,Filtered,0.97,External,0,7.2,Cleartext Auth,0,Medium
+1521,TCP,Oracle-DB,Open,0.0,External,1,6.9,Default Credentials Risk,0,High
+21,TCP,FTP,Open,0.53,External,1,6.9,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.64,Internal,0,2.6,None,1,Low
+19227,TCP,Web-Hook,Open,0.0,DMZ,1,9.3,Cleartext Auth,0,High
+1433,TCP,MSSQL,Open,0.13,External,1,10.0,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Closed,0.18,External,0,5.4,None,0,Safe
+36242,TCP,Microservice,Open,0.82,DMZ,0,2.4,Anonymized,1,Low
+465,TCP,SMTPS,Open,0.45,External,0,1.6,None,1,Low
+3306,TCP,MySQL,Open,0.82,External,0,10.0,Cleartext Auth,0,Critical
+139,TCP,NetBIOS,Filtered,0.69,Internal,0,6.4,Cleartext Auth,0,Medium
+3306,TCP,MySQL,Open,0.53,External,1,6.7,Default Credentials Risk,0,Critical
+80,TCP,HTTP,Open,0.04,Internal,0,6.9,Obsolete Cipher,0,Medium
+123,UDP,NTP,Open,0.79,Internal,0,2.0,None,0,Medium
+993,TCP,IMAPS,Open,0.44,Internal,0,0.9,None,1,Safe
+993,TCP,IMAPS,Open,0.12,DMZ,0,2.6,None,1,Low
+80,TCP,HTTP,Open,0.43,External,0,6.7,Cleartext Auth,0,High
+389,TCP,LDAP,Open,0.9,Internal,0,5.6,Cleartext Auth,0,High
+88,TCP,Kerberos,Open,0.33,Internal,0,1.7,None,1,Safe
+69,UDP,TFTP,Open,0.18,Internal,1,7.7,Anonymized,0,High
+46057,UDP,Peer2Peer,Closed,0.66,External,1,8.3,Default Credentials Risk,1,Safe
+53,UDP,DNS,Filtered,0.15,Internal,0,4.2,None,0,Low
+3389,TCP,RDP,Open,0.58,External,1,7.7,Obsolete Cipher,1,High
+69,UDP,TFTP,Open,0.48,External,1,8.6,Cleartext Auth,0,Critical
+993,TCP,IMAPS,Open,0.55,External,0,0.8,None,1,Low
+6379,TCP,Redis,Open,0.42,External,1,7.7,Default Credentials Risk,0,Critical
+389,TCP,LDAP,Filtered,0.36,Internal,0,5.5,Cleartext Auth,0,Low
+110,TCP,POP3,Filtered,0.78,External,0,7.0,Cleartext Auth,0,Medium
+27017,TCP,MongoDB,Filtered,0.06,External,0,9.2,Default Credentials Risk,0,Medium
+47158,TCP,RPC-Node,Open,0.11,DMZ,1,9.2,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.83,Internal,1,7.0,None,1,High
+5900,TCP,VNC,Open,0.41,External,1,8.9,Cleartext Auth,0,Critical
+21,TCP,FTP,Open,0.01,DMZ,1,6.2,Cleartext Auth,0,High
+5432,TCP,PostgreSQL,Open,0.71,External,1,9.6,Default Credentials Risk,0,Critical
+69,UDP,TFTP,Open,0.06,Internal,1,6.7,Cleartext Auth,0,High
+27017,TCP,MongoDB,Open,0.64,DMZ,1,10.0,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.85,Internal,0,8.9,Default Credentials Risk,0,High
+9200,TCP,Elasticsearch,Open,0.55,Internal,1,9.2,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.31,External,0,2.8,Obsolete Cipher,0,Medium
+1579,UDP,Web-Hook,Open,0.97,DMZ,0,1.9,Obsolete Cipher,1,Low
+80,TCP,HTTP,Open,0.78,External,0,6.9,Obsolete Cipher,0,High
+5900,TCP,VNC,Open,0.46,External,1,9.1,Cleartext Auth,0,Critical
+389,TCP,LDAP,Filtered,0.16,Internal,1,7.5,Cleartext Auth,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.36,External,0,2.7,None,1,Medium
+29263,TCP,Microservice,Open,0.96,Internal,0,2.0,Anonymized,1,Low
+6379,TCP,Redis,Closed,0.78,External,0,9.9,Default Credentials Risk,1,Safe
+636,TCP,LDAPS,Open,0.09,Internal,0,1.9,Anonymized,1,Safe
+5432,TCP,PostgreSQL,Filtered,0.65,External,0,9.6,Default Credentials Risk,0,Medium
+6379,TCP,Redis,Filtered,0.92,External,0,8.5,Default Credentials Risk,1,Medium
+636,TCP,LDAPS,Open,0.88,Internal,0,3.8,None,1,Low
+25,TCP,SMTP,Open,0.16,DMZ,0,5.5,None,0,Medium
+53,UDP,DNS,Open,0.47,Internal,0,2.1,None,0,Medium
+5432,TCP,PostgreSQL,Closed,0.77,Internal,0,8.3,Default Credentials Risk,0,Safe
+636,TCP,LDAPS,Open,0.11,Internal,0,1.3,None,1,Safe
+9200,TCP,Elasticsearch,Open,0.03,External,1,9.5,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.02,External,1,7.9,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.87,Internal,1,8.9,Default Credentials Risk,0,Critical
+161,UDP,SNMP,Open,0.9,Internal,0,5.6,Default Credentials Risk,0,High
+587,TCP,SMTP-Submission,Open,0.69,External,0,2.3,None,1,Medium
+3306,TCP,MySQL,Open,0.78,External,1,6.5,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.74,Internal,0,0.9,None,0,Low
+123,UDP,NTP,Open,0.79,Internal,0,3.3,None,0,Medium
+445,TCP,SMB,Filtered,0.63,External,1,10.0,Default Credentials Risk,0,High
+23,TCP,Telnet,Open,0.17,External,1,9.2,Cleartext Auth,0,Critical
+143,TCP,IMAP,Open,0.9,External,0,5.0,Default Credentials Risk,0,High
+88,TCP,Kerberos,Open,0.35,Internal,0,3.0,None,1,Low
+8443,TCP,HTTPS-Alt,Open,0.37,External,0,2.5,None,1,Medium
+135,TCP,MSRPC,Open,0.44,Internal,0,6.0,Default Credentials Risk,0,Medium
+80,TCP,HTTP,Open,0.41,External,1,8.0,None,0,Critical
+9200,TCP,Elasticsearch,Open,0.29,External,1,9.6,Default Credentials Risk,1,High
+5432,TCP,PostgreSQL,Open,0.79,External,1,8.0,Default Credentials Risk,0,Critical
+43285,UDP,Custom-Service,Filtered,0.26,Internal,0,4.8,Default Credentials Risk,1,Low
+2375,TCP,Docker-Daemon,Open,0.37,External,1,9.8,None,0,Critical
+636,TCP,LDAPS,Open,0.97,Internal,0,2.2,None,1,Low
+2049,TCP,NFS,Open,0.64,Internal,0,5.0,None,0,Medium
+12408,UDP,Web-Hook,Open,0.63,External,0,2.2,Cleartext Auth,0,Medium
+445,TCP,SMB,Open,0.44,External,1,9.1,Default Credentials Risk,0,Critical
+22,TCP,SSH,Open,0.03,External,0,2.3,None,1,Low
+5432,TCP,PostgreSQL,Open,0.54,External,0,7.2,Cleartext Auth,0,High
+1521,TCP,Oracle-DB,Closed,0.63,External,1,8.1,Default Credentials Risk,0,Safe
+80,TCP,HTTP,Open,0.89,External,0,8.3,Cleartext Auth,0,Critical
+1433,TCP,MSSQL,Open,0.07,Internal,1,9.2,Default Credentials Risk,0,High
+2375,TCP,Docker-Daemon,Filtered,0.18,External,0,9.2,Cleartext Auth,0,Medium
+23,TCP,Telnet,Closed,0.6,External,0,9.4,Cleartext Auth,0,Safe
+445,TCP,SMB,Open,0.76,Internal,0,10.0,Default Credentials Risk,0,High
+161,UDP,SNMP,Closed,0.27,Internal,1,8.4,Default Credentials Risk,1,Safe
+23866,UDP,RPC-Node,Closed,0.25,External,0,4.9,Obsolete Cipher,1,Safe
+465,TCP,SMTPS,Filtered,0.95,DMZ,0,2.3,None,1,Low
+3389,TCP,RDP,Open,0.61,External,1,7.2,Obsolete Cipher,1,High
+1433,TCP,MSSQL,Filtered,0.96,External,0,9.3,Default Credentials Risk,0,High
+8443,TCP,HTTPS-Alt,Open,0.19,Internal,0,2.9,None,1,Low
+161,UDP,SNMP,Open,0.32,Internal,0,8.4,Default Credentials Risk,0,High
+5432,TCP,PostgreSQL,Open,0.28,External,0,8.8,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Filtered,0.07,External,1,10.0,Default Credentials Risk,0,High
+3306,TCP,MySQL,Open,0.99,External,1,8.4,Obsolete Cipher,0,Critical
+135,TCP,MSRPC,Open,0.02,Internal,1,8.5,Default Credentials Risk,0,High
+21,TCP,FTP,Open,0.9,External,1,7.7,Cleartext Auth,0,Critical
+22,TCP,SSH,Open,0.75,External,0,5.1,None,0,High
+27017,TCP,MongoDB,Open,0.45,External,1,8.3,Default Credentials Risk,0,Critical
+8980,UDP,Peer2Peer,Open,0.99,Internal,0,2.1,None,0,Medium
+48488,UDP,Unknown-App,Filtered,0.54,Internal,0,1.8,Default Credentials Risk,0,Low
+25,TCP,SMTP,Open,0.33,External,1,7.2,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.32,External,0,2.4,None,1,Low
+2375,TCP,Docker-Daemon,Open,0.48,External,1,9.1,Cleartext Auth,0,Critical
+5900,TCP,VNC,Open,0.56,External,1,8.0,Cleartext Auth,0,Critical
+161,UDP,SNMP,Open,0.47,External,1,7.2,None,0,Critical
+993,TCP,IMAPS,Filtered,0.76,External,0,2.3,None,1,Low
+5432,TCP,PostgreSQL,Open,0.36,External,1,8.7,Cleartext Auth,0,Critical
+34674,TCP,RPC-Node,Open,0.95,Internal,0,2.6,Cleartext Auth,0,Medium
+80,TCP,HTTP,Open,0.89,External,0,5.9,Obsolete Cipher,0,High
+22,TCP,SSH,Open,0.55,External,0,3.0,None,1,Medium
+161,UDP,SNMP,Open,0.27,Internal,0,9.6,Default Credentials Risk,0,High
+3306,TCP,MySQL,Open,0.49,Internal,1,10.0,Default Credentials Risk,0,Critical
+443,TCP,HTTPS,Open,0.24,Internal,0,2.2,None,1,Safe
+465,TCP,SMTPS,Open,0.1,External,0,2.2,None,1,Low
+465,TCP,SMTPS,Open,0.6,Internal,0,2.3,None,1,Low
+80,TCP,HTTP,Open,0.85,External,1,7.1,Obsolete Cipher,0,Critical
+53,UDP,DNS,Closed,0.67,Internal,0,2.5,None,0,Safe
+22,TCP,SSH,Open,0.97,External,0,2.7,None,1,Medium
+6379,TCP,Redis,Open,0.99,External,1,7.5,None,0,Critical
+135,TCP,MSRPC,Open,0.73,Internal,1,7.6,Default Credentials Risk,0,High
+6379,TCP,Redis,Open,0.33,External,1,9.8,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Open,0.98,External,1,8.0,Cleartext Auth,0,Critical
+123,UDP,NTP,Closed,0.36,DMZ,0,4.1,None,0,Safe
+143,TCP,IMAP,Filtered,0.68,External,0,4.8,Default Credentials Risk,0,Medium
+30467,TCP,Web-Hook,Closed,0.28,External,0,3.7,Obsolete Cipher,1,Safe
+8443,TCP,HTTPS-Alt,Open,0.79,External,0,1.0,Obsolete Cipher,1,Medium
+88,TCP,Kerberos,Open,0.15,Internal,0,3.2,None,1,Low
+41905,TCP,Web-Hook,Open,0.04,External,0,0.6,Default Credentials Risk,1,Low
+88,TCP,Kerberos,Open,0.0,Internal,0,4.0,None,0,Medium
+995,TCP,POP3S,Closed,0.56,External,0,3.6,None,1,Safe
+47764,UDP,Unknown-App,Open,0.03,External,0,5.6,None,0,High
+17324,UDP,RPC-Node,Open,0.17,Internal,1,8.5,Default Credentials Risk,1,Medium
+53739,TCP,Microservice,Open,0.3,External,0,1.3,Anonymized,0,Medium
+5432,TCP,PostgreSQL,Open,0.14,External,1,7.7,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.03,External,0,3.0,None,1,Low
+2375,TCP,Docker-Daemon,Open,0.37,External,1,9.8,Cleartext Auth,1,Critical
+58551,UDP,Custom-Service,Open,0.76,Internal,0,3.8,None,1,Low
+25,TCP,SMTP,Open,0.59,External,0,5.3,None,1,Medium
+5900,TCP,VNC,Open,0.74,External,0,9.4,Anonymized,0,Critical
+123,UDP,NTP,Open,0.31,Internal,0,3.2,Cleartext Auth,0,Medium
+1446,UDP,Peer2Peer,Open,0.12,Internal,0,0.6,Cleartext Auth,0,Low
+161,UDP,SNMP,Open,0.12,DMZ,0,5.9,Default Credentials Risk,0,Medium
+139,TCP,NetBIOS,Filtered,0.68,Internal,1,9.3,Cleartext Auth,0,Medium
+3306,TCP,MySQL,Open,0.17,Internal,1,10.0,Default Credentials Risk,0,High
+5900,TCP,VNC,Open,0.67,External,1,7.9,Anonymized,0,Critical
+80,TCP,HTTP,Open,0.56,External,0,6.9,Default Credentials Risk,0,High
+3389,TCP,RDP,Open,0.72,External,0,8.3,Obsolete Cipher,0,Critical
+24469,TCP,Web-Hook,Open,0.72,DMZ,0,0.6,Cleartext Auth,1,Low
+110,TCP,POP3,Open,0.92,External,1,7.3,Cleartext Auth,0,Critical
+5900,TCP,VNC,Filtered,0.53,DMZ,0,7.9,Cleartext Auth,0,Medium
+995,TCP,POP3S,Filtered,0.16,External,0,1.2,None,1,Safe
+80,TCP,HTTP,Open,0.77,External,1,6.5,Obsolete Cipher,0,Critical
+80,TCP,HTTP,Open,0.06,External,1,7.7,Obsolete Cipher,0,Critical
+53,UDP,DNS,Open,0.17,Internal,0,4.0,None,0,Medium
+3389,TCP,RDP,Open,0.25,External,1,7.4,Obsolete Cipher,1,High
+143,TCP,IMAP,Filtered,0.09,External,0,6.8,Cleartext Auth,0,Medium
+7328,TCP,Custom-Service,Open,0.86,Internal,0,3.4,Obsolete Cipher,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.35,External,0,0.0,None,1,Low
+27017,TCP,MongoDB,Open,0.87,External,1,10.0,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.22,Internal,0,0.8,Anonymized,1,Safe
+61466,UDP,RPC-Node,Closed,0.07,Internal,1,8.3,Cleartext Auth,1,Safe
+62091,UDP,RPC-Node,Open,0.94,DMZ,1,6.6,None,0,Critical
+23,TCP,Telnet,Filtered,0.14,External,1,8.4,Cleartext Auth,0,High
+25,TCP,SMTP,Open,0.77,DMZ,0,4.4,None,0,High
+53,UDP,DNS,Open,0.55,Internal,0,2.2,None,0,Medium
+18752,TCP,Custom-Service,Open,0.3,External,0,4.8,Default Credentials Risk,0,High
+389,TCP,LDAP,Filtered,0.68,Internal,1,7.4,Cleartext Auth,1,Medium
+25,TCP,SMTP,Open,0.12,External,0,5.0,Obsolete Cipher,0,High
+1433,TCP,MSSQL,Open,0.09,External,0,8.9,Default Credentials Risk,0,Critical
+9200,TCP,Elasticsearch,Filtered,0.08,External,0,8.7,Cleartext Auth,0,Medium
+23,TCP,Telnet,Closed,0.13,External,1,9.3,Cleartext Auth,0,Safe
+53,UDP,DNS,Open,0.81,Internal,0,3.6,None,1,Low
+57303,TCP,RPC-Node,Filtered,0.24,External,1,7.4,Default Credentials Risk,1,Medium
+9200,TCP,Elasticsearch,Open,0.28,External,0,7.4,Default Credentials Risk,0,High
+8443,TCP,HTTPS-Alt,Open,0.82,External,0,3.5,None,1,Medium
+443,TCP,HTTPS,Open,0.5,External,0,1.3,None,1,Low
+465,TCP,SMTPS,Open,0.85,External,0,0.6,None,1,Medium
+22,TCP,SSH,Open,0.66,External,0,2.6,Cleartext Auth,1,Medium
+587,TCP,SMTP-Submission,Closed,0.75,External,0,4.3,None,0,Safe
+445,TCP,SMB,Open,0.83,External,1,10.0,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Closed,0.29,External,0,5.2,None,0,Safe
+36070,UDP,RPC-Node,Open,0.92,Internal,0,9.1,Obsolete Cipher,1,High
+465,TCP,SMTPS,Open,0.04,DMZ,0,1.9,None,0,Medium
+465,TCP,SMTPS,Open,0.12,External,0,1.9,None,1,Low
+636,TCP,LDAPS,Open,0.01,Internal,0,4.1,None,1,Low
+995,TCP,POP3S,Open,0.94,External,0,2.3,None,1,Medium
+27017,TCP,MongoDB,Filtered,0.26,Internal,1,9.4,Default Credentials Risk,0,Medium
+139,TCP,NetBIOS,Open,0.18,Internal,1,8.8,None,0,High
+636,TCP,LDAPS,Closed,0.02,Internal,0,2.2,Default Credentials Risk,0,Safe
+995,TCP,POP3S,Open,0.44,Internal,0,1.6,None,1,Low
+443,TCP,HTTPS,Open,0.07,External,0,1.6,None,1,Low
+502,TCP,Modbus,Open,0.41,External,1,8.9,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.59,Internal,0,9.0,Cleartext Auth,0,High
+636,TCP,LDAPS,Open,0.34,Internal,0,2.7,None,1,Low
+23,TCP,Telnet,Closed,0.99,DMZ,1,8.9,None,0,Safe
+42332,UDP,Peer2Peer,Open,0.52,DMZ,1,7.6,Anonymized,0,Critical
+502,TCP,Modbus,Closed,0.23,External,1,9.7,Cleartext Auth,0,Safe
+46445,TCP,RPC-Node,Open,0.91,External,0,0.8,Anonymized,1,Medium
+389,TCP,LDAP,Filtered,0.13,Internal,1,6.1,Cleartext Auth,0,Medium
+2375,TCP,Docker-Daemon,Filtered,0.34,External,0,9.9,Cleartext Auth,0,High
+8080,TCP,HTTP-Proxy,Filtered,0.9,External,0,4.8,Obsolete Cipher,0,Medium
+2040,TCP,Custom-Service,Open,0.13,External,0,7.3,Obsolete Cipher,1,Medium
+135,TCP,MSRPC,Closed,0.35,DMZ,1,8.1,Default Credentials Risk,0,Safe
+502,TCP,Modbus,Open,0.62,External,1,9.3,Cleartext Auth,0,Critical
+995,TCP,POP3S,Open,0.44,External,0,2.9,None,1,Medium
+110,TCP,POP3,Filtered,0.51,External,0,4.1,Cleartext Auth,0,Medium
+21,TCP,FTP,Open,0.44,External,1,9.6,Cleartext Auth,0,Critical
+80,TCP,HTTP,Filtered,0.58,External,1,6.4,Anonymized,0,Medium
+636,TCP,LDAPS,Open,0.95,Internal,0,3.1,None,1,Low
+48929,TCP,RPC-Node,Open,0.28,DMZ,0,8.4,Default Credentials Risk,1,Medium
+3389,TCP,RDP,Filtered,0.92,External,1,6.8,Obsolete Cipher,1,Medium
+161,UDP,SNMP,Closed,0.96,Internal,1,8.1,Anonymized,0,Safe
+21,TCP,FTP,Open,0.95,External,1,6.4,Cleartext Auth,0,Critical
+110,TCP,POP3,Open,0.43,External,0,6.4,None,0,High
+19272,TCP,Web-Hook,Open,0.51,DMZ,0,7.5,None,0,High
+8080,TCP,HTTP-Proxy,Closed,0.43,DMZ,1,8.7,Obsolete Cipher,0,Safe
+636,TCP,LDAPS,Open,0.95,Internal,0,1.8,None,1,Low
+443,TCP,HTTPS,Open,0.27,External,0,2.0,None,1,Low
+139,TCP,NetBIOS,Closed,0.86,Internal,1,8.7,None,0,Safe
+53,UDP,DNS,Open,0.69,Internal,0,4.0,None,0,Medium
+443,TCP,HTTPS,Open,0.3,External,0,2.0,None,1,Low
+502,TCP,Modbus,Open,0.54,External,0,9.4,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.18,External,1,10.0,Cleartext Auth,0,Critical
+995,TCP,POP3S,Open,0.8,External,0,1.8,None,1,Medium
+2375,TCP,Docker-Daemon,Filtered,0.78,External,0,10.0,Cleartext Auth,0,High
+445,TCP,SMB,Open,0.26,External,0,10.0,Default Credentials Risk,0,Critical
+389,TCP,LDAP,Open,0.57,Internal,0,7.3,Cleartext Auth,0,High
+88,TCP,Kerberos,Open,0.02,Internal,0,4.2,None,1,Low
+1521,TCP,Oracle-DB,Filtered,0.55,External,1,9.0,Default Credentials Risk,1,Medium
+1433,TCP,MSSQL,Open,0.72,External,0,7.5,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.85,DMZ,1,10.0,Default Credentials Risk,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.63,External,0,5.7,Default Credentials Risk,0,High
+23,TCP,Telnet,Open,0.74,External,0,9.1,Cleartext Auth,0,Critical
+53,UDP,DNS,Open,0.74,Internal,0,2.7,None,0,Medium
+123,UDP,NTP,Filtered,0.86,Internal,0,2.4,None,1,Safe
+3306,TCP,MySQL,Open,0.97,External,1,9.2,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Open,0.91,External,1,9.2,Default Credentials Risk,1,Critical
+22,TCP,SSH,Filtered,0.71,External,0,3.4,None,1,Low
+22,TCP,SSH,Open,0.31,External,0,4.6,None,1,Medium
+69,UDP,TFTP,Open,0.4,External,1,7.3,Cleartext Auth,1,High
+389,TCP,LDAP,Open,0.83,Internal,0,6.0,Cleartext Auth,1,Medium
+2375,TCP,Docker-Daemon,Open,0.49,External,1,10.0,Cleartext Auth,0,Critical
+16473,UDP,RPC-Node,Closed,0.43,DMZ,0,5.3,None,1,Safe
+110,TCP,POP3,Open,0.97,DMZ,0,8.2,Cleartext Auth,0,High
+135,TCP,MSRPC,Open,0.01,Internal,0,6.0,Anonymized,0,Medium
+502,TCP,Modbus,Open,0.89,External,1,9.6,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.6,DMZ,1,9.7,Cleartext Auth,0,Critical
+993,TCP,IMAPS,Open,0.52,External,0,1.6,None,1,Low
+21,TCP,FTP,Open,0.19,External,1,8.9,None,0,Critical
+993,TCP,IMAPS,Open,0.64,External,0,1.7,None,0,Medium
+23631,TCP,Unknown-App,Open,0.31,External,1,7.8,Obsolete Cipher,1,High
+445,TCP,SMB,Open,0.1,External,0,9.4,Default Credentials Risk,0,Critical
+80,TCP,HTTP,Open,0.58,External,1,6.3,Obsolete Cipher,0,Critical
+5900,TCP,VNC,Open,0.8,Internal,0,8.5,Cleartext Auth,0,High
+21,TCP,FTP,Filtered,0.43,External,1,6.4,Anonymized,0,High
+88,TCP,Kerberos,Open,0.35,Internal,0,1.6,None,1,Safe
+636,TCP,LDAPS,Closed,0.95,Internal,0,3.6,None,1,Safe
+123,UDP,NTP,Filtered,0.69,Internal,0,1.7,None,0,Low
+3306,TCP,MySQL,Filtered,0.35,External,1,7.9,Default Credentials Risk,0,High
+143,TCP,IMAP,Open,0.36,DMZ,0,3.8,Cleartext Auth,0,Medium
+587,TCP,SMTP-Submission,Open,0.01,External,0,2.2,None,1,Low
+465,TCP,SMTPS,Open,0.27,External,0,0.9,None,1,Low
+22,TCP,SSH,Open,0.49,External,0,4.6,None,1,Medium
+9200,TCP,Elasticsearch,Open,0.71,Internal,0,9.7,Default Credentials Risk,0,High
+6451,UDP,Custom-Service,Open,0.86,External,0,6.1,None,0,High
+43956,TCP,Web-Hook,Open,0.37,DMZ,0,1.6,Anonymized,1,Low
+2049,TCP,NFS,Filtered,0.5,Internal,1,6.3,Cleartext Auth,0,Medium
+3389,TCP,RDP,Open,0.64,External,1,10.0,Obsolete Cipher,0,Critical
+21416,UDP,Peer2Peer,Filtered,0.09,Internal,0,3.2,Anonymized,1,Safe
+6801,TCP,Custom-Service,Open,0.97,DMZ,0,0.8,Default Credentials Risk,0,Medium
+21,TCP,FTP,Open,0.68,External,1,8.5,Cleartext Auth,0,Critical
+50006,TCP,Web-Hook,Open,0.57,External,1,6.7,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.09,External,0,1.9,None,1,Low
+1433,TCP,MSSQL,Open,0.83,External,0,6.1,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Open,0.65,External,1,10.0,Default Credentials Risk,0,Critical
+993,TCP,IMAPS,Filtered,0.09,External,0,0.5,None,1,Safe
+445,TCP,SMB,Open,0.63,External,1,7.7,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.7,Internal,0,3.0,None,1,Low
+21,TCP,FTP,Closed,0.19,External,1,9.9,Cleartext Auth,0,Safe
+9200,TCP,Elasticsearch,Open,0.43,DMZ,1,10.0,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.04,External,1,9.9,Default Credentials Risk,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.59,External,0,7.4,Obsolete Cipher,0,High
+587,TCP,SMTP-Submission,Open,0.97,External,0,3.7,None,1,Medium
+110,TCP,POP3,Open,0.77,External,1,7.8,None,0,Critical
+135,TCP,MSRPC,Open,0.31,Internal,0,7.5,Default Credentials Risk,0,Medium
+29633,TCP,Microservice,Open,0.16,Internal,0,6.5,Default Credentials Risk,0,Medium
+2049,TCP,NFS,Filtered,0.71,Internal,1,7.1,None,0,Medium
+110,TCP,POP3,Open,0.28,External,1,6.9,Cleartext Auth,0,Critical
+40144,UDP,Peer2Peer,Open,0.89,External,0,4.6,Anonymized,0,High
+443,TCP,HTTPS,Open,0.75,External,0,1.0,None,1,Medium
+43332,TCP,Unknown-App,Open,0.34,Internal,0,0.4,Default Credentials Risk,1,Safe
+3306,TCP,MySQL,Open,0.26,External,1,8.6,Default Credentials Risk,0,Critical
+2049,TCP,NFS,Open,0.69,Internal,0,5.3,None,0,Medium
+2049,TCP,NFS,Open,0.45,External,1,6.9,Anonymized,0,Critical
+27350,UDP,Custom-Service,Open,0.8,External,0,2.5,None,1,Medium
+1433,TCP,MSSQL,Closed,0.11,External,0,7.6,Default Credentials Risk,0,Safe
+1521,TCP,Oracle-DB,Closed,0.59,Internal,0,7.3,Default Credentials Risk,0,Safe
+5432,TCP,PostgreSQL,Open,0.05,External,1,8.4,Obsolete Cipher,0,Critical
+3306,TCP,MySQL,Open,0.18,External,1,10.0,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.74,Internal,0,2.9,None,1,Low
+69,UDP,TFTP,Open,0.27,Internal,0,5.2,Cleartext Auth,0,Medium
+46177,TCP,Microservice,Open,0.61,Internal,0,0.7,Default Credentials Risk,1,Safe
+80,TCP,HTTP,Open,0.02,External,0,5.5,Default Credentials Risk,0,High
+17857,TCP,RPC-Node,Open,0.54,Internal,0,5.4,Default Credentials Risk,0,Medium
+25,TCP,SMTP,Open,0.75,External,1,6.4,None,0,Critical
+23,TCP,Telnet,Open,0.41,External,0,7.8,Cleartext Auth,0,Critical
+110,TCP,POP3,Open,0.1,External,0,6.8,Cleartext Auth,0,High
+389,TCP,LDAP,Filtered,0.59,Internal,1,6.8,Cleartext Auth,1,Low
+1521,TCP,Oracle-DB,Open,0.82,External,0,7.4,Default Credentials Risk,0,Critical
+33724,TCP,Peer2Peer,Open,0.85,DMZ,0,3.7,Obsolete Cipher,0,Medium
+42402,UDP,Peer2Peer,Open,0.29,Internal,0,2.0,Anonymized,1,Safe
+5432,TCP,PostgreSQL,Open,0.42,External,1,8.3,Default Credentials Risk,1,High
+502,TCP,Modbus,Closed,0.13,External,1,7.7,Cleartext Auth,0,Safe
+80,TCP,HTTP,Open,0.16,Internal,0,5.9,Obsolete Cipher,0,Medium
+2049,TCP,NFS,Closed,0.28,Internal,1,7.3,None,0,Safe
+636,TCP,LDAPS,Open,0.76,Internal,0,0.4,None,1,Low
+3389,TCP,RDP,Open,0.83,External,1,8.2,Obsolete Cipher,1,Critical
+80,TCP,HTTP,Open,0.64,External,1,6.5,Obsolete Cipher,0,Critical
+8080,TCP,HTTP-Proxy,Closed,0.33,External,0,7.4,Obsolete Cipher,0,Safe
+5900,TCP,VNC,Filtered,0.65,External,1,8.7,Anonymized,0,High
+56749,TCP,RPC-Node,Open,0.71,DMZ,0,8.3,Cleartext Auth,1,High
+53,UDP,DNS,Open,0.44,External,0,4.9,None,0,High
+139,TCP,NetBIOS,Filtered,0.87,Internal,1,7.9,Anonymized,0,Medium
+53,UDP,DNS,Open,0.47,DMZ,0,3.1,None,1,Low
+2375,TCP,Docker-Daemon,Open,0.61,External,1,9.9,Cleartext Auth,0,Critical
+3389,TCP,RDP,Open,0.82,External,1,8.3,Obsolete Cipher,1,Critical
+8080,TCP,HTTP-Proxy,Open,0.85,External,1,6.8,Obsolete Cipher,0,Critical
+88,TCP,Kerberos,Open,0.24,Internal,0,3.0,None,1,Low
+445,TCP,SMB,Filtered,0.76,External,1,8.6,Obsolete Cipher,1,High
+993,TCP,IMAPS,Open,0.76,External,0,1.2,None,1,Medium
+502,TCP,Modbus,Open,0.31,External,1,7.6,Cleartext Auth,1,Critical
+587,TCP,SMTP-Submission,Open,0.7,External,0,4.5,None,1,Medium
+502,TCP,Modbus,Filtered,0.58,External,0,7.8,Cleartext Auth,0,High
+1433,TCP,MSSQL,Open,0.62,External,0,7.9,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.93,Internal,0,1.8,None,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.06,External,0,3.4,None,1,Low
+161,UDP,SNMP,Filtered,0.65,Internal,1,7.2,Default Credentials Risk,0,Medium
+21,TCP,FTP,Open,0.23,External,0,8.7,Cleartext Auth,0,Critical
+2049,TCP,NFS,Open,0.96,Internal,1,6.3,None,0,High
+69,UDP,TFTP,Open,0.8,DMZ,0,7.1,Cleartext Auth,0,High
+57222,TCP,Unknown-App,Open,0.28,Internal,0,0.4,Anonymized,1,Safe
+53,UDP,DNS,Open,0.76,External,0,2.7,Cleartext Auth,0,High
+80,TCP,HTTP,Open,0.2,External,0,8.6,Obsolete Cipher,0,High
+143,TCP,IMAP,Open,0.01,External,0,4.8,Cleartext Auth,1,Medium
+88,TCP,Kerberos,Open,0.63,Internal,0,3.3,None,1,Low
+21,TCP,FTP,Open,0.33,External,1,8.1,Cleartext Auth,0,Critical
+587,TCP,SMTP-Submission,Open,0.5,External,0,3.2,None,1,Medium
+88,TCP,Kerberos,Open,0.97,Internal,0,2.8,None,1,Low
+135,TCP,MSRPC,Open,0.86,Internal,1,7.1,Default Credentials Risk,0,High
+139,TCP,NetBIOS,Open,0.32,Internal,1,7.8,Cleartext Auth,0,High
+587,TCP,SMTP-Submission,Open,0.4,DMZ,0,2.7,Cleartext Auth,1,Low
+135,TCP,MSRPC,Open,0.79,DMZ,1,8.2,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.33,External,1,10.0,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Open,0.94,External,0,7.2,Obsolete Cipher,1,High
+110,TCP,POP3,Open,0.72,External,0,5.6,Cleartext Auth,0,High
+1433,TCP,MSSQL,Open,0.74,External,1,8.5,Default Credentials Risk,1,Critical
+3389,TCP,RDP,Closed,0.59,Internal,1,10.0,Obsolete Cipher,1,Safe
+52222,UDP,Microservice,Open,0.06,Internal,0,2.7,Anonymized,1,Safe
+993,TCP,IMAPS,Open,0.13,External,0,1.1,None,1,Low
+636,TCP,LDAPS,Filtered,0.59,Internal,0,3.6,None,1,Low
+27017,TCP,MongoDB,Open,0.56,DMZ,1,10.0,Default Credentials Risk,1,High
+110,TCP,POP3,Open,0.85,DMZ,1,6.4,Cleartext Auth,0,Critical
+161,UDP,SNMP,Open,0.68,Internal,1,8.1,Default Credentials Risk,0,High
+22,TCP,SSH,Filtered,0.8,External,0,4.6,None,1,Low
+25,TCP,SMTP,Closed,0.96,External,0,5.1,Obsolete Cipher,0,Safe
+22458,UDP,Web-Hook,Open,0.97,DMZ,0,0.6,None,1,Low
+9200,TCP,Elasticsearch,Open,0.47,External,1,8.5,Default Credentials Risk,0,Critical
+53,UDP,DNS,Open,0.88,Internal,0,2.9,None,0,Medium
+993,TCP,IMAPS,Open,0.69,External,0,0.9,None,0,Medium
+3306,TCP,MySQL,Open,0.39,External,0,8.3,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.65,DMZ,0,1.3,None,0,Medium
+995,TCP,POP3S,Open,0.15,External,0,1.9,None,1,Low
+80,TCP,HTTP,Filtered,0.54,External,0,5.7,Obsolete Cipher,1,Low
+22484,UDP,Unknown-App,Closed,0.23,Internal,0,2.9,Obsolete Cipher,0,Safe
+51640,UDP,Custom-Service,Open,0.87,External,0,1.2,Obsolete Cipher,0,Medium
+14693,UDP,Custom-Service,Filtered,0.59,External,0,3.8,Cleartext Auth,1,Low
+139,TCP,NetBIOS,Open,0.21,Internal,1,8.0,Cleartext Auth,0,High
+995,TCP,POP3S,Filtered,0.36,External,0,0.3,None,1,Safe
+88,TCP,Kerberos,Open,0.86,External,0,3.3,None,1,Medium
+587,TCP,SMTP-Submission,Open,1.0,External,0,3.6,None,1,Medium
+1521,TCP,Oracle-DB,Filtered,0.05,External,1,6.4,Default Credentials Risk,0,Medium
+21,TCP,FTP,Open,0.6,DMZ,0,7.9,Cleartext Auth,0,High
+502,TCP,Modbus,Open,0.52,External,0,10.0,Cleartext Auth,0,Critical
+139,TCP,NetBIOS,Open,0.2,Internal,1,6.6,Cleartext Auth,0,High
+445,TCP,SMB,Filtered,0.03,Internal,1,10.0,Default Credentials Risk,0,Medium
+4071,UDP,Peer2Peer,Filtered,0.09,Internal,0,1.0,Default Credentials Risk,0,Safe
+8390,UDP,RPC-Node,Filtered,0.0,DMZ,0,4.2,Anonymized,1,Low
+445,TCP,SMB,Open,0.72,External,1,9.7,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Open,0.66,External,0,5.3,Cleartext Auth,0,High
+2049,TCP,NFS,Open,0.73,Internal,1,6.9,None,0,High
+5432,TCP,PostgreSQL,Filtered,0.76,External,0,8.8,Default Credentials Risk,0,Medium
+123,UDP,NTP,Open,0.79,Internal,0,2.6,Obsolete Cipher,0,Medium
+1962,TCP,Microservice,Open,0.48,Internal,0,1.5,Default Credentials Risk,0,Low
+13328,UDP,RPC-Node,Open,0.74,External,0,5.9,Anonymized,0,High
+8080,TCP,HTTP-Proxy,Open,0.81,External,1,7.3,Obsolete Cipher,0,Critical
+80,TCP,HTTP,Open,0.37,External,0,5.6,Obsolete Cipher,0,High
+9200,TCP,Elasticsearch,Open,0.71,External,0,8.9,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Open,0.82,External,1,6.4,Anonymized,1,High
+123,UDP,NTP,Open,0.78,Internal,0,2.4,Default Credentials Risk,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.95,External,0,1.6,None,1,Medium
+1433,TCP,MSSQL,Filtered,0.23,External,1,7.9,Default Credentials Risk,0,High
+9200,TCP,Elasticsearch,Open,0.96,External,1,9.9,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.94,External,0,3.6,None,1,Medium
+445,TCP,SMB,Open,0.59,External,0,9.9,Default Credentials Risk,0,Critical
+110,TCP,POP3,Filtered,0.95,External,0,5.9,Cleartext Auth,0,Medium
+135,TCP,MSRPC,Open,0.96,Internal,0,6.9,Default Credentials Risk,0,High
+9115,TCP,Unknown-App,Open,0.12,Internal,1,6.4,Default Credentials Risk,1,Medium
+5900,TCP,VNC,Open,0.61,External,0,9.7,Cleartext Auth,0,Critical
+50454,UDP,Web-Hook,Open,0.47,External,1,8.0,Default Credentials Risk,0,Critical
+46338,UDP,Web-Hook,Closed,0.87,DMZ,0,1.0,Anonymized,0,Safe
+6379,TCP,Redis,Open,0.87,External,0,9.3,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.25,External,0,4.5,None,1,Medium
+21,TCP,FTP,Open,0.59,External,1,7.9,Cleartext Auth,0,Critical
+6379,TCP,Redis,Open,0.93,External,1,9.4,Default Credentials Risk,0,Critical
+80,TCP,HTTP,Open,0.9,Internal,1,6.2,Obsolete Cipher,0,High
+23,TCP,Telnet,Open,0.52,External,1,8.9,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.92,DMZ,1,8.7,Default Credentials Risk,0,Critical
+445,TCP,SMB,Closed,0.28,External,1,10.0,Default Credentials Risk,0,Safe
+445,TCP,SMB,Open,0.32,DMZ,1,10.0,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.74,Internal,1,7.0,Cleartext Auth,0,High
+587,TCP,SMTP-Submission,Open,0.5,External,0,1.5,None,1,Low
+1521,TCP,Oracle-DB,Open,0.44,External,1,6.6,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.64,DMZ,0,7.7,Default Credentials Risk,0,High
+139,TCP,NetBIOS,Open,0.91,Internal,1,6.7,None,0,High
+10576,UDP,Peer2Peer,Open,0.96,External,0,1.3,Obsolete Cipher,1,Medium
+502,TCP,Modbus,Open,0.83,External,0,6.8,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.23,DMZ,0,2.6,None,0,Medium
+161,UDP,SNMP,Filtered,0.48,Internal,1,10.0,Default Credentials Risk,0,Medium
+143,TCP,IMAP,Open,0.89,External,0,6.0,Cleartext Auth,0,High
+49965,UDP,Microservice,Closed,0.94,External,0,4.1,Default Credentials Risk,1,Safe
+995,TCP,POP3S,Filtered,0.7,External,0,2.7,None,0,Medium
+110,TCP,POP3,Open,0.54,External,0,7.1,Cleartext Auth,1,High
+389,TCP,LDAP,Open,0.99,Internal,1,6.1,Cleartext Auth,0,High
+25,TCP,SMTP,Open,1.0,External,0,6.4,None,0,Critical
+25,TCP,SMTP,Open,0.35,External,0,5.2,None,0,High
+19117,UDP,Microservice,Open,0.94,DMZ,0,5.7,Obsolete Cipher,0,High
+15127,UDP,Web-Hook,Closed,0.14,External,0,2.2,Anonymized,1,Safe
+636,TCP,LDAPS,Open,0.77,Internal,0,2.3,Default Credentials Risk,1,Low
+53,UDP,DNS,Open,0.6,Internal,0,3.8,None,0,Medium
+139,TCP,NetBIOS,Open,0.09,External,1,7.1,Cleartext Auth,0,High
+1521,TCP,Oracle-DB,Filtered,0.18,External,1,9.4,Default Credentials Risk,0,High
+3306,TCP,MySQL,Open,0.35,External,1,8.7,Obsolete Cipher,0,Critical
+3389,TCP,RDP,Open,0.56,External,1,7.0,Anonymized,1,High
+21,TCP,FTP,Open,0.8,External,1,8.0,Obsolete Cipher,0,Critical
+53,UDP,DNS,Open,0.98,DMZ,0,2.6,None,0,Medium
+123,UDP,NTP,Open,0.88,Internal,0,2.5,None,0,Medium
+123,UDP,NTP,Closed,0.89,Internal,0,2.5,None,0,Safe
+88,TCP,Kerberos,Open,0.18,Internal,0,4.1,None,1,Low
+80,TCP,HTTP,Closed,0.94,External,1,7.0,Obsolete Cipher,0,Safe
+1521,TCP,Oracle-DB,Open,0.25,External,0,8.4,Default Credentials Risk,0,High
+33186,TCP,RPC-Node,Filtered,0.91,External,0,0.6,Obsolete Cipher,0,Low
+80,TCP,HTTP,Open,0.58,DMZ,1,7.3,Obsolete Cipher,0,High
+9200,TCP,Elasticsearch,Open,0.63,External,1,10.0,Cleartext Auth,0,Critical
+6379,TCP,Redis,Open,0.5,DMZ,1,9.8,Default Credentials Risk,1,High
+25,TCP,SMTP,Open,0.9,Internal,0,5.5,None,0,High
+636,TCP,LDAPS,Open,0.35,Internal,0,0.7,Default Credentials Risk,1,Safe
+3306,TCP,MySQL,Open,0.04,External,0,7.8,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.57,Internal,1,7.5,Cleartext Auth,0,High
+1521,TCP,Oracle-DB,Open,0.24,External,1,7.8,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Filtered,0.04,Internal,0,7.6,Cleartext Auth,0,Low
+445,TCP,SMB,Filtered,0.63,External,0,9.4,Default Credentials Risk,0,High
+49300,UDP,RPC-Node,Open,0.9,External,1,7.8,Obsolete Cipher,0,Critical
+21,TCP,FTP,Open,0.66,External,0,8.0,Cleartext Auth,0,Critical
+88,TCP,Kerberos,Open,0.94,Internal,0,2.9,Anonymized,1,Low
+2049,TCP,NFS,Open,0.76,Internal,1,7.5,None,0,High
+14270,TCP,Peer2Peer,Open,0.11,Internal,0,1.2,None,1,Safe
+1521,TCP,Oracle-DB,Open,0.62,External,1,8.5,Default Credentials Risk,0,Critical
+23,TCP,Telnet,Filtered,0.72,External,0,6.8,Cleartext Auth,0,Medium
+123,UDP,NTP,Open,0.2,Internal,0,1.6,None,0,Low
+2049,TCP,NFS,Open,0.63,Internal,1,6.9,None,0,High
+22,TCP,SSH,Open,0.16,Internal,0,1.8,None,1,Safe
+636,TCP,LDAPS,Open,0.62,Internal,0,2.6,None,0,Medium
+636,TCP,LDAPS,Open,0.0,Internal,0,3.5,None,1,Low
+1521,TCP,Oracle-DB,Open,0.55,Internal,0,9.6,Default Credentials Risk,0,High
+5900,TCP,VNC,Open,0.45,External,1,8.3,Cleartext Auth,0,Critical
+445,TCP,SMB,Closed,0.15,External,1,10.0,Default Credentials Risk,0,Safe
+123,UDP,NTP,Open,0.26,Internal,0,2.6,None,0,Low
+22,TCP,SSH,Open,0.54,External,0,2.7,Obsolete Cipher,1,Medium
+2049,TCP,NFS,Open,0.88,Internal,1,6.4,None,0,High
+1521,TCP,Oracle-DB,Open,0.53,External,0,8.1,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Open,0.46,External,0,5.6,Cleartext Auth,0,High
+52933,UDP,Web-Hook,Open,0.65,Internal,0,3.7,Obsolete Cipher,1,Low
+2375,TCP,Docker-Daemon,Open,0.94,DMZ,1,10.0,Cleartext Auth,1,Critical
+2586,TCP,RPC-Node,Filtered,0.64,External,1,9.3,Anonymized,0,High
+123,UDP,NTP,Open,0.93,Internal,0,2.7,None,0,Medium
+8443,TCP,HTTPS-Alt,Filtered,0.09,External,0,2.5,None,1,Low
+25,TCP,SMTP,Open,0.21,External,0,5.9,None,0,High
+1433,TCP,MSSQL,Open,0.34,External,0,9.8,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.62,External,0,9.9,None,0,Critical
+5900,TCP,VNC,Open,0.11,External,1,7.0,Cleartext Auth,0,Critical
+7385,TCP,Unknown-App,Filtered,0.59,External,0,3.6,Cleartext Auth,1,Low
+24773,UDP,Peer2Peer,Closed,0.57,External,1,8.5,Obsolete Cipher,0,Safe
+59121,UDP,Custom-Service,Closed,0.11,Internal,0,5.9,Obsolete Cipher,0,Safe
+63965,TCP,Microservice,Open,0.98,External,1,6.8,None,1,High
+2375,TCP,Docker-Daemon,Open,0.98,External,1,7.2,Cleartext Auth,0,Critical
+636,TCP,LDAPS,Open,1.0,Internal,0,2.9,None,1,Low
+465,TCP,SMTPS,Open,0.55,External,0,0.8,None,1,Low
+21,TCP,FTP,Open,0.04,External,1,7.3,Obsolete Cipher,0,Critical
+993,TCP,IMAPS,Open,0.71,External,0,0.7,None,1,Low
+995,TCP,POP3S,Open,0.91,External,0,0.1,None,1,Low
+6581,UDP,Peer2Peer,Open,0.18,Internal,0,7.7,None,0,Medium
+443,TCP,HTTPS,Open,0.34,External,0,2.3,None,1,Low
+5636,TCP,Peer2Peer,Open,0.06,DMZ,0,8.3,None,1,Medium
+61747,TCP,Unknown-App,Open,0.69,DMZ,0,9.0,None,0,High
+1521,TCP,Oracle-DB,Open,0.99,External,1,9.2,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Open,0.51,External,0,8.4,Cleartext Auth,0,Critical
+18277,TCP,Peer2Peer,Open,0.85,DMZ,0,1.2,None,0,Medium
+389,TCP,LDAP,Open,0.51,Internal,0,3.6,Cleartext Auth,0,Medium
+3306,TCP,MySQL,Open,0.89,External,1,8.4,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.76,External,1,7.6,Default Credentials Risk,1,High
+3389,TCP,RDP,Filtered,0.91,External,1,6.3,Anonymized,0,Medium
+53,UDP,DNS,Open,0.81,Internal,0,3.7,None,0,Medium
+587,TCP,SMTP-Submission,Open,0.59,External,0,2.8,None,1,Medium
+995,TCP,POP3S,Filtered,0.95,External,0,2.5,None,1,Low
+5432,TCP,PostgreSQL,Open,0.14,External,1,8.3,Default Credentials Risk,0,Critical
+42455,TCP,RPC-Node,Open,0.95,Internal,0,4.1,Cleartext Auth,1,Medium
+22,TCP,SSH,Open,0.3,External,0,2.0,Obsolete Cipher,1,Low
+37024,UDP,Unknown-App,Open,0.95,External,0,5.8,Obsolete Cipher,0,High
+25,TCP,SMTP,Open,0.14,External,1,6.7,None,0,High
+161,UDP,SNMP,Open,0.31,External,1,7.3,Default Credentials Risk,0,Critical
+110,TCP,POP3,Open,0.13,External,1,7.0,Cleartext Auth,0,High
+22,TCP,SSH,Open,0.23,External,0,2.1,None,1,Low
+21506,UDP,Web-Hook,Closed,0.97,DMZ,1,7.5,Cleartext Auth,1,Safe
+389,TCP,LDAP,Open,0.56,Internal,0,5.8,Cleartext Auth,0,Medium
+21566,TCP,RPC-Node,Open,0.6,DMZ,0,3.1,Anonymized,0,Medium
+63825,UDP,Custom-Service,Open,0.36,External,1,7.4,Default Credentials Risk,1,High
+389,TCP,LDAP,Open,0.15,Internal,0,5.3,Cleartext Auth,0,Medium
+636,TCP,LDAPS,Open,0.81,Internal,0,1.8,None,1,Low
+88,TCP,Kerberos,Open,0.25,Internal,0,4.7,None,1,Low
+21,TCP,FTP,Open,0.46,External,1,6.1,Obsolete Cipher,0,Critical
+1521,TCP,Oracle-DB,Open,0.27,External,0,6.8,Default Credentials Risk,0,High
+5432,TCP,PostgreSQL,Open,0.05,External,1,9.7,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.65,Internal,0,2.3,None,0,Medium
+636,TCP,LDAPS,Open,0.76,Internal,0,1.3,None,1,Low
+8080,TCP,HTTP-Proxy,Closed,0.14,External,0,7.8,None,1,Safe
+443,TCP,HTTPS,Open,0.34,External,0,1.2,None,0,Medium
+2049,TCP,NFS,Open,0.15,Internal,1,8.8,None,0,High
+3389,TCP,RDP,Open,0.06,External,1,8.5,Obsolete Cipher,1,High
+389,TCP,LDAP,Closed,0.14,Internal,0,5.7,Cleartext Auth,0,Safe
+1521,TCP,Oracle-DB,Open,0.67,External,1,10.0,Default Credentials Risk,0,Critical
+23,TCP,Telnet,Open,0.7,Internal,1,8.2,Cleartext Auth,0,High
+135,TCP,MSRPC,Open,0.28,Internal,1,7.9,Default Credentials Risk,0,High
+135,TCP,MSRPC,Open,0.9,Internal,1,7.5,Default Credentials Risk,0,High
+3389,TCP,RDP,Open,0.41,External,0,9.1,Obsolete Cipher,0,Critical
+80,TCP,HTTP,Open,0.75,External,1,8.1,Obsolete Cipher,0,Critical
+587,TCP,SMTP-Submission,Filtered,0.84,DMZ,0,2.8,None,1,Low
+22,TCP,SSH,Open,0.95,Internal,0,2.2,None,1,Low
+636,TCP,LDAPS,Closed,0.48,Internal,0,2.5,None,1,Safe
+443,TCP,HTTPS,Open,0.86,Internal,0,1.1,None,0,Medium
+61982,TCP,Web-Hook,Open,0.37,External,1,6.9,Cleartext Auth,1,High
+49641,UDP,Custom-Service,Filtered,0.9,External,1,6.2,Default Credentials Risk,1,Medium
+161,UDP,SNMP,Filtered,0.88,Internal,1,9.5,Default Credentials Risk,0,Medium
+88,TCP,Kerberos,Open,0.02,DMZ,0,3.1,None,0,Medium
+53,UDP,DNS,Open,0.04,Internal,0,3.1,None,0,Low
+5432,TCP,PostgreSQL,Open,0.06,External,1,8.4,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Closed,0.19,External,1,7.7,Default Credentials Risk,0,Safe
+23,TCP,Telnet,Closed,0.49,External,0,7.8,Cleartext Auth,0,Safe
+25,TCP,SMTP,Open,0.16,External,1,6.7,None,0,High
+27017,TCP,MongoDB,Open,0.58,External,1,8.3,Default Credentials Risk,0,Critical
+51310,UDP,Unknown-App,Closed,0.09,DMZ,0,5.2,Default Credentials Risk,1,Safe
+110,TCP,POP3,Filtered,0.86,External,0,6.0,Cleartext Auth,0,Medium
+23,TCP,Telnet,Open,0.34,External,1,9.3,Cleartext Auth,0,Critical
+110,TCP,POP3,Open,0.82,External,1,8.2,Cleartext Auth,0,Critical
+36675,TCP,Peer2Peer,Open,0.16,DMZ,0,0.0,Anonymized,0,Low
+993,TCP,IMAPS,Open,0.94,External,0,2.6,None,1,Medium
+2049,TCP,NFS,Filtered,0.11,Internal,1,8.0,None,0,Medium
+143,TCP,IMAP,Filtered,0.5,External,0,5.2,Cleartext Auth,0,Medium
+46567,UDP,Unknown-App,Open,0.95,External,0,7.8,Anonymized,1,High
+502,TCP,Modbus,Open,0.12,DMZ,1,7.6,Default Credentials Risk,0,High
+21,TCP,FTP,Open,0.43,External,1,9.0,Cleartext Auth,0,Critical
+23,TCP,Telnet,Open,0.26,External,1,8.5,Cleartext Auth,0,Critical
+9200,TCP,Elasticsearch,Filtered,0.95,External,1,8.4,Default Credentials Risk,0,High
+25925,TCP,RPC-Node,Open,0.72,External,0,2.4,None,0,High
+80,TCP,HTTP,Closed,0.03,External,1,7.8,Obsolete Cipher,0,Safe
+3389,TCP,RDP,Open,0.68,External,0,8.4,Cleartext Auth,1,High
+53,UDP,DNS,Open,0.92,Internal,0,4.0,None,0,Medium
+25,TCP,SMTP,Closed,0.29,DMZ,0,7.7,None,0,Safe
+993,TCP,IMAPS,Open,0.48,External,0,1.3,None,1,Low
+1521,TCP,Oracle-DB,Filtered,0.04,External,0,9.3,Default Credentials Risk,0,Medium
+6379,TCP,Redis,Closed,0.1,External,0,9.3,Default Credentials Risk,0,Safe
+22,TCP,SSH,Open,0.53,External,0,3.3,None,1,Medium
+9200,TCP,Elasticsearch,Open,0.42,External,0,10.0,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Closed,0.14,External,0,2.4,None,1,Safe
+69,UDP,TFTP,Closed,0.37,Internal,0,7.3,Cleartext Auth,0,Safe
+139,TCP,NetBIOS,Open,0.13,Internal,1,8.9,Cleartext Auth,0,High
+25,TCP,SMTP,Open,0.01,DMZ,0,5.1,None,0,Medium
+10006,UDP,Unknown-App,Open,0.21,Internal,0,1.8,Obsolete Cipher,1,Safe
+27017,TCP,MongoDB,Open,0.13,External,1,8.2,Default Credentials Risk,0,Critical
+5480,UDP,Peer2Peer,Filtered,0.36,DMZ,0,1.6,Obsolete Cipher,0,Low
+445,TCP,SMB,Filtered,0.03,External,1,8.3,Default Credentials Risk,0,High
+26633,UDP,Peer2Peer,Open,0.79,DMZ,1,8.6,Obsolete Cipher,0,Critical
+135,TCP,MSRPC,Open,0.6,Internal,0,5.2,Default Credentials Risk,0,Medium
+27017,TCP,MongoDB,Open,0.39,External,1,10.0,None,1,Critical
+993,TCP,IMAPS,Open,0.95,External,0,0.8,None,1,Medium
+1521,TCP,Oracle-DB,Open,0.68,External,1,8.2,Default Credentials Risk,0,Critical
+110,TCP,POP3,Open,0.62,External,0,6.7,Cleartext Auth,0,High
+465,TCP,SMTPS,Closed,0.32,External,0,2.5,None,1,Safe
+143,TCP,IMAP,Open,0.41,External,0,6.8,Cleartext Auth,0,High
+143,TCP,IMAP,Open,0.69,External,1,6.9,Default Credentials Risk,0,Critical
+161,UDP,SNMP,Open,0.21,Internal,1,6.9,Default Credentials Risk,0,High
+139,TCP,NetBIOS,Open,0.72,Internal,1,7.6,Cleartext Auth,0,High
+993,TCP,IMAPS,Closed,0.81,External,0,2.2,None,1,Safe
+1238,TCP,Unknown-App,Open,0.28,External,0,4.3,Anonymized,1,Medium
+143,TCP,IMAP,Open,0.11,External,0,5.8,Cleartext Auth,0,High
+636,TCP,LDAPS,Closed,0.04,External,0,3.6,None,1,Safe
+80,TCP,HTTP,Closed,0.69,External,0,7.0,Obsolete Cipher,0,Safe
+38154,TCP,Custom-Service,Open,0.24,External,0,9.3,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.58,External,0,2.9,None,1,Medium
+135,TCP,MSRPC,Open,0.95,Internal,0,7.9,Default Credentials Risk,0,High
+465,TCP,SMTPS,Open,0.46,Internal,0,3.4,None,1,Low
+139,TCP,NetBIOS,Open,0.86,Internal,1,8.0,Default Credentials Risk,0,High
+389,TCP,LDAP,Open,0.89,DMZ,0,4.9,Cleartext Auth,0,High
+50221,UDP,Custom-Service,Open,0.88,Internal,1,8.4,Obsolete Cipher,1,High
+8080,TCP,HTTP-Proxy,Open,0.7,External,1,7.2,Obsolete Cipher,0,Critical
+1521,TCP,Oracle-DB,Open,0.27,External,1,7.7,Default Credentials Risk,0,Critical
+25891,UDP,Custom-Service,Open,0.02,DMZ,1,6.6,Obsolete Cipher,0,High
+22,TCP,SSH,Open,0.25,External,0,2.5,None,1,Low
+1433,TCP,MSSQL,Filtered,0.65,External,1,9.2,Cleartext Auth,0,High
+23,TCP,Telnet,Open,0.92,External,0,10.0,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.14,External,0,5.5,None,0,High
+139,TCP,NetBIOS,Open,0.09,Internal,0,8.1,Cleartext Auth,0,Medium
+139,TCP,NetBIOS,Open,0.02,Internal,1,9.5,Cleartext Auth,0,High
+53,UDP,DNS,Filtered,0.55,Internal,0,3.7,None,1,Low
+139,TCP,NetBIOS,Open,0.86,Internal,1,10.0,Cleartext Auth,0,Critical
+22,TCP,SSH,Open,0.47,External,0,3.6,None,1,Medium
+443,TCP,HTTPS,Open,0.25,External,0,0.0,None,1,Low
+88,TCP,Kerberos,Open,0.38,DMZ,0,3.8,None,1,Low
+5432,TCP,PostgreSQL,Open,0.73,External,1,8.6,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.75,External,0,3.8,None,1,Medium
+2375,TCP,Docker-Daemon,Open,0.6,External,1,10.0,None,0,Critical
+2375,TCP,Docker-Daemon,Open,0.02,External,1,9.7,Obsolete Cipher,0,Critical
+123,UDP,NTP,Open,0.79,Internal,0,1.3,None,0,Medium
+123,UDP,NTP,Open,0.71,External,0,2.3,None,1,Medium
+161,UDP,SNMP,Filtered,0.92,Internal,0,6.6,Cleartext Auth,0,Medium
+5432,TCP,PostgreSQL,Open,0.29,External,1,7.6,Default Credentials Risk,0,Critical
+23,TCP,Telnet,Open,0.19,External,1,9.4,Cleartext Auth,0,Critical
+80,TCP,HTTP,Open,0.22,External,1,8.2,Obsolete Cipher,0,Critical
+2049,TCP,NFS,Open,0.37,Internal,1,7.4,None,0,High
+3389,TCP,RDP,Open,0.55,External,1,6.6,Obsolete Cipher,1,High
+123,UDP,NTP,Open,0.72,Internal,0,2.9,None,0,Medium
+123,UDP,NTP,Open,0.04,DMZ,0,3.7,None,0,Medium
+110,TCP,POP3,Filtered,0.15,External,1,6.4,Cleartext Auth,0,Medium
+161,UDP,SNMP,Open,0.07,Internal,1,7.4,Default Credentials Risk,1,Medium
+61633,UDP,Custom-Service,Open,0.98,DMZ,0,4.4,Default Credentials Risk,0,High
+63654,UDP,Peer2Peer,Open,0.68,DMZ,1,6.3,Anonymized,1,High
+465,TCP,SMTPS,Filtered,0.43,External,0,2.2,None,1,Low
+8080,TCP,HTTP-Proxy,Open,0.59,External,1,6.0,Obsolete Cipher,0,Critical
+123,UDP,NTP,Closed,0.46,Internal,0,3.1,None,0,Safe
+80,TCP,HTTP,Open,0.57,External,0,6.4,Obsolete Cipher,0,High
+5900,TCP,VNC,Closed,0.06,External,1,8.9,Cleartext Auth,0,Safe
+2375,TCP,Docker-Daemon,Open,1.0,External,1,8.9,Cleartext Auth,0,Critical
+161,UDP,SNMP,Open,0.16,Internal,0,7.1,Default Credentials Risk,0,Medium
+1521,TCP,Oracle-DB,Open,0.54,Internal,1,9.1,Default Credentials Risk,0,High
+123,UDP,NTP,Closed,0.37,Internal,0,2.1,Default Credentials Risk,0,Safe
+995,TCP,POP3S,Open,0.04,Internal,0,3.6,None,1,Low
+23,TCP,Telnet,Filtered,0.82,External,1,8.4,Cleartext Auth,0,High
+502,TCP,Modbus,Open,0.06,External,1,9.2,Cleartext Auth,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.85,External,1,7.7,Obsolete Cipher,1,High
+3389,TCP,RDP,Open,0.4,External,1,6.4,Obsolete Cipher,1,High
+587,TCP,SMTP-Submission,Open,0.06,External,0,1.0,Cleartext Auth,1,Low
+10702,TCP,RPC-Node,Filtered,0.69,Internal,1,6.9,Default Credentials Risk,0,Medium
+3306,TCP,MySQL,Open,0.73,External,1,7.4,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Open,0.05,External,1,9.8,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.71,External,1,7.8,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Closed,0.75,Internal,0,4.6,None,1,Safe
+13080,TCP,Unknown-App,Open,0.88,External,0,0.9,Default Credentials Risk,1,Medium
+6379,TCP,Redis,Open,0.77,External,1,8.6,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.68,DMZ,1,8.8,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.61,External,0,3.7,None,1,Medium
+23,TCP,Telnet,Open,0.76,External,0,10.0,Cleartext Auth,0,Critical
+2375,TCP,Docker-Daemon,Closed,0.91,External,1,10.0,Obsolete Cipher,0,Safe
+636,TCP,LDAPS,Open,0.04,External,0,3.2,None,1,Low
+445,TCP,SMB,Open,0.0,Internal,0,10.0,Obsolete Cipher,0,High
+465,TCP,SMTPS,Open,0.87,External,0,2.8,None,1,Medium
+587,TCP,SMTP-Submission,Open,0.53,External,0,3.6,None,1,Medium
+88,TCP,Kerberos,Open,0.18,Internal,0,2.4,None,1,Safe
+21,TCP,FTP,Open,0.1,DMZ,1,6.7,Cleartext Auth,0,High
+135,TCP,MSRPC,Closed,0.2,Internal,0,7.2,Default Credentials Risk,0,Safe
+502,TCP,Modbus,Open,0.98,External,1,8.8,Cleartext Auth,0,Critical
+1242,TCP,Custom-Service,Open,0.5,Internal,0,1.1,Obsolete Cipher,1,Safe
+9200,TCP,Elasticsearch,Filtered,0.36,DMZ,0,8.2,Default Credentials Risk,0,Medium
+143,TCP,IMAP,Filtered,0.79,External,0,6.7,Anonymized,0,Medium
+123,UDP,NTP,Open,0.99,Internal,0,3.5,None,0,Medium
+995,TCP,POP3S,Open,0.81,External,0,2.0,None,0,High
+2049,TCP,NFS,Open,0.7,DMZ,1,8.5,None,0,Critical
+6379,TCP,Redis,Open,0.9,External,0,8.1,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.75,External,0,1.7,None,0,Medium
+636,TCP,LDAPS,Open,0.12,Internal,0,1.3,None,1,Safe
+6379,TCP,Redis,Open,0.81,External,1,7.3,Default Credentials Risk,0,Critical
+443,TCP,HTTPS,Filtered,0.05,External,0,1.7,None,1,Safe
+110,TCP,POP3,Open,0.85,External,1,6.9,Cleartext Auth,0,Critical
+24865,TCP,RPC-Node,Open,0.29,DMZ,0,2.8,None,1,Low
+69,UDP,TFTP,Filtered,0.36,Internal,0,8.3,Cleartext Auth,0,Medium
+993,TCP,IMAPS,Filtered,0.23,DMZ,0,2.5,None,1,Safe
+27017,TCP,MongoDB,Closed,0.87,External,1,8.0,Anonymized,0,Safe
+44140,UDP,Custom-Service,Open,0.33,Internal,0,3.0,Obsolete Cipher,1,Low
+110,TCP,POP3,Open,0.48,External,1,8.9,Cleartext Auth,1,High
+9200,TCP,Elasticsearch,Open,0.33,DMZ,0,9.9,Default Credentials Risk,0,High
+46944,TCP,Microservice,Open,0.96,External,0,2.1,Cleartext Auth,0,High
+34426,TCP,RPC-Node,Open,0.73,DMZ,0,5.0,Default Credentials Risk,0,High
+6379,TCP,Redis,Open,0.83,Internal,0,9.8,Default Credentials Risk,0,High
+2375,TCP,Docker-Daemon,Filtered,0.12,External,1,9.6,Cleartext Auth,0,High
+6379,TCP,Redis,Open,0.58,DMZ,1,8.2,Default Credentials Risk,1,High
+443,TCP,HTTPS,Open,0.68,Internal,0,1.4,None,1,Low
+161,UDP,SNMP,Open,0.83,Internal,0,8.6,Default Credentials Risk,0,High
+161,UDP,SNMP,Filtered,0.33,DMZ,1,9.4,Default Credentials Risk,0,Medium
+465,TCP,SMTPS,Open,0.87,DMZ,0,3.7,Obsolete Cipher,1,Medium
+44428,TCP,RPC-Node,Open,0.46,External,0,4.2,Default Credentials Risk,1,Medium
+25,TCP,SMTP,Open,0.29,External,0,5.0,None,0,High
+139,TCP,NetBIOS,Open,0.64,DMZ,1,6.7,Obsolete Cipher,0,High
+465,TCP,SMTPS,Open,0.44,External,0,2.3,None,1,Medium
+443,TCP,HTTPS,Open,0.64,External,0,0.0,None,1,Low
+465,TCP,SMTPS,Open,0.66,External,0,2.5,None,1,Medium
+2049,TCP,NFS,Open,0.28,Internal,1,6.9,None,1,Medium
+27017,TCP,MongoDB,Closed,0.63,External,1,8.5,Default Credentials Risk,0,Safe
+22,TCP,SSH,Open,0.0,External,0,1.4,None,1,Low
+80,TCP,HTTP,Open,0.27,External,0,7.0,Obsolete Cipher,0,High
+995,TCP,POP3S,Open,0.86,External,0,1.4,Cleartext Auth,0,Medium
+443,TCP,HTTPS,Open,0.69,External,0,0.6,None,1,Low
+110,TCP,POP3,Open,1.0,External,0,4.1,Cleartext Auth,0,High
+27017,TCP,MongoDB,Open,0.04,DMZ,0,9.0,Default Credentials Risk,0,High
+88,TCP,Kerberos,Filtered,0.09,Internal,0,4.8,None,1,Safe
+41117,TCP,Custom-Service,Open,0.69,DMZ,0,5.1,Cleartext Auth,1,Medium
+21,TCP,FTP,Filtered,0.89,External,0,9.2,Cleartext Auth,0,High
+389,TCP,LDAP,Open,0.36,Internal,0,5.7,Cleartext Auth,0,Medium
+135,TCP,MSRPC,Open,0.19,DMZ,1,6.6,Default Credentials Risk,1,Medium
+23,TCP,Telnet,Open,0.66,Internal,0,9.3,Default Credentials Risk,0,High
+88,TCP,Kerberos,Filtered,0.76,Internal,0,2.0,None,1,Safe
+3306,TCP,MySQL,Open,0.37,Internal,1,9.2,Default Credentials Risk,0,High
+2375,TCP,Docker-Daemon,Open,0.11,External,0,10.0,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.9,External,0,3.4,None,1,Medium
+993,TCP,IMAPS,Open,0.95,DMZ,0,1.8,None,1,Low
+3389,TCP,RDP,Open,0.77,External,0,7.6,Obsolete Cipher,1,High
+1521,TCP,Oracle-DB,Open,0.69,External,1,7.5,Anonymized,0,Critical
+9200,TCP,Elasticsearch,Open,0.71,External,1,7.9,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.86,Internal,1,7.6,Cleartext Auth,0,High
+9200,TCP,Elasticsearch,Open,0.33,External,0,9.1,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Open,0.09,External,0,9.8,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.16,External,0,8.1,Default Credentials Risk,0,Critical
+22,TCP,SSH,Open,0.86,Internal,0,4.5,None,0,Medium
+69,UDP,TFTP,Open,0.08,Internal,0,6.5,Cleartext Auth,0,Medium
+7463,UDP,Peer2Peer,Open,0.15,Internal,1,7.5,Anonymized,1,Medium
+88,TCP,Kerberos,Open,0.16,Internal,0,3.0,None,1,Low
+123,UDP,NTP,Open,0.91,Internal,0,1.8,None,0,Medium
+139,TCP,NetBIOS,Open,0.38,Internal,0,5.4,Cleartext Auth,0,Medium
+3306,TCP,MySQL,Filtered,0.38,Internal,1,9.8,Default Credentials Risk,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.15,External,0,3.2,None,1,Medium
+389,TCP,LDAP,Filtered,0.79,Internal,0,5.9,Default Credentials Risk,0,Medium
+23,TCP,Telnet,Open,0.6,External,1,8.9,Cleartext Auth,0,Critical
+995,TCP,POP3S,Closed,0.86,DMZ,0,2.4,None,1,Safe
+110,TCP,POP3,Filtered,0.25,External,0,5.4,None,1,Low
+27017,TCP,MongoDB,Open,0.96,External,1,8.5,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Open,0.76,External,1,9.3,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.3,External,0,0.9,Obsolete Cipher,1,Low
+587,TCP,SMTP-Submission,Filtered,0.13,Internal,0,3.1,None,1,Safe
+8443,TCP,HTTPS-Alt,Filtered,0.29,External,0,1.1,None,1,Low
+26575,TCP,Web-Hook,Open,0.79,External,1,8.2,None,1,High
+9200,TCP,Elasticsearch,Closed,0.02,External,0,9.2,Default Credentials Risk,0,Safe
+2375,TCP,Docker-Daemon,Closed,0.53,External,1,9.8,Cleartext Auth,0,Safe
+389,TCP,LDAP,Open,0.18,Internal,0,4.6,Cleartext Auth,0,Medium
+22752,TCP,RPC-Node,Open,0.64,DMZ,1,6.5,None,0,High
+161,UDP,SNMP,Open,0.32,External,1,8.7,Anonymized,0,Critical
+389,TCP,LDAP,Open,0.47,Internal,0,5.5,Anonymized,0,Medium
+9135,TCP,Peer2Peer,Open,0.13,Internal,0,5.6,Cleartext Auth,0,Medium
+389,TCP,LDAP,Closed,0.92,Internal,0,5.4,None,1,Safe
+8080,TCP,HTTP-Proxy,Open,0.96,External,1,7.0,Obsolete Cipher,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.81,Internal,0,3.6,None,1,Low
+993,TCP,IMAPS,Open,0.01,Internal,0,0.9,None,1,Safe
+993,TCP,IMAPS,Open,0.98,External,0,2.0,None,1,Medium
+2375,TCP,Docker-Daemon,Open,0.61,External,1,10.0,Cleartext Auth,0,Critical
+6021,UDP,Peer2Peer,Open,0.54,Internal,0,8.3,Anonymized,0,High
+5900,TCP,VNC,Open,0.17,Internal,1,9.2,Cleartext Auth,0,High
+40776,TCP,Custom-Service,Open,0.09,External,0,2.6,Default Credentials Risk,0,Medium
+46598,UDP,Unknown-App,Open,0.78,DMZ,0,0.4,Default Credentials Risk,1,Low
+6379,TCP,Redis,Open,0.52,External,0,9.4,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Filtered,0.06,Internal,1,8.5,Default Credentials Risk,0,Medium
+2049,TCP,NFS,Open,0.07,Internal,1,6.2,None,0,High
+139,TCP,NetBIOS,Open,0.43,Internal,1,7.9,Cleartext Auth,0,High
+80,TCP,HTTP,Open,0.9,External,0,5.4,Obsolete Cipher,0,High
+8443,TCP,HTTPS-Alt,Open,0.3,External,0,0.0,None,1,Low
+8443,TCP,HTTPS-Alt,Open,0.86,External,0,2.9,None,1,Medium
+49301,TCP,RPC-Node,Open,0.12,Internal,0,2.2,Default Credentials Risk,0,Low
+1433,TCP,MSSQL,Open,0.37,External,1,9.5,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Open,0.26,Internal,1,6.6,Cleartext Auth,0,High
+2375,TCP,Docker-Daemon,Filtered,0.3,External,1,8.8,Cleartext Auth,0,High
+5432,TCP,PostgreSQL,Open,0.64,External,1,8.8,Default Credentials Risk,1,High
+80,TCP,HTTP,Open,0.79,External,1,8.6,Obsolete Cipher,0,Critical
+59386,TCP,Custom-Service,Filtered,0.43,Internal,0,2.8,Cleartext Auth,0,Low
+25,TCP,SMTP,Open,0.4,External,0,5.5,None,0,High
+2375,TCP,Docker-Daemon,Open,0.94,External,1,9.1,Cleartext Auth,0,Critical
+389,TCP,LDAP,Open,0.9,Internal,1,6.0,Cleartext Auth,0,High
+27017,TCP,MongoDB,Filtered,0.9,External,1,10.0,Default Credentials Risk,0,High
+8744,TCP,Microservice,Open,0.76,External,0,0.3,Cleartext Auth,1,Low
+123,UDP,NTP,Open,0.38,Internal,0,1.9,None,0,Low
+53,UDP,DNS,Open,0.67,DMZ,0,2.7,None,0,Medium
+123,UDP,NTP,Open,0.92,Internal,0,2.0,None,0,Medium
+143,TCP,IMAP,Filtered,0.31,External,0,5.0,Anonymized,0,Medium
+23,TCP,Telnet,Open,0.67,External,1,8.9,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.67,External,1,10.0,Default Credentials Risk,1,Critical
+22,TCP,SSH,Open,0.63,DMZ,0,3.3,Default Credentials Risk,0,Medium
+636,TCP,LDAPS,Open,0.58,Internal,0,1.7,Anonymized,0,Medium
+2375,TCP,Docker-Daemon,Open,0.02,External,1,9.5,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.76,External,1,7.4,Cleartext Auth,0,Critical
+110,TCP,POP3,Open,0.83,External,1,7.9,Obsolete Cipher,0,Critical
+65379,TCP,Peer2Peer,Open,0.26,External,0,0.2,Anonymized,0,Medium
+14028,TCP,RPC-Node,Open,0.93,Internal,0,8.9,Default Credentials Risk,0,High
+27324,TCP,RPC-Node,Open,0.08,External,0,0.1,Cleartext Auth,0,Medium
+1521,TCP,Oracle-DB,Open,0.67,External,0,8.3,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.26,External,0,1.7,Anonymized,1,Low
+135,TCP,MSRPC,Open,0.04,Internal,1,10.0,Obsolete Cipher,0,High
+502,TCP,Modbus,Filtered,0.4,Internal,1,9.3,Cleartext Auth,0,Medium
+60336,UDP,Microservice,Open,0.83,DMZ,0,4.9,Cleartext Auth,1,Medium
+6379,TCP,Redis,Open,0.19,External,1,8.4,Default Credentials Risk,0,Critical
+12271,UDP,Microservice,Open,0.43,DMZ,1,6.5,Obsolete Cipher,1,Medium
+36371,TCP,Custom-Service,Open,0.34,DMZ,1,6.5,Default Credentials Risk,0,High
+22,TCP,SSH,Open,0.4,External,0,2.6,None,1,Medium
+8822,UDP,RPC-Node,Open,0.41,External,1,8.2,Obsolete Cipher,0,Critical
+21,TCP,FTP,Open,0.63,DMZ,1,8.6,Cleartext Auth,0,Critical
+2049,TCP,NFS,Open,0.45,Internal,0,7.1,Default Credentials Risk,0,High
+123,UDP,NTP,Open,0.98,Internal,0,1.1,None,0,Medium
+2049,TCP,NFS,Open,0.53,Internal,1,7.9,None,0,High
+9200,TCP,Elasticsearch,Open,0.92,External,1,8.0,Cleartext Auth,0,Critical
+389,TCP,LDAP,Open,0.69,Internal,1,8.1,Cleartext Auth,0,High
+110,TCP,POP3,Open,0.55,External,0,8.1,Cleartext Auth,0,Critical
+995,TCP,POP3S,Filtered,0.91,External,0,1.5,None,1,Low
+3389,TCP,RDP,Open,0.45,External,1,9.1,Obsolete Cipher,0,Critical
+139,TCP,NetBIOS,Filtered,0.96,Internal,0,7.9,Cleartext Auth,1,Low
+5432,TCP,PostgreSQL,Open,0.62,External,1,9.1,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.75,DMZ,0,3.0,None,0,Medium
+9200,TCP,Elasticsearch,Open,0.63,External,0,7.9,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Filtered,0.39,External,0,1.6,None,1,Low
+993,TCP,IMAPS,Open,0.9,External,0,2.9,None,1,Medium
+993,TCP,IMAPS,Open,0.59,External,0,1.6,Anonymized,1,Medium
+995,TCP,POP3S,Open,0.13,External,0,1.5,Cleartext Auth,1,Low
+465,TCP,SMTPS,Closed,0.55,External,0,1.2,None,1,Safe
+38549,TCP,Web-Hook,Open,0.76,Internal,0,2.5,Default Credentials Risk,1,Low
+5900,TCP,VNC,Closed,0.17,External,1,8.9,Cleartext Auth,0,Safe
+389,TCP,LDAP,Open,0.86,Internal,1,8.3,Cleartext Auth,0,Critical
+2049,TCP,NFS,Open,0.39,DMZ,0,5.9,None,0,High
+22282,TCP,Peer2Peer,Filtered,0.22,External,0,7.3,Default Credentials Risk,1,Low
+88,TCP,Kerberos,Open,0.83,Internal,0,3.0,None,1,Low
+40280,UDP,Unknown-App,Open,0.27,Internal,0,5.0,Default Credentials Risk,0,Medium
+1433,TCP,MSSQL,Open,0.33,External,1,10.0,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.85,Internal,1,7.7,Cleartext Auth,0,High
+3306,TCP,MySQL,Open,0.85,External,1,9.4,Anonymized,0,Critical
+80,TCP,HTTP,Open,0.38,External,0,5.4,Default Credentials Risk,0,High
+88,TCP,Kerberos,Open,0.83,Internal,0,3.4,None,1,Low
+21,TCP,FTP,Filtered,0.35,DMZ,0,7.3,Cleartext Auth,0,Medium
+993,TCP,IMAPS,Open,0.96,External,0,2.9,None,1,Medium
+39268,UDP,RPC-Node,Open,0.71,External,0,2.8,Cleartext Auth,1,Medium
+465,TCP,SMTPS,Closed,0.8,External,0,3.4,None,1,Safe
+502,TCP,Modbus,Closed,0.81,DMZ,1,10.0,Cleartext Auth,0,Safe
+110,TCP,POP3,Open,0.23,Internal,1,7.6,Default Credentials Risk,0,High
+443,TCP,HTTPS,Filtered,0.8,External,0,2.1,None,1,Low
+5561,TCP,Custom-Service,Open,0.63,External,0,4.6,Anonymized,1,Medium
+139,TCP,NetBIOS,Open,0.62,Internal,1,8.0,Cleartext Auth,0,High
+6379,TCP,Redis,Closed,0.42,External,1,8.8,Default Credentials Risk,0,Safe
+502,TCP,Modbus,Closed,0.7,Internal,1,9.3,Anonymized,0,Safe
+53,UDP,DNS,Filtered,0.11,Internal,0,3.2,Anonymized,0,Low
+53,UDP,DNS,Open,0.63,Internal,0,3.7,None,0,Medium
+25,TCP,SMTP,Open,0.49,Internal,0,6.8,None,0,Medium
+995,TCP,POP3S,Open,0.67,External,0,0.9,None,0,Medium
+139,TCP,NetBIOS,Open,0.36,Internal,1,8.9,Cleartext Auth,0,High
+1521,TCP,Oracle-DB,Open,0.51,External,1,9.7,Cleartext Auth,0,Critical
+5432,TCP,PostgreSQL,Open,0.05,External,1,8.1,Default Credentials Risk,0,Critical
+88,TCP,Kerberos,Open,0.79,External,0,0.9,None,1,Medium
+139,TCP,NetBIOS,Open,0.58,Internal,1,7.2,Cleartext Auth,0,High
+2375,TCP,Docker-Daemon,Filtered,0.66,External,1,10.0,Cleartext Auth,0,High
+443,TCP,HTTPS,Open,0.96,Internal,0,1.8,None,1,Low
+9200,TCP,Elasticsearch,Open,0.49,External,1,7.7,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Closed,0.57,External,0,8.7,Default Credentials Risk,0,Safe
+6379,TCP,Redis,Open,0.85,External,1,10.0,Obsolete Cipher,0,Critical
+139,TCP,NetBIOS,Closed,0.47,External,1,8.3,Cleartext Auth,0,Safe
+88,TCP,Kerberos,Open,0.95,Internal,0,2.8,None,1,Low
+35033,TCP,Unknown-App,Open,0.36,Internal,1,7.7,None,0,High
+25,TCP,SMTP,Open,0.61,Internal,0,5.1,None,0,Medium
+59011,UDP,Peer2Peer,Open,0.36,External,0,6.5,Default Credentials Risk,1,Medium
+25,TCP,SMTP,Filtered,0.04,External,0,5.1,None,0,Medium
+587,TCP,SMTP-Submission,Filtered,0.57,External,0,1.9,Anonymized,1,Low
+53,UDP,DNS,Filtered,0.57,Internal,0,5.1,None,0,Low
+7156,TCP,Unknown-App,Open,0.09,DMZ,0,8.9,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Open,0.99,External,0,6.5,None,0,Critical
+6379,TCP,Redis,Open,0.73,External,0,10.0,None,1,Critical
+5432,TCP,PostgreSQL,Open,0.75,External,0,9.7,None,0,Critical
+2049,TCP,NFS,Open,0.45,Internal,1,8.0,Anonymized,0,High
+8443,TCP,HTTPS-Alt,Open,0.21,External,0,2.1,Anonymized,1,Low
+143,TCP,IMAP,Open,0.46,External,1,6.4,Cleartext Auth,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.28,External,0,2.5,None,1,Low
+2049,TCP,NFS,Open,0.33,External,0,6.1,None,0,High
+1521,TCP,Oracle-DB,Open,0.37,External,1,8.7,Default Credentials Risk,0,Critical
+53,UDP,DNS,Open,0.57,Internal,0,2.3,Cleartext Auth,0,Medium
+6379,TCP,Redis,Open,0.14,External,0,10.0,Default Credentials Risk,0,Critical
+37048,UDP,Peer2Peer,Open,0.03,External,0,2.9,Cleartext Auth,1,Low
+59226,TCP,Custom-Service,Open,0.61,External,1,8.8,Obsolete Cipher,0,Critical
+465,TCP,SMTPS,Open,0.86,External,0,1.7,None,0,Medium
+389,TCP,LDAP,Closed,0.11,Internal,1,6.4,Cleartext Auth,0,Safe
+11417,TCP,Unknown-App,Open,0.36,Internal,0,2.4,None,1,Low
+63715,UDP,Peer2Peer,Open,0.37,External,0,4.0,Default Credentials Risk,1,Medium
+995,TCP,POP3S,Open,0.84,External,0,2.2,Cleartext Auth,1,Medium
+445,TCP,SMB,Filtered,0.8,Internal,1,9.0,Default Credentials Risk,0,Medium
+22,TCP,SSH,Open,0.45,External,0,3.6,None,1,Medium
+69,UDP,TFTP,Open,0.81,Internal,1,6.3,None,0,High
+123,UDP,NTP,Open,0.46,Internal,0,3.4,Default Credentials Risk,0,Medium
+23,TCP,Telnet,Open,0.08,Internal,0,7.5,Cleartext Auth,0,Medium
+24690,UDP,RPC-Node,Open,0.2,Internal,0,7.6,Cleartext Auth,1,Medium
+995,TCP,POP3S,Open,0.43,External,0,2.0,None,1,Low
+22,TCP,SSH,Closed,0.8,External,0,4.9,None,1,Safe
+2049,TCP,NFS,Closed,0.84,Internal,0,6.0,None,0,Safe
+29650,TCP,Custom-Service,Filtered,0.7,DMZ,0,0.6,Cleartext Auth,1,Safe
+23,TCP,Telnet,Open,0.97,External,1,8.1,Cleartext Auth,1,Critical
+53,UDP,DNS,Open,0.91,DMZ,0,4.0,None,0,High
+445,TCP,SMB,Open,0.71,External,1,9.5,Default Credentials Risk,0,Critical
+42382,UDP,Peer2Peer,Open,0.17,External,0,2.4,None,0,Medium
+8080,TCP,HTTP-Proxy,Open,0.5,External,1,7.2,Obsolete Cipher,1,High
+8443,TCP,HTTPS-Alt,Open,0.59,External,0,3.0,None,1,Medium
+2375,TCP,Docker-Daemon,Open,0.38,External,0,10.0,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.83,External,1,10.0,Cleartext Auth,0,Critical
+161,UDP,SNMP,Open,0.58,Internal,1,7.9,Default Credentials Risk,0,High
+30257,TCP,Custom-Service,Open,0.47,Internal,1,8.4,Cleartext Auth,1,High
+9200,TCP,Elasticsearch,Open,0.66,External,1,8.5,Cleartext Auth,0,Critical
+445,TCP,SMB,Closed,0.8,External,0,10.0,Default Credentials Risk,1,Safe
+8080,TCP,HTTP-Proxy,Open,0.15,External,0,8.7,Obsolete Cipher,0,High
+64103,TCP,Microservice,Closed,0.93,DMZ,0,4.8,None,1,Safe
+20954,TCP,Unknown-App,Open,0.74,External,0,9.0,Default Credentials Risk,0,Critical
+64759,UDP,RPC-Node,Open,0.05,DMZ,0,1.6,None,0,Low
+5900,TCP,VNC,Open,0.09,External,1,8.4,Cleartext Auth,0,Critical
+69,UDP,TFTP,Filtered,0.27,Internal,0,5.8,Cleartext Auth,0,Low
+3306,TCP,MySQL,Filtered,0.58,External,1,10.0,Default Credentials Risk,0,High
+32293,TCP,Web-Hook,Open,0.79,DMZ,0,3.4,None,0,Medium
+3306,TCP,MySQL,Open,0.25,External,1,8.8,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.93,External,1,6.8,Default Credentials Risk,0,Critical
+44188,UDP,Unknown-App,Closed,0.7,DMZ,0,0.4,Anonymized,1,Safe
+1521,TCP,Oracle-DB,Open,0.27,External,1,9.2,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Open,0.93,External,1,7.3,Cleartext Auth,0,Critical
+2375,TCP,Docker-Daemon,Closed,0.78,External,0,9.7,Anonymized,0,Safe
+8080,TCP,HTTP-Proxy,Open,0.15,External,1,7.1,Default Credentials Risk,0,Critical
+53,UDP,DNS,Open,1.0,Internal,0,3.7,Default Credentials Risk,0,Medium
+443,TCP,HTTPS,Filtered,1.0,External,0,2.5,None,1,Low
+47864,UDP,Custom-Service,Filtered,0.34,Internal,0,4.5,Obsolete Cipher,0,Low
+3893,UDP,Web-Hook,Closed,0.36,External,0,3.2,None,0,Safe
+50207,UDP,RPC-Node,Open,0.65,External,0,1.2,None,0,Medium
+46703,UDP,Web-Hook,Open,0.74,DMZ,0,4.0,None,0,Medium
+62061,TCP,Peer2Peer,Open,0.55,DMZ,0,2.5,Anonymized,0,Medium
+9200,TCP,Elasticsearch,Open,0.55,External,0,8.3,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Filtered,0.62,External,0,2.7,Cleartext Auth,1,Low
+42088,UDP,Web-Hook,Filtered,0.25,DMZ,1,6.3,Anonymized,1,Low
+27017,TCP,MongoDB,Open,0.89,External,0,8.7,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.72,External,1,10.0,None,0,Critical
+5900,TCP,VNC,Open,0.11,External,1,9.1,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.39,External,0,4.6,None,0,High
+443,TCP,HTTPS,Open,0.33,External,0,2.9,Anonymized,1,Medium
+1521,TCP,Oracle-DB,Open,0.81,DMZ,0,7.9,Default Credentials Risk,0,High
+17422,TCP,Custom-Service,Filtered,0.74,External,1,9.5,Default Credentials Risk,1,Medium
+6379,TCP,Redis,Open,0.82,External,1,10.0,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.45,External,1,9.0,Default Credentials Risk,0,Critical
+389,TCP,LDAP,Open,0.24,Internal,1,8.0,Cleartext Auth,0,High
+2049,TCP,NFS,Open,0.42,Internal,1,6.8,None,0,High
+2049,TCP,NFS,Closed,0.01,Internal,1,6.7,None,0,Safe
+139,TCP,NetBIOS,Filtered,0.43,Internal,1,7.8,Cleartext Auth,0,Medium
+5900,TCP,VNC,Open,0.1,External,0,8.2,Cleartext Auth,0,Critical
+80,TCP,HTTP,Filtered,0.25,External,1,7.3,Obsolete Cipher,1,Medium
+25,TCP,SMTP,Open,0.59,External,0,3.9,None,1,Medium
+32559,UDP,Peer2Peer,Open,0.88,Internal,1,8.3,Cleartext Auth,0,Critical
+59827,TCP,Web-Hook,Filtered,0.85,Internal,1,9.4,Obsolete Cipher,1,Medium
+123,UDP,NTP,Open,0.74,Internal,0,1.4,Anonymized,0,Medium
+23447,TCP,RPC-Node,Filtered,0.53,DMZ,0,5.6,Obsolete Cipher,1,Low
+995,TCP,POP3S,Open,0.51,External,0,0.8,None,1,Low
+88,TCP,Kerberos,Open,0.25,Internal,0,4.0,None,1,Low
+465,TCP,SMTPS,Open,0.37,External,0,3.9,None,0,High
+993,TCP,IMAPS,Open,0.14,External,0,1.8,None,1,Low
+3389,TCP,RDP,Open,0.49,External,1,7.6,Obsolete Cipher,1,High
+69,UDP,TFTP,Open,0.66,Internal,1,6.9,Cleartext Auth,0,High
+135,TCP,MSRPC,Open,0.82,DMZ,1,8.4,Default Credentials Risk,0,Critical
+21,TCP,FTP,Open,0.25,Internal,0,6.6,Cleartext Auth,0,Medium
+143,TCP,IMAP,Open,0.72,External,1,6.2,Cleartext Auth,1,High
+389,TCP,LDAP,Open,0.72,External,1,7.2,None,0,Critical
+502,TCP,Modbus,Open,0.25,External,1,9.5,Cleartext Auth,0,Critical
+18171,UDP,RPC-Node,Filtered,0.69,DMZ,0,2.0,Anonymized,0,Low
+161,UDP,SNMP,Open,0.6,Internal,0,7.7,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Open,0.62,External,1,7.8,Obsolete Cipher,0,Critical
+35606,TCP,Microservice,Open,0.7,External,1,9.4,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Filtered,0.86,External,0,5.1,Obsolete Cipher,1,Low
+36442,UDP,Microservice,Filtered,0.65,Internal,0,2.5,Cleartext Auth,1,Safe
+135,TCP,MSRPC,Closed,0.66,Internal,1,7.9,None,0,Safe
+135,TCP,MSRPC,Open,0.51,Internal,0,6.5,Default Credentials Risk,0,Medium
+161,UDP,SNMP,Open,0.0,Internal,0,5.7,Cleartext Auth,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.63,External,0,3.0,None,1,Medium
+27017,TCP,MongoDB,Open,0.55,External,1,10.0,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Open,0.55,External,1,8.3,Default Credentials Risk,0,Critical
+69,UDP,TFTP,Open,0.78,Internal,1,7.8,Cleartext Auth,0,High
+110,TCP,POP3,Open,0.83,External,1,8.6,Cleartext Auth,0,Critical
+143,TCP,IMAP,Filtered,0.92,External,0,7.3,Cleartext Auth,0,Medium
+465,TCP,SMTPS,Open,0.07,External,0,3.8,None,1,Medium
+23,TCP,Telnet,Open,0.09,External,0,9.5,Cleartext Auth,0,Critical
+1433,TCP,MSSQL,Filtered,0.94,Internal,1,8.7,Default Credentials Risk,0,Medium
+3389,TCP,RDP,Closed,0.27,DMZ,1,6.2,Obsolete Cipher,1,Safe
+21,TCP,FTP,Open,0.29,External,0,7.3,Obsolete Cipher,0,Critical
+2049,TCP,NFS,Open,0.54,Internal,1,6.2,None,0,High
+88,TCP,Kerberos,Open,0.61,Internal,0,5.2,None,1,Low
+1433,TCP,MSSQL,Filtered,0.57,External,1,8.4,Default Credentials Risk,0,High
+443,TCP,HTTPS,Open,0.96,External,0,1.9,Default Credentials Risk,1,Medium
+27017,TCP,MongoDB,Open,0.85,Internal,1,9.6,Default Credentials Risk,0,Critical
+38486,UDP,Unknown-App,Open,0.96,External,0,3.4,Anonymized,0,High
+5432,TCP,PostgreSQL,Open,0.18,DMZ,0,8.2,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Closed,0.44,DMZ,0,10.0,Default Credentials Risk,0,Safe
+5900,TCP,VNC,Filtered,0.88,External,1,7.9,Cleartext Auth,0,High
+1433,TCP,MSSQL,Open,0.49,DMZ,1,8.8,Default Credentials Risk,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.0,External,1,6.1,Default Credentials Risk,0,High
+4286,TCP,Microservice,Open,0.95,Internal,1,8.8,Default Credentials Risk,1,High
+110,TCP,POP3,Open,0.92,External,0,5.7,Cleartext Auth,0,High
+465,TCP,SMTPS,Closed,0.52,DMZ,0,1.6,None,0,Safe
+445,TCP,SMB,Open,0.94,Internal,1,9.3,Default Credentials Risk,0,Critical
+51645,UDP,Custom-Service,Closed,0.64,Internal,0,0.6,Default Credentials Risk,1,Safe
+25,TCP,SMTP,Open,0.84,External,0,5.1,None,1,Medium
+8181,TCP,Web-Hook,Open,0.23,External,0,0.8,None,0,Medium
+3389,TCP,RDP,Open,0.81,External,1,7.1,None,0,Critical
+21,TCP,FTP,Closed,0.09,External,1,6.1,Cleartext Auth,0,Safe
+27017,TCP,MongoDB,Open,0.8,External,1,8.9,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.26,External,1,7.5,Default Credentials Risk,0,Critical
+2375,TCP,Docker-Daemon,Open,0.14,DMZ,1,10.0,Cleartext Auth,0,Critical
+9200,TCP,Elasticsearch,Open,0.26,External,0,8.8,Default Credentials Risk,1,High
+27017,TCP,MongoDB,Open,0.89,External,0,7.5,Default Credentials Risk,0,Critical
+52841,UDP,RPC-Node,Open,0.92,DMZ,1,7.3,Cleartext Auth,1,High
+465,TCP,SMTPS,Open,0.59,External,0,1.9,None,1,Medium
+445,TCP,SMB,Open,0.97,External,1,8.5,Default Credentials Risk,0,Critical
+587,TCP,SMTP-Submission,Open,0.82,Internal,0,3.1,None,1,Low
+47206,TCP,RPC-Node,Open,0.96,External,0,5.9,Default Credentials Risk,1,High
+139,TCP,NetBIOS,Open,0.77,Internal,0,9.1,Cleartext Auth,0,High
+587,TCP,SMTP-Submission,Filtered,0.1,External,0,0.9,None,1,Safe
+80,TCP,HTTP,Open,0.69,External,0,6.6,Obsolete Cipher,0,High
+3389,TCP,RDP,Open,0.62,DMZ,1,7.6,None,1,High
+465,TCP,SMTPS,Filtered,0.67,Internal,0,2.9,None,1,Safe
+636,TCP,LDAPS,Closed,0.01,Internal,0,2.2,None,1,Safe
+50801,TCP,Custom-Service,Closed,0.35,Internal,0,3.2,Cleartext Auth,1,Safe
+445,TCP,SMB,Open,0.04,External,1,8.5,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Open,0.93,External,1,7.5,Obsolete Cipher,1,High
+1433,TCP,MSSQL,Filtered,0.05,External,1,7.8,Default Credentials Risk,0,High
+161,UDP,SNMP,Open,0.28,Internal,0,8.6,Anonymized,0,High
+161,UDP,SNMP,Filtered,0.06,Internal,1,7.5,Default Credentials Risk,0,Medium
+80,TCP,HTTP,Open,0.89,External,1,8.4,Obsolete Cipher,0,Critical
+443,TCP,HTTPS,Open,0.39,External,0,1.7,None,1,Low
+2375,TCP,Docker-Daemon,Open,0.4,External,1,9.1,Cleartext Auth,0,Critical
+55041,TCP,Custom-Service,Open,0.7,DMZ,0,4.2,Default Credentials Risk,1,Medium
+5900,TCP,VNC,Open,0.57,External,0,7.0,Cleartext Auth,0,Critical
+1433,TCP,MSSQL,Open,0.85,External,0,6.8,Default Credentials Risk,0,Critical
+161,UDP,SNMP,Open,0.38,Internal,0,5.9,Obsolete Cipher,0,Medium
+2049,TCP,NFS,Open,0.63,DMZ,1,7.3,None,0,Critical
+123,UDP,NTP,Open,0.74,External,0,3.0,None,0,High
+23,TCP,Telnet,Open,0.24,External,1,7.2,Cleartext Auth,0,Critical
+37447,UDP,Peer2Peer,Open,0.39,Internal,0,0.1,None,1,Safe
+110,TCP,POP3,Closed,0.91,DMZ,1,7.9,Cleartext Auth,0,Safe
+37892,UDP,Web-Hook,Filtered,0.31,Internal,0,1.6,Anonymized,0,Low
+389,TCP,LDAP,Open,0.01,DMZ,0,5.7,Cleartext Auth,0,Medium
+5432,TCP,PostgreSQL,Closed,0.89,External,1,8.3,Obsolete Cipher,0,Safe
+3389,TCP,RDP,Open,0.75,External,0,9.4,Obsolete Cipher,1,High
+135,TCP,MSRPC,Open,0.35,Internal,1,8.1,Default Credentials Risk,1,Medium
+8443,TCP,HTTPS-Alt,Open,0.43,External,0,2.2,Default Credentials Risk,1,Medium
+8080,TCP,HTTP-Proxy,Open,0.73,External,0,5.9,Obsolete Cipher,0,High
+38312,UDP,Microservice,Open,0.52,Internal,1,6.7,None,1,Medium
+993,TCP,IMAPS,Open,0.86,External,0,0.0,None,1,Low
+1521,TCP,Oracle-DB,Open,0.51,DMZ,1,7.7,Default Credentials Risk,0,Critical
+57793,TCP,Microservice,Open,0.05,DMZ,0,1.3,Obsolete Cipher,0,Low
+502,TCP,Modbus,Open,0.66,External,0,8.8,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.92,External,0,1.2,None,1,Medium
+50030,TCP,Custom-Service,Open,0.67,External,0,5.5,Cleartext Auth,1,Medium
+21,TCP,FTP,Open,0.71,External,0,7.4,Cleartext Auth,0,Critical
+9581,UDP,RPC-Node,Open,0.72,Internal,0,6.6,None,1,Medium
+110,TCP,POP3,Open,0.4,External,0,7.1,Cleartext Auth,0,High
+4788,UDP,Microservice,Open,0.58,External,0,4.3,Default Credentials Risk,0,High
+389,TCP,LDAP,Closed,0.09,Internal,0,6.0,Cleartext Auth,0,Safe
+53,UDP,DNS,Filtered,0.16,Internal,0,2.8,None,0,Low
+8443,TCP,HTTPS-Alt,Filtered,0.74,External,0,2.7,Cleartext Auth,1,Low
+53,UDP,DNS,Filtered,0.2,Internal,0,3.9,None,0,Low
+6379,TCP,Redis,Open,0.84,External,1,8.1,Default Credentials Risk,1,Critical
+31203,TCP,RPC-Node,Open,0.51,DMZ,0,3.7,Cleartext Auth,0,Medium
+1433,TCP,MSSQL,Filtered,0.3,External,0,10.0,Default Credentials Risk,1,Medium
+26682,TCP,Microservice,Open,0.34,DMZ,1,7.3,Cleartext Auth,1,High
+135,TCP,MSRPC,Open,0.83,Internal,0,7.1,Default Credentials Risk,0,High
+17783,TCP,RPC-Node,Open,0.27,DMZ,0,3.3,Anonymized,0,Medium
+8080,TCP,HTTP-Proxy,Open,0.49,External,1,6.8,Obsolete Cipher,0,Critical
+41505,TCP,Microservice,Closed,0.71,Internal,1,6.1,Default Credentials Risk,1,Safe
+1521,TCP,Oracle-DB,Filtered,0.72,External,1,9.1,Default Credentials Risk,0,High
+5432,TCP,PostgreSQL,Open,0.24,External,0,8.4,Default Credentials Risk,0,High
+63241,TCP,Microservice,Filtered,0.53,Internal,0,0.7,Default Credentials Risk,0,Low
+1433,TCP,MSSQL,Filtered,0.39,External,1,9.6,Default Credentials Risk,0,High
+6379,TCP,Redis,Filtered,0.8,External,0,9.5,Default Credentials Risk,0,High
+993,TCP,IMAPS,Open,0.47,External,0,1.3,None,1,Low
+26781,UDP,Microservice,Open,0.18,Internal,0,4.1,Default Credentials Risk,1,Low
+22,TCP,SSH,Closed,0.94,External,0,3.4,None,1,Safe
+21100,TCP,Web-Hook,Filtered,0.37,External,0,5.7,Default Credentials Risk,0,Medium
+587,TCP,SMTP-Submission,Open,0.37,Internal,0,1.7,Default Credentials Risk,1,Safe
+88,TCP,Kerberos,Open,1.0,Internal,0,3.1,None,1,Low
+43665,TCP,Unknown-App,Filtered,0.89,External,0,7.8,Default Credentials Risk,0,Medium
+3389,TCP,RDP,Closed,0.68,External,0,7.8,Obsolete Cipher,1,Safe
+88,TCP,Kerberos,Open,0.93,Internal,0,2.8,None,1,Low
+27017,TCP,MongoDB,Open,0.21,External,1,8.9,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.84,Internal,0,5.9,Cleartext Auth,0,High
+6379,TCP,Redis,Open,0.65,External,1,8.7,Default Credentials Risk,1,Critical
+8443,TCP,HTTPS-Alt,Open,0.9,External,0,2.6,None,1,Medium
+110,TCP,POP3,Open,0.47,External,0,7.2,Cleartext Auth,0,High
+43340,TCP,Microservice,Open,0.93,Internal,1,7.7,Anonymized,1,High
+23,TCP,Telnet,Open,0.73,External,0,7.8,Cleartext Auth,1,High
+5432,TCP,PostgreSQL,Open,0.23,External,1,9.5,None,0,Critical
+161,UDP,SNMP,Open,0.99,Internal,1,6.6,Default Credentials Risk,0,High
+143,TCP,IMAP,Open,0.39,External,1,7.0,Cleartext Auth,0,Critical
+139,TCP,NetBIOS,Open,0.13,Internal,1,8.2,Cleartext Auth,0,High
+161,UDP,SNMP,Filtered,0.44,Internal,1,6.9,Default Credentials Risk,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.69,External,0,4.3,None,1,Medium
+55523,TCP,Web-Hook,Open,0.35,Internal,0,2.2,Obsolete Cipher,0,Low
+2049,TCP,NFS,Open,0.5,External,0,5.8,Cleartext Auth,1,Medium
+51125,TCP,Unknown-App,Open,0.4,Internal,0,0.9,Obsolete Cipher,1,Safe
+27017,TCP,MongoDB,Open,0.18,External,0,9.9,Default Credentials Risk,0,Critical
+44685,UDP,Microservice,Open,0.32,DMZ,1,8.2,Obsolete Cipher,1,High
+161,UDP,SNMP,Closed,0.14,Internal,0,8.5,Default Credentials Risk,0,Safe
+22,TCP,SSH,Closed,0.35,External,0,2.3,None,1,Safe
+57258,TCP,Microservice,Open,0.38,Internal,1,7.0,Default Credentials Risk,0,High
+993,TCP,IMAPS,Open,0.9,External,0,3.3,None,1,Medium
+5900,TCP,VNC,Open,0.68,DMZ,1,8.2,None,0,Critical
+443,TCP,HTTPS,Open,0.3,External,0,2.1,None,0,Medium
+27017,TCP,MongoDB,Open,0.66,DMZ,1,9.3,Obsolete Cipher,0,Critical
+2049,TCP,NFS,Open,0.06,Internal,1,6.9,None,0,High
+23,TCP,Telnet,Closed,0.66,External,1,9.6,Cleartext Auth,0,Safe
+465,TCP,SMTPS,Open,0.43,External,0,3.0,None,0,Medium
+69,UDP,TFTP,Open,0.45,Internal,0,5.1,Cleartext Auth,0,Medium
+139,TCP,NetBIOS,Open,0.17,Internal,1,9.1,Cleartext Auth,1,Medium
+53,UDP,DNS,Open,0.07,Internal,0,1.8,None,0,Low
+443,TCP,HTTPS,Open,0.53,External,0,2.8,None,1,Medium
+2049,TCP,NFS,Open,0.43,Internal,1,8.1,None,1,Medium
+139,TCP,NetBIOS,Open,0.96,Internal,1,6.7,Cleartext Auth,0,High
+36070,UDP,Microservice,Closed,0.68,External,0,2.3,Cleartext Auth,1,Safe
+46786,UDP,Unknown-App,Open,0.19,DMZ,0,0.9,Obsolete Cipher,0,Low
+45071,UDP,Unknown-App,Open,0.07,Internal,0,1.4,Cleartext Auth,0,Low
+995,TCP,POP3S,Open,0.46,External,0,1.5,None,1,Low
+32477,TCP,Microservice,Open,0.31,Internal,0,1.3,Anonymized,0,Low
+3306,TCP,MySQL,Open,0.31,External,1,7.8,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Open,0.86,External,0,5.8,Cleartext Auth,0,High
+2375,TCP,Docker-Daemon,Open,0.59,External,1,9.5,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.63,External,1,9.7,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Open,0.01,DMZ,1,9.7,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.99,External,0,3.9,None,1,Medium
+41268,UDP,Peer2Peer,Open,0.43,DMZ,0,3.7,Default Credentials Risk,1,Low
+993,TCP,IMAPS,Open,0.22,External,0,1.3,None,1,Low
+53,UDP,DNS,Closed,0.59,Internal,0,3.3,Anonymized,0,Safe
+443,TCP,HTTPS,Open,0.29,External,0,0.1,None,1,Low
+465,TCP,SMTPS,Open,0.66,External,0,1.4,None,1,Medium
+123,UDP,NTP,Open,0.72,Internal,0,3.5,None,0,Medium
+161,UDP,SNMP,Filtered,0.52,Internal,1,9.1,Default Credentials Risk,0,Medium
+443,TCP,HTTPS,Filtered,0.45,External,0,0.6,None,1,Low
+139,TCP,NetBIOS,Open,0.85,Internal,1,7.2,Default Credentials Risk,0,High
+2375,TCP,Docker-Daemon,Filtered,0.13,External,0,9.8,Cleartext Auth,0,High
+465,TCP,SMTPS,Open,0.72,External,0,2.5,None,1,Medium
+25,TCP,SMTP,Open,0.78,DMZ,0,4.7,None,0,High
+5432,TCP,PostgreSQL,Open,0.39,External,1,8.6,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Filtered,0.92,External,1,8.0,Cleartext Auth,0,High
+18134,UDP,Peer2Peer,Open,0.22,Internal,0,2.5,Default Credentials Risk,1,Low
+9200,TCP,Elasticsearch,Open,0.83,Internal,0,8.7,Default Credentials Risk,0,High
+110,TCP,POP3,Open,0.41,External,1,7.5,Cleartext Auth,1,High
+389,TCP,LDAP,Open,0.67,Internal,1,6.2,Cleartext Auth,0,High
+9200,TCP,Elasticsearch,Open,0.14,DMZ,1,8.3,Default Credentials Risk,0,High
+25,TCP,SMTP,Open,0.29,External,0,5.4,Obsolete Cipher,0,High
+143,TCP,IMAP,Open,0.23,External,0,5.9,Cleartext Auth,0,High
+1433,TCP,MSSQL,Open,0.39,DMZ,0,8.2,Default Credentials Risk,0,High
+135,TCP,MSRPC,Open,0.14,Internal,0,6.9,Default Credentials Risk,0,Medium
+80,TCP,HTTP,Open,0.25,External,1,8.1,Obsolete Cipher,0,Critical
+88,TCP,Kerberos,Closed,0.01,Internal,0,3.6,None,1,Safe
+10329,UDP,Peer2Peer,Open,0.64,External,0,2.4,None,1,Medium
+69,UDP,TFTP,Open,0.26,Internal,1,6.5,Cleartext Auth,0,High
+161,UDP,SNMP,Open,0.54,Internal,1,8.2,Default Credentials Risk,0,High
+53423,TCP,Custom-Service,Open,0.13,DMZ,0,1.5,Cleartext Auth,1,Low
+1433,TCP,MSSQL,Closed,0.26,External,1,8.3,Default Credentials Risk,1,Safe
+80,TCP,HTTP,Open,0.82,External,1,7.7,Obsolete Cipher,0,Critical
+139,TCP,NetBIOS,Open,0.87,External,1,8.2,Cleartext Auth,0,Critical
+5900,TCP,VNC,Open,0.16,External,1,8.4,Cleartext Auth,0,Critical
+993,TCP,IMAPS,Open,0.51,External,0,2.3,None,1,Medium
+443,TCP,HTTPS,Filtered,0.08,External,0,0.2,None,1,Safe
+110,TCP,POP3,Closed,0.04,External,0,5.9,Obsolete Cipher,1,Safe
+27017,TCP,MongoDB,Open,0.89,External,1,7.8,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Filtered,0.93,External,0,5.6,None,0,Medium
+995,TCP,POP3S,Open,0.18,External,0,3.6,None,1,Medium
+88,TCP,Kerberos,Closed,0.75,Internal,0,5.2,None,1,Safe
+27017,TCP,MongoDB,Open,0.11,External,0,9.6,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.2,External,1,9.8,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Filtered,0.83,External,0,4.2,Cleartext Auth,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.46,External,0,2.0,None,1,Low
+21,TCP,FTP,Open,0.35,External,1,6.7,Cleartext Auth,0,Critical
+13440,UDP,RPC-Node,Open,0.63,DMZ,0,6.7,Cleartext Auth,1,Medium
+40197,UDP,RPC-Node,Open,0.79,External,0,1.8,Obsolete Cipher,0,Medium
+995,TCP,POP3S,Open,0.08,Internal,0,1.3,None,1,Safe
+110,TCP,POP3,Open,0.59,External,0,6.8,Cleartext Auth,1,High
+2375,TCP,Docker-Daemon,Open,0.58,External,0,9.3,Cleartext Auth,0,Critical
+123,UDP,NTP,Open,0.95,DMZ,0,0.5,None,0,Medium
+1521,TCP,Oracle-DB,Open,0.67,External,1,9.1,Default Credentials Risk,1,Critical
+80,TCP,HTTP,Open,0.57,External,0,5.4,Obsolete Cipher,0,High
+15733,TCP,Custom-Service,Closed,0.17,Internal,0,8.1,None,0,Safe
+8080,TCP,HTTP-Proxy,Open,0.87,External,1,7.0,Obsolete Cipher,0,Critical
+2049,TCP,NFS,Open,0.54,DMZ,1,9.1,Default Credentials Risk,0,Critical
+50181,TCP,Microservice,Open,0.5,Internal,1,7.5,Cleartext Auth,0,High
+8443,TCP,HTTPS-Alt,Filtered,0.96,External,0,1.6,None,1,Low
+502,TCP,Modbus,Open,0.6,External,1,6.5,Cleartext Auth,0,Critical
+139,TCP,NetBIOS,Open,0.19,External,0,7.5,Cleartext Auth,0,High
+23,TCP,Telnet,Filtered,0.11,External,1,9.9,Cleartext Auth,0,High
+61122,TCP,Custom-Service,Open,0.59,DMZ,0,4.2,Obsolete Cipher,1,Medium
+8443,TCP,HTTPS-Alt,Open,0.22,DMZ,0,4.5,Anonymized,0,Medium
+2375,TCP,Docker-Daemon,Open,0.35,External,0,8.6,None,1,High
+993,TCP,IMAPS,Open,0.63,External,0,2.4,None,1,Medium
+139,TCP,NetBIOS,Open,0.0,Internal,1,7.3,Cleartext Auth,0,High
+2375,TCP,Docker-Daemon,Open,0.61,External,0,9.7,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.23,External,1,10.0,Default Credentials Risk,0,Critical
+14577,UDP,Microservice,Closed,0.08,Internal,1,7.7,Obsolete Cipher,0,Safe
+9200,TCP,Elasticsearch,Open,0.45,External,0,7.2,Default Credentials Risk,0,High
+80,TCP,HTTP,Filtered,0.2,Internal,0,6.8,Obsolete Cipher,1,Low
+80,TCP,HTTP,Open,0.9,External,1,7.0,Obsolete Cipher,0,Critical
+53,UDP,DNS,Open,0.7,Internal,0,4.6,None,0,Medium
+5900,TCP,VNC,Open,0.37,Internal,1,8.6,Cleartext Auth,0,High
+9200,TCP,Elasticsearch,Open,0.08,External,0,9.0,Default Credentials Risk,0,High
+2375,TCP,Docker-Daemon,Open,0.59,External,1,9.4,Cleartext Auth,0,Critical
+443,TCP,HTTPS,Open,0.68,External,0,2.1,None,1,Medium
+54888,TCP,Microservice,Open,0.76,External,0,3.5,Obsolete Cipher,1,Medium
+995,TCP,POP3S,Open,0.51,External,0,1.6,None,1,Low
+135,TCP,MSRPC,Open,0.01,External,1,7.8,Default Credentials Risk,0,Critical
+110,TCP,POP3,Open,0.14,External,1,6.6,Cleartext Auth,0,High
+587,TCP,SMTP-Submission,Open,0.56,External,0,3.2,None,0,High
+5432,TCP,PostgreSQL,Open,0.62,External,1,8.2,Default Credentials Risk,0,Critical
+53,UDP,DNS,Filtered,0.11,DMZ,0,4.6,None,0,Low
+502,TCP,Modbus,Open,0.73,External,1,8.9,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.79,External,0,6.6,Default Credentials Risk,0,High
+2049,TCP,NFS,Open,0.14,Internal,1,8.3,None,0,High
+502,TCP,Modbus,Open,0.53,External,0,8.1,Anonymized,0,Critical
+389,TCP,LDAP,Open,0.67,Internal,0,5.5,Cleartext Auth,1,Medium
+5900,TCP,VNC,Open,0.74,External,0,7.9,Cleartext Auth,0,Critical
+7969,UDP,RPC-Node,Filtered,0.92,Internal,0,1.4,Obsolete Cipher,0,Low
+161,UDP,SNMP,Open,0.1,Internal,1,8.9,Default Credentials Risk,1,Medium
+995,TCP,POP3S,Open,0.26,External,0,0.0,None,1,Low
+3389,TCP,RDP,Open,0.45,External,0,10.0,Obsolete Cipher,1,High
+22,TCP,SSH,Open,0.63,External,0,4.1,None,1,Medium
+1433,TCP,MSSQL,Open,0.95,Internal,0,8.8,Default Credentials Risk,0,High
+23,TCP,Telnet,Open,0.9,External,1,8.7,Cleartext Auth,0,Critical
+11826,UDP,Custom-Service,Open,0.91,Internal,1,7.5,Cleartext Auth,1,High
+5900,TCP,VNC,Open,0.86,External,0,8.8,Cleartext Auth,0,Critical
+443,TCP,HTTPS,Open,0.03,External,0,2.3,None,1,Low
+5900,TCP,VNC,Filtered,0.37,External,0,9.1,Cleartext Auth,0,High
+135,TCP,MSRPC,Open,0.01,Internal,1,7.8,Default Credentials Risk,1,Medium
+19863,UDP,Microservice,Open,0.74,Internal,0,1.0,Anonymized,1,Low
+139,TCP,NetBIOS,Open,0.78,Internal,0,7.9,Obsolete Cipher,0,High
+33441,TCP,RPC-Node,Open,0.56,DMZ,1,6.1,Cleartext Auth,1,Medium
+636,TCP,LDAPS,Open,0.35,Internal,0,1.8,None,1,Safe
+636,TCP,LDAPS,Open,0.08,DMZ,0,1.8,None,1,Low
+993,TCP,IMAPS,Open,0.6,External,0,1.7,None,1,Medium
+5432,TCP,PostgreSQL,Open,0.36,External,0,9.3,Default Credentials Risk,0,Critical
+8443,TCP,HTTPS-Alt,Filtered,0.84,External,0,3.1,None,1,Low
+587,TCP,SMTP-Submission,Open,0.85,External,0,0.0,None,1,Low
+23,TCP,Telnet,Open,0.12,External,0,9.5,Cleartext Auth,0,Critical
+53,UDP,DNS,Open,0.18,DMZ,0,3.7,None,0,Medium
+34642,UDP,Peer2Peer,Open,0.48,DMZ,0,0.6,Cleartext Auth,0,Medium
+27017,TCP,MongoDB,Open,0.69,External,1,9.0,Cleartext Auth,0,Critical
+161,UDP,SNMP,Filtered,0.51,Internal,0,7.1,Default Credentials Risk,0,Medium
+80,TCP,HTTP,Filtered,0.5,External,1,7.6,Default Credentials Risk,0,Medium
+1521,TCP,Oracle-DB,Closed,0.99,External,0,9.3,Default Credentials Risk,0,Safe
+110,TCP,POP3,Open,0.43,External,1,6.2,Cleartext Auth,0,Critical
+22,TCP,SSH,Open,0.23,DMZ,0,3.4,None,1,Low
+389,TCP,LDAP,Open,0.08,Internal,0,5.2,Cleartext Auth,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.74,External,0,1.1,None,1,Medium
+8443,TCP,HTTPS-Alt,Open,0.72,External,0,1.9,None,1,Medium
+3389,TCP,RDP,Filtered,0.49,External,1,8.7,Obsolete Cipher,1,Medium
+8443,TCP,HTTPS-Alt,Open,0.14,External,0,3.5,Anonymized,1,Medium
+5432,TCP,PostgreSQL,Filtered,0.84,External,1,8.7,Default Credentials Risk,0,High
+9200,TCP,Elasticsearch,Filtered,0.46,External,1,9.4,Default Credentials Risk,0,High
+8443,TCP,HTTPS-Alt,Filtered,0.79,External,0,3.0,None,1,Low
+161,UDP,SNMP,Closed,0.1,Internal,0,6.9,Obsolete Cipher,0,Safe
+22,TCP,SSH,Filtered,0.11,External,0,3.4,None,1,Low
+443,TCP,HTTPS,Open,0.95,External,0,2.6,None,1,Medium
+21,TCP,FTP,Filtered,0.84,DMZ,1,8.3,Cleartext Auth,0,Medium
+80,TCP,HTTP,Open,0.86,External,1,7.7,Obsolete Cipher,0,Critical
+389,TCP,LDAP,Open,0.74,Internal,1,6.9,Cleartext Auth,0,High
+5432,TCP,PostgreSQL,Open,0.39,DMZ,1,8.6,Default Credentials Risk,0,Critical
+443,TCP,HTTPS,Open,0.85,Internal,0,2.9,None,1,Low
+21168,TCP,Microservice,Open,0.06,External,0,1.2,Obsolete Cipher,1,Low
+9200,TCP,Elasticsearch,Open,0.33,External,1,8.7,Default Credentials Risk,0,Critical
+5432,TCP,PostgreSQL,Filtered,0.53,External,0,7.3,Default Credentials Risk,0,Medium
+110,TCP,POP3,Open,0.4,DMZ,0,6.8,Cleartext Auth,0,High
+25,TCP,SMTP,Closed,0.98,External,0,4.8,None,0,Safe
+3306,TCP,MySQL,Open,0.09,External,1,8.2,Default Credentials Risk,1,High
+1521,TCP,Oracle-DB,Filtered,0.12,External,1,8.3,Default Credentials Risk,0,Medium
+23,TCP,Telnet,Open,0.18,External,0,8.0,Cleartext Auth,0,Critical
+2375,TCP,Docker-Daemon,Open,0.25,External,0,9.5,Cleartext Auth,0,Critical
+445,TCP,SMB,Open,0.89,External,1,7.4,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.3,DMZ,0,2.2,None,1,Low
+23,TCP,Telnet,Open,0.14,External,1,8.8,Anonymized,0,Critical
+123,UDP,NTP,Open,0.1,Internal,0,1.7,None,0,Low
+465,TCP,SMTPS,Open,0.79,External,0,2.9,None,1,Medium
+38729,UDP,Peer2Peer,Open,0.86,External,0,4.7,Default Credentials Risk,0,High
+21,TCP,FTP,Open,0.61,DMZ,1,8.4,Cleartext Auth,0,Critical
+636,TCP,LDAPS,Open,0.83,Internal,0,0.4,None,1,Low
+5432,TCP,PostgreSQL,Filtered,0.02,External,1,7.4,Default Credentials Risk,0,Medium
+27017,TCP,MongoDB,Filtered,0.82,External,1,8.2,Default Credentials Risk,0,High
+23,TCP,Telnet,Filtered,0.9,External,1,7.9,Cleartext Auth,0,High
+5900,TCP,VNC,Open,0.23,External,1,9.3,Cleartext Auth,0,Critical
+3389,TCP,RDP,Open,0.01,External,1,7.6,Obsolete Cipher,0,Critical
+23903,TCP,Peer2Peer,Open,0.35,Internal,0,1.8,Cleartext Auth,1,Safe
+23,TCP,Telnet,Open,0.08,Internal,0,8.5,Cleartext Auth,0,High
+3389,TCP,RDP,Open,0.49,External,0,5.8,None,1,Medium
+465,TCP,SMTPS,Filtered,0.84,External,0,2.8,None,0,Medium
+25,TCP,SMTP,Closed,0.92,External,0,4.3,None,0,Safe
+465,TCP,SMTPS,Open,0.47,External,0,2.3,None,1,Medium
+445,TCP,SMB,Open,0.08,External,1,9.6,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.42,DMZ,0,3.9,None,0,Medium
+25,TCP,SMTP,Open,0.38,External,0,4.2,None,1,Medium
+21,TCP,FTP,Open,0.93,External,0,4.5,Cleartext Auth,0,Critical
+23,TCP,Telnet,Open,0.8,External,1,9.0,Cleartext Auth,1,Critical
+1433,TCP,MSSQL,Open,0.46,External,1,10.0,Default Credentials Risk,0,Critical
+80,TCP,HTTP,Open,0.46,DMZ,1,7.7,Obsolete Cipher,0,High
+23,TCP,Telnet,Filtered,0.57,Internal,1,9.0,Anonymized,0,Medium
+53,UDP,DNS,Filtered,0.25,Internal,0,3.0,None,0,Low
+47550,UDP,Microservice,Open,0.55,Internal,1,9.5,None,1,High
+21,TCP,FTP,Closed,0.14,External,0,8.3,Cleartext Auth,0,Safe
+110,TCP,POP3,Open,0.18,DMZ,1,6.0,Cleartext Auth,0,High
+69,UDP,TFTP,Open,0.58,Internal,1,7.3,Cleartext Auth,0,High
+5900,TCP,VNC,Open,0.63,External,1,9.0,Cleartext Auth,0,Critical
+110,TCP,POP3,Open,0.56,External,1,8.1,Cleartext Auth,0,Critical
+465,TCP,SMTPS,Open,0.11,External,0,5.0,None,1,Medium
+80,TCP,HTTP,Closed,0.58,External,1,6.9,Obsolete Cipher,0,Safe
+3306,TCP,MySQL,Open,0.61,External,1,8.4,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Open,0.42,External,0,8.5,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.02,External,0,3.7,None,0,Medium
+3389,TCP,RDP,Open,0.03,External,0,7.1,Anonymized,1,Medium
+110,TCP,POP3,Open,0.76,External,1,6.6,Anonymized,1,High
+143,TCP,IMAP,Filtered,0.79,External,0,5.5,Cleartext Auth,0,Medium
+19282,UDP,Peer2Peer,Open,0.12,External,0,4.3,None,1,Medium
+8443,TCP,HTTPS-Alt,Open,1.0,External,0,2.7,None,1,Medium
+6379,TCP,Redis,Open,0.33,External,1,8.4,Default Credentials Risk,0,Critical
+21,TCP,FTP,Filtered,0.74,DMZ,1,8.6,Cleartext Auth,1,Medium
+88,TCP,Kerberos,Filtered,1.0,DMZ,0,3.0,None,1,Low
+88,TCP,Kerberos,Filtered,0.38,DMZ,0,3.0,None,1,Low
+123,UDP,NTP,Open,0.83,External,0,2.2,None,0,High
+5432,TCP,PostgreSQL,Open,0.73,External,1,8.4,Default Credentials Risk,0,Critical
+63345,TCP,Peer2Peer,Open,0.05,External,1,9.5,Obsolete Cipher,1,High
+8080,TCP,HTTP-Proxy,Open,0.24,External,1,7.6,None,0,Critical
+35324,TCP,Web-Hook,Open,0.33,DMZ,0,5.7,Default Credentials Risk,0,Medium
+587,TCP,SMTP-Submission,Filtered,0.01,DMZ,0,1.9,None,1,Safe
+636,TCP,LDAPS,Open,0.38,Internal,0,1.3,None,1,Safe
+445,TCP,SMB,Open,0.44,External,1,9.0,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Filtered,0.71,External,1,7.7,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Open,0.77,Internal,0,6.0,Obsolete Cipher,0,High
+10807,UDP,Unknown-App,Open,0.69,DMZ,0,3.3,None,0,Medium
+31666,TCP,Web-Hook,Open,0.45,External,0,3.0,Cleartext Auth,0,Medium
+69,UDP,TFTP,Open,0.33,DMZ,1,6.3,Cleartext Auth,0,High
+53,UDP,DNS,Open,0.02,Internal,0,4.4,None,0,Medium
+2049,TCP,NFS,Open,0.26,External,1,7.3,None,0,Critical
+110,TCP,POP3,Open,0.72,External,1,7.2,Cleartext Auth,0,Critical
+110,TCP,POP3,Open,0.09,External,0,7.9,Cleartext Auth,0,High
+63054,UDP,Custom-Service,Open,0.81,DMZ,0,4.1,Default Credentials Risk,1,Medium
+60887,UDP,Web-Hook,Open,0.89,DMZ,0,0.4,Default Credentials Risk,1,Low
+28481,TCP,Microservice,Open,0.09,External,0,7.8,None,1,Medium
+161,UDP,SNMP,Open,0.35,Internal,1,7.4,Default Credentials Risk,0,High
+2375,TCP,Docker-Daemon,Open,0.13,External,1,10.0,Cleartext Auth,0,Critical
+26860,UDP,Custom-Service,Closed,0.93,External,1,6.7,Obsolete Cipher,1,Safe
+57117,TCP,Web-Hook,Filtered,0.44,DMZ,1,8.4,Obsolete Cipher,0,Medium
+502,TCP,Modbus,Open,0.64,External,1,8.9,Cleartext Auth,0,Critical
+80,TCP,HTTP,Closed,0.97,External,0,6.8,Obsolete Cipher,0,Safe
+465,TCP,SMTPS,Open,0.74,External,0,1.6,None,1,Medium
+123,UDP,NTP,Open,0.25,External,0,0.1,None,0,Medium
+995,TCP,POP3S,Open,0.4,External,0,1.8,None,1,Low
+502,TCP,Modbus,Open,0.2,Internal,1,10.0,Anonymized,0,High
+5432,TCP,PostgreSQL,Open,0.34,External,1,9.1,Default Credentials Risk,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.8,External,1,7.8,Obsolete Cipher,0,Critical
+27576,UDP,Custom-Service,Open,0.16,Internal,1,7.8,None,1,Medium
+465,TCP,SMTPS,Open,0.71,External,0,3.4,None,0,High
+8443,TCP,HTTPS-Alt,Open,0.71,External,0,2.6,None,1,Medium
+8080,TCP,HTTP-Proxy,Open,0.7,External,0,7.0,Obsolete Cipher,0,High
+25,TCP,SMTP,Open,0.92,External,0,4.9,None,1,Medium
+88,TCP,Kerberos,Open,0.82,Internal,0,2.7,None,1,Low
+27017,TCP,MongoDB,Filtered,0.16,External,1,9.6,Obsolete Cipher,0,High
+25,TCP,SMTP,Open,0.98,External,1,6.7,None,0,Critical
+1433,TCP,MSSQL,Open,0.34,External,0,8.5,Obsolete Cipher,0,Critical
+5900,TCP,VNC,Filtered,0.52,External,0,8.0,Cleartext Auth,0,High
+5432,TCP,PostgreSQL,Closed,0.11,Internal,0,8.2,Default Credentials Risk,0,Safe
+88,TCP,Kerberos,Open,0.2,Internal,0,3.6,None,1,Low
+1521,TCP,Oracle-DB,Open,0.84,External,0,7.0,Cleartext Auth,0,Critical
+37701,TCP,Custom-Service,Open,0.35,External,0,5.2,Anonymized,0,High
+33824,TCP,Custom-Service,Open,0.77,DMZ,0,2.4,Default Credentials Risk,0,Medium
+2049,TCP,NFS,Open,0.99,Internal,0,4.7,None,0,Medium
+1521,TCP,Oracle-DB,Open,0.02,External,1,7.8,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Filtered,0.91,External,0,0.7,Anonymized,0,Low
+123,UDP,NTP,Filtered,0.82,Internal,0,2.0,None,1,Safe
+21,TCP,FTP,Closed,0.95,Internal,1,7.4,Cleartext Auth,0,Safe
+135,TCP,MSRPC,Open,0.87,DMZ,1,6.7,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Open,0.43,Internal,1,10.0,Cleartext Auth,0,Critical
+21,TCP,FTP,Open,0.72,Internal,1,7.8,None,0,High
+1521,TCP,Oracle-DB,Open,0.87,External,1,8.7,Default Credentials Risk,0,Critical
+587,TCP,SMTP-Submission,Filtered,0.28,External,0,3.4,None,1,Low
+445,TCP,SMB,Open,0.42,DMZ,1,8.2,Default Credentials Risk,0,Critical
+443,TCP,HTTPS,Filtered,0.14,External,0,2.8,None,1,Low
+3389,TCP,RDP,Open,0.77,External,1,7.7,Cleartext Auth,1,High
+1433,TCP,MSSQL,Open,0.67,External,1,9.3,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Filtered,0.84,External,1,7.3,Default Credentials Risk,1,Medium
+5432,TCP,PostgreSQL,Open,0.2,Internal,1,6.6,Default Credentials Risk,0,High
+1433,TCP,MSSQL,Open,0.64,External,0,9.4,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Open,0.02,External,0,5.9,None,0,High
+3389,TCP,RDP,Open,0.46,External,0,6.9,Obsolete Cipher,1,Medium
+139,TCP,NetBIOS,Open,0.98,Internal,1,6.9,Cleartext Auth,0,High
+8443,TCP,HTTPS-Alt,Open,0.14,External,0,3.6,None,1,Medium
+1521,TCP,Oracle-DB,Open,0.94,Internal,0,7.2,Default Credentials Risk,0,High
+2049,TCP,NFS,Open,0.89,Internal,1,8.6,None,0,Critical
+5900,TCP,VNC,Open,0.26,External,1,7.6,Cleartext Auth,0,Critical
+2049,TCP,NFS,Filtered,0.78,Internal,0,7.6,None,0,Medium
+22,TCP,SSH,Open,0.2,External,0,2.7,None,1,Low
+69,UDP,TFTP,Open,0.26,Internal,0,7.4,Cleartext Auth,0,Medium
+636,TCP,LDAPS,Filtered,0.5,External,0,1.5,None,1,Low
+445,TCP,SMB,Filtered,0.24,External,1,9.1,Default Credentials Risk,0,High
+139,TCP,NetBIOS,Open,0.73,Internal,0,7.8,Cleartext Auth,0,High
+139,TCP,NetBIOS,Filtered,0.83,Internal,1,6.8,None,0,Medium
+88,TCP,Kerberos,Open,0.88,Internal,0,3.7,Default Credentials Risk,1,Low
+502,TCP,Modbus,Open,0.37,External,1,8.5,Cleartext Auth,0,Critical
+21,TCP,FTP,Filtered,0.75,External,1,7.3,None,0,High
+53106,TCP,Custom-Service,Open,0.08,Internal,1,6.4,Default Credentials Risk,1,Medium
+53,UDP,DNS,Closed,0.81,Internal,0,2.5,None,0,Safe
+143,TCP,IMAP,Open,0.94,External,0,3.4,Cleartext Auth,0,High
+143,TCP,IMAP,Open,0.28,External,0,5.8,Cleartext Auth,0,High
+88,TCP,Kerberos,Filtered,0.43,Internal,0,5.4,None,1,Low
+27017,TCP,MongoDB,Filtered,0.33,DMZ,0,9.8,Obsolete Cipher,1,Medium
+41379,UDP,Custom-Service,Open,0.16,DMZ,0,5.7,Cleartext Auth,0,Medium
+139,TCP,NetBIOS,Open,0.65,DMZ,0,7.8,Obsolete Cipher,0,High
+3306,TCP,MySQL,Open,0.65,External,1,8.6,Default Credentials Risk,1,Critical
+135,TCP,MSRPC,Open,0.26,Internal,1,7.2,Default Credentials Risk,0,High
+22,TCP,SSH,Filtered,0.42,DMZ,0,3.5,None,1,Low
+1433,TCP,MSSQL,Open,0.67,External,1,7.4,None,0,Critical
+135,TCP,MSRPC,Filtered,0.94,Internal,1,8.3,Default Credentials Risk,0,Medium
+23,TCP,Telnet,Open,0.17,External,0,9.5,Cleartext Auth,0,Critical
+17228,TCP,Unknown-App,Open,0.81,Internal,0,2.3,None,0,Medium
+53804,UDP,Web-Hook,Closed,0.28,Internal,0,5.9,Cleartext Auth,0,Safe
+23,TCP,Telnet,Open,0.56,External,1,9.5,Cleartext Auth,0,Critical
+143,TCP,IMAP,Open,0.92,Internal,1,6.4,Cleartext Auth,0,High
+9200,TCP,Elasticsearch,Closed,0.23,External,0,8.7,Default Credentials Risk,1,Safe
+18683,UDP,Custom-Service,Filtered,0.39,DMZ,0,0.5,Default Credentials Risk,0,Low
+41114,TCP,Custom-Service,Open,0.08,Internal,0,2.3,Obsolete Cipher,0,Low
+1433,TCP,MSSQL,Open,0.87,Internal,1,9.3,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Open,0.45,External,1,8.4,Cleartext Auth,1,High
+1433,TCP,MSSQL,Filtered,0.27,External,1,8.2,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Filtered,0.14,External,0,6.2,Obsolete Cipher,0,Medium
+88,TCP,Kerberos,Open,0.66,Internal,0,3.1,Anonymized,1,Low
+60162,UDP,Web-Hook,Open,0.06,External,0,0.6,Cleartext Auth,0,Medium
+993,TCP,IMAPS,Open,0.14,External,0,3.4,None,1,Medium
+80,TCP,HTTP,Open,0.59,External,0,5.3,Obsolete Cipher,0,High
+445,TCP,SMB,Open,0.86,External,0,7.8,Default Credentials Risk,0,Critical
+9200,TCP,Elasticsearch,Open,0.7,External,1,8.9,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.49,Internal,1,7.9,Cleartext Auth,0,High
+143,TCP,IMAP,Open,0.99,External,1,6.2,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.43,External,0,5.7,None,0,High
+8443,TCP,HTTPS-Alt,Open,0.53,External,0,2.3,None,1,Medium
+9200,TCP,Elasticsearch,Open,0.48,External,1,10.0,Default Credentials Risk,0,Critical
+8080,TCP,HTTP-Proxy,Filtered,0.36,External,0,5.2,Obsolete Cipher,0,Medium
+57533,UDP,Microservice,Open,0.16,Internal,0,7.5,Obsolete Cipher,1,Medium
+80,TCP,HTTP,Closed,0.41,External,0,5.7,Obsolete Cipher,0,Safe
+587,TCP,SMTP-Submission,Filtered,0.65,External,0,2.7,Default Credentials Risk,1,Low
+135,TCP,MSRPC,Open,0.59,External,0,5.6,Anonymized,0,High
+2375,TCP,Docker-Daemon,Open,0.4,External,0,9.6,Cleartext Auth,0,Critical
+993,TCP,IMAPS,Open,0.07,DMZ,0,3.6,None,1,Low
+23,TCP,Telnet,Open,0.25,Internal,1,8.8,None,1,Medium
+139,TCP,NetBIOS,Open,0.59,Internal,1,8.0,Cleartext Auth,0,High
+23,TCP,Telnet,Open,0.32,DMZ,0,7.5,Obsolete Cipher,0,High
+2375,TCP,Docker-Daemon,Open,0.22,External,1,9.2,Cleartext Auth,0,Critical
+1700,TCP,Peer2Peer,Open,0.09,Internal,0,4.4,Cleartext Auth,1,Low
+123,UDP,NTP,Filtered,0.2,Internal,0,2.1,None,0,Low
+21,TCP,FTP,Open,0.96,External,0,7.2,Cleartext Auth,0,Critical
+47909,TCP,RPC-Node,Open,0.75,External,1,8.5,Default Credentials Risk,1,Critical
+1521,TCP,Oracle-DB,Closed,0.03,External,1,9.7,Default Credentials Risk,0,Safe
+445,TCP,SMB,Filtered,0.81,Internal,1,9.9,Default Credentials Risk,0,Medium
+7583,UDP,Custom-Service,Open,0.3,External,0,5.9,Anonymized,0,High
+135,TCP,MSRPC,Open,0.77,External,0,6.1,Default Credentials Risk,0,High
+3306,TCP,MySQL,Open,0.26,External,1,9.1,Default Credentials Risk,0,Critical
+11870,UDP,Web-Hook,Open,0.57,DMZ,0,2.1,Cleartext Auth,1,Low
+5432,TCP,PostgreSQL,Open,0.65,External,1,8.7,Default Credentials Risk,0,Critical
+993,TCP,IMAPS,Open,0.74,External,0,3.0,None,1,Medium
+69,UDP,TFTP,Open,0.02,Internal,1,8.4,Cleartext Auth,0,High
+389,TCP,LDAP,Open,0.85,DMZ,0,5.2,Cleartext Auth,0,High
+80,TCP,HTTP,Open,0.28,External,0,5.7,Obsolete Cipher,0,High
+2049,TCP,NFS,Closed,0.35,External,0,5.7,None,0,Safe
+2375,TCP,Docker-Daemon,Open,0.92,External,1,9.6,Cleartext Auth,0,Critical
+1433,TCP,MSSQL,Filtered,0.75,External,1,9.1,Default Credentials Risk,0,High
+10798,UDP,RPC-Node,Filtered,0.31,DMZ,0,8.0,None,0,Medium
+27017,TCP,MongoDB,Open,0.88,External,0,10.0,Default Credentials Risk,0,Critical
+15959,TCP,RPC-Node,Open,0.4,External,0,5.6,Cleartext Auth,1,Medium
+161,UDP,SNMP,Filtered,0.12,Internal,1,7.4,Default Credentials Risk,1,Low
+139,TCP,NetBIOS,Open,0.28,Internal,0,7.5,Cleartext Auth,0,Medium
+8080,TCP,HTTP-Proxy,Open,0.76,External,1,7.0,Obsolete Cipher,0,Critical
+23,TCP,Telnet,Open,0.68,External,0,8.0,Cleartext Auth,0,Critical
+8080,TCP,HTTP-Proxy,Filtered,0.64,External,1,8.9,Default Credentials Risk,0,High
+587,TCP,SMTP-Submission,Open,0.65,Internal,0,1.2,None,1,Low
+53,UDP,DNS,Open,0.39,Internal,0,3.7,None,0,Medium
+25,TCP,SMTP,Open,0.94,External,1,7.5,None,0,Critical
+8080,TCP,HTTP-Proxy,Closed,0.49,DMZ,1,6.8,Obsolete Cipher,0,Safe
+636,TCP,LDAPS,Open,0.09,Internal,0,1.8,None,1,Safe
+21,TCP,FTP,Open,0.41,External,0,7.1,Cleartext Auth,0,Critical
+9200,TCP,Elasticsearch,Open,0.77,External,1,8.5,Default Credentials Risk,0,Critical
+22,TCP,SSH,Closed,0.45,External,0,4.4,None,1,Safe
+40267,TCP,Custom-Service,Open,1.0,DMZ,0,4.2,None,1,Medium
+465,TCP,SMTPS,Open,0.79,External,0,0.0,None,1,Low
+123,UDP,NTP,Open,0.72,Internal,0,4.0,None,0,Medium
+5900,TCP,VNC,Open,0.64,External,1,7.1,Cleartext Auth,0,Critical
+993,TCP,IMAPS,Filtered,0.92,External,0,1.6,None,1,Low
+445,TCP,SMB,Open,0.85,External,1,8.9,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Closed,0.98,External,1,6.6,None,0,Safe
+3389,TCP,RDP,Open,0.64,DMZ,1,6.2,Obsolete Cipher,1,High
+30794,TCP,RPC-Node,Open,0.65,DMZ,0,1.6,Obsolete Cipher,0,Medium
+587,TCP,SMTP-Submission,Open,0.02,External,0,3.3,None,1,Low
+8080,TCP,HTTP-Proxy,Open,0.65,External,1,8.8,Obsolete Cipher,0,Critical
+2375,TCP,Docker-Daemon,Open,0.6,External,1,8.4,Cleartext Auth,0,Critical
+12262,UDP,RPC-Node,Open,0.84,Internal,0,0.1,None,1,Low
+88,TCP,Kerberos,Closed,0.42,Internal,0,3.2,None,1,Safe
+445,TCP,SMB,Open,0.64,DMZ,1,8.6,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Open,0.66,Internal,1,9.6,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Closed,0.16,External,0,8.6,Default Credentials Risk,0,Safe
+21,TCP,FTP,Open,0.82,External,1,6.9,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.32,External,1,8.9,Default Credentials Risk,0,Critical
+21231,TCP,Web-Hook,Open,0.75,Internal,1,6.6,Obsolete Cipher,1,Medium
+1433,TCP,MSSQL,Filtered,0.83,External,0,10.0,Cleartext Auth,0,High
+34448,TCP,Custom-Service,Open,0.37,DMZ,0,5.4,Obsolete Cipher,1,Medium
+27242,UDP,Unknown-App,Open,0.81,Internal,0,2.2,None,0,Medium
+8443,TCP,HTTPS-Alt,Open,0.82,External,0,2.3,Anonymized,1,Medium
+57078,TCP,Unknown-App,Open,0.17,External,0,1.8,Anonymized,0,Medium
+110,TCP,POP3,Closed,0.57,External,1,7.7,Obsolete Cipher,1,Safe
+995,TCP,POP3S,Closed,0.66,External,0,0.6,None,1,Safe
+27017,TCP,MongoDB,Open,0.97,External,1,8.0,Default Credentials Risk,0,Critical
+6379,TCP,Redis,Open,0.53,External,0,9.7,None,0,Critical
+53942,UDP,Peer2Peer,Open,0.19,Internal,0,3.1,Anonymized,0,Medium
+69,UDP,TFTP,Open,0.05,Internal,1,8.3,None,0,High
+2049,TCP,NFS,Open,0.79,Internal,1,7.4,None,0,High
+23,TCP,Telnet,Open,0.12,External,0,8.5,Cleartext Auth,0,Critical
+6379,TCP,Redis,Open,0.03,External,1,9.2,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.01,Internal,0,0.7,Cleartext Auth,1,Safe
+123,UDP,NTP,Open,0.93,External,0,3.1,None,1,Medium
+29080,TCP,Peer2Peer,Open,0.94,DMZ,1,8.6,Obsolete Cipher,1,High
+9200,TCP,Elasticsearch,Open,0.13,External,0,9.6,Default Credentials Risk,0,Critical
+1433,TCP,MSSQL,Open,0.1,External,1,8.1,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Open,0.77,External,1,8.0,Cleartext Auth,0,Critical
+443,TCP,HTTPS,Open,0.32,External,0,2.1,None,1,Low
+44058,TCP,RPC-Node,Open,0.5,External,0,0.9,None,1,Low
+53,UDP,DNS,Open,0.58,Internal,0,3.1,Obsolete Cipher,0,Medium
+23,TCP,Telnet,Filtered,0.6,External,0,8.7,Cleartext Auth,0,High
+5900,TCP,VNC,Filtered,0.85,External,1,10.0,Cleartext Auth,0,High
+502,TCP,Modbus,Open,0.75,External,1,8.8,Cleartext Auth,0,Critical
+51779,TCP,Web-Hook,Open,0.08,Internal,1,6.6,Obsolete Cipher,0,High
+5900,TCP,VNC,Filtered,0.97,External,0,8.1,Cleartext Auth,0,High
+135,TCP,MSRPC,Open,0.97,Internal,0,6.6,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Open,0.08,External,1,9.7,Default Credentials Risk,0,Critical
+3389,TCP,RDP,Open,0.25,External,1,7.6,Obsolete Cipher,1,High
+4097,UDP,RPC-Node,Open,0.83,Internal,0,2.7,Anonymized,0,Medium
+587,TCP,SMTP-Submission,Closed,0.99,External,0,2.2,None,1,Safe
+9200,TCP,Elasticsearch,Open,0.39,DMZ,0,10.0,Cleartext Auth,0,High
+48956,TCP,Unknown-App,Open,0.69,DMZ,0,5.3,Default Credentials Risk,1,Medium
+3389,TCP,RDP,Open,0.34,External,1,9.2,Obsolete Cipher,1,High
+3306,TCP,MySQL,Open,0.42,Internal,0,8.3,Default Credentials Risk,0,High
+40666,UDP,Web-Hook,Closed,0.76,Internal,0,4.8,Anonymized,1,Safe
+6379,TCP,Redis,Open,0.97,External,1,7.3,Default Credentials Risk,1,Critical
+88,TCP,Kerberos,Open,0.69,Internal,0,4.0,None,1,Low
+19514,TCP,Custom-Service,Filtered,0.38,Internal,0,6.5,Cleartext Auth,0,Low
+27017,TCP,MongoDB,Open,0.66,Internal,0,8.3,Default Credentials Risk,0,High
+23,TCP,Telnet,Closed,0.15,External,1,9.6,Cleartext Auth,0,Safe
+5900,TCP,VNC,Open,0.28,External,1,6.5,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.64,External,0,6.4,None,0,High
+53,UDP,DNS,Open,0.73,Internal,0,2.3,None,0,Medium
+2375,TCP,Docker-Daemon,Open,0.87,External,0,10.0,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.38,External,1,8.4,Default Credentials Risk,0,Critical
+110,TCP,POP3,Open,0.91,External,1,6.0,Cleartext Auth,0,Critical
+25,TCP,SMTP,Filtered,0.37,External,0,5.1,None,0,Medium
+8443,TCP,HTTPS-Alt,Filtered,0.62,DMZ,0,3.2,None,1,Low
+21,TCP,FTP,Closed,0.06,External,1,7.6,Cleartext Auth,0,Safe
+123,UDP,NTP,Open,0.77,External,0,3.1,None,0,High
+1433,TCP,MSSQL,Filtered,0.57,External,1,10.0,Default Credentials Risk,0,High
+3754,TCP,Peer2Peer,Open,0.81,Internal,0,1.3,Obsolete Cipher,1,Low
+502,TCP,Modbus,Open,0.95,External,0,7.4,Cleartext Auth,0,Critical
+27017,TCP,MongoDB,Open,0.51,External,0,10.0,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.53,External,0,9.1,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Filtered,0.6,External,1,8.1,Cleartext Auth,0,High
+6379,TCP,Redis,Open,0.97,DMZ,1,7.9,Default Credentials Risk,0,Critical
+110,TCP,POP3,Open,0.86,External,0,6.8,Cleartext Auth,0,Critical
+2049,TCP,NFS,Open,0.07,Internal,1,7.9,None,1,Medium
+53,UDP,DNS,Open,0.5,Internal,0,3.4,None,0,Medium
+3306,TCP,MySQL,Open,0.18,External,1,10.0,Default Credentials Risk,1,Critical
+636,TCP,LDAPS,Closed,0.73,Internal,0,0.5,Obsolete Cipher,1,Safe
+80,TCP,HTTP,Closed,0.58,External,1,6.5,Obsolete Cipher,0,Safe
+69,UDP,TFTP,Open,0.43,Internal,0,5.5,Cleartext Auth,0,Medium
+587,TCP,SMTP-Submission,Open,0.89,External,0,3.2,None,1,Medium
+143,TCP,IMAP,Open,0.56,External,1,6.9,Cleartext Auth,0,Critical
+25551,UDP,Custom-Service,Filtered,0.8,Internal,0,9.4,Obsolete Cipher,0,Medium
+21,TCP,FTP,Open,0.49,Internal,0,7.1,Anonymized,0,High
+10438,UDP,Unknown-App,Open,0.04,Internal,0,5.4,Obsolete Cipher,0,Medium
+61419,TCP,Web-Hook,Open,0.86,Internal,1,7.7,Obsolete Cipher,0,High
+3389,TCP,RDP,Filtered,0.65,DMZ,0,5.2,Anonymized,1,Low
+443,TCP,HTTPS,Closed,0.07,Internal,0,2.0,None,1,Safe
+389,TCP,LDAP,Open,0.3,External,1,6.6,Cleartext Auth,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.82,External,0,2.9,None,1,Medium
+22536,UDP,Microservice,Closed,0.44,Internal,1,8.5,None,1,Safe
+53,UDP,DNS,Open,0.39,Internal,0,4.7,None,0,Medium
+443,TCP,HTTPS,Open,0.15,External,0,0.7,None,1,Low
+3389,TCP,RDP,Open,0.7,Internal,0,8.5,Obsolete Cipher,1,Medium
+587,TCP,SMTP-Submission,Open,0.24,External,0,4.0,Anonymized,1,Medium
+993,TCP,IMAPS,Open,0.29,DMZ,0,0.1,None,1,Safe
+23,TCP,Telnet,Open,0.9,External,0,9.1,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.42,External,1,8.4,Default Credentials Risk,0,Critical
+56195,UDP,Unknown-App,Open,0.51,Internal,0,2.3,Obsolete Cipher,0,Medium
+42593,UDP,Web-Hook,Open,0.32,DMZ,0,0.7,Anonymized,1,Low
+161,UDP,SNMP,Open,0.57,Internal,1,7.4,Default Credentials Risk,0,High
+9200,TCP,Elasticsearch,Open,0.6,External,1,9.0,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Filtered,0.21,External,0,1.5,None,1,Low
+3306,TCP,MySQL,Open,0.89,DMZ,0,8.2,Default Credentials Risk,0,High
+27017,TCP,MongoDB,Open,0.66,External,1,9.0,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Open,0.07,External,1,7.9,Cleartext Auth,0,Critical
+135,TCP,MSRPC,Open,0.3,DMZ,1,6.1,Default Credentials Risk,0,High
+135,TCP,MSRPC,Open,0.06,Internal,1,7.9,Default Credentials Risk,0,High
+123,UDP,NTP,Open,0.48,External,0,1.4,None,0,Medium
+9200,TCP,Elasticsearch,Open,0.7,External,1,9.4,Default Credentials Risk,0,Critical
+445,TCP,SMB,Open,0.57,External,1,9.8,Default Credentials Risk,0,Critical
+18785,UDP,Custom-Service,Open,0.57,DMZ,0,4.1,Obsolete Cipher,1,Medium
+143,TCP,IMAP,Filtered,0.86,External,0,4.3,Cleartext Auth,0,Medium
+143,TCP,IMAP,Open,0.38,DMZ,0,5.3,Cleartext Auth,0,Medium
+80,TCP,HTTP,Open,0.51,External,1,7.7,Obsolete Cipher,0,Critical
+8443,TCP,HTTPS-Alt,Open,0.49,External,0,1.5,None,1,Low
+139,TCP,NetBIOS,Open,0.45,Internal,1,7.3,None,0,High
+8443,TCP,HTTPS-Alt,Open,0.35,External,0,3.0,None,1,Medium
+123,UDP,NTP,Open,0.51,Internal,0,3.3,None,0,Medium
+502,TCP,Modbus,Open,0.41,External,1,8.7,Cleartext Auth,1,Critical
+8080,TCP,HTTP-Proxy,Filtered,0.73,External,1,6.2,Obsolete Cipher,0,Medium
+27776,TCP,Custom-Service,Open,0.41,External,0,1.5,Cleartext Auth,1,Low
+993,TCP,IMAPS,Open,0.98,External,0,3.3,None,1,Medium
+465,TCP,SMTPS,Open,0.43,DMZ,0,3.9,None,1,Low
+5900,TCP,VNC,Filtered,0.88,External,0,9.5,Cleartext Auth,0,High
+123,UDP,NTP,Open,0.01,External,0,2.6,None,0,Medium
+23,TCP,Telnet,Filtered,0.49,External,1,8.0,Cleartext Auth,0,High
+1952,UDP,RPC-Node,Filtered,0.58,DMZ,0,2.4,None,0,Low
+27017,TCP,MongoDB,Open,0.62,External,0,8.2,Default Credentials Risk,1,High
+23,TCP,Telnet,Open,0.97,External,0,9.3,Cleartext Auth,0,Critical
+22,TCP,SSH,Open,0.74,External,0,3.4,Cleartext Auth,1,Medium
+5900,TCP,VNC,Open,0.95,External,1,9.9,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.2,External,1,9.6,Default Credentials Risk,0,Critical
+110,TCP,POP3,Filtered,0.7,External,0,5.5,Cleartext Auth,0,Medium
+465,TCP,SMTPS,Filtered,0.17,External,0,3.3,None,1,Low
+3064,UDP,Microservice,Open,0.42,DMZ,0,5.9,Default Credentials Risk,1,Medium
+8443,TCP,HTTPS-Alt,Open,0.38,External,0,1.5,None,1,Low
+161,UDP,SNMP,Open,0.98,Internal,1,7.1,Default Credentials Risk,0,High
+51116,TCP,RPC-Node,Filtered,0.82,External,1,7.4,Obsolete Cipher,0,High
+27017,TCP,MongoDB,Open,0.46,External,0,9.3,Default Credentials Risk,0,Critical
+88,TCP,Kerberos,Closed,0.88,Internal,0,5.0,None,1,Safe
+25,TCP,SMTP,Open,0.82,External,1,8.6,None,1,Critical
+3389,TCP,RDP,Open,0.45,External,1,8.4,Obsolete Cipher,0,Critical
+3389,TCP,RDP,Open,0.99,External,1,7.6,Obsolete Cipher,1,Critical
+23,TCP,Telnet,Open,0.58,External,1,9.3,Cleartext Auth,0,Critical
+27017,TCP,MongoDB,Filtered,0.63,External,0,9.9,Default Credentials Risk,0,High
+161,UDP,SNMP,Open,0.02,Internal,0,7.2,Default Credentials Risk,0,Medium
+5900,TCP,VNC,Open,0.11,DMZ,1,10.0,Cleartext Auth,0,Critical
+22,TCP,SSH,Open,0.93,External,0,3.2,Anonymized,1,Medium
+9200,TCP,Elasticsearch,Filtered,0.51,External,0,9.2,Default Credentials Risk,0,Medium
+6379,TCP,Redis,Filtered,0.6,External,1,9.9,Default Credentials Risk,1,High
+110,TCP,POP3,Open,0.55,External,1,7.4,Cleartext Auth,0,Critical
+8080,TCP,HTTP-Proxy,Open,0.45,External,0,7.6,Obsolete Cipher,0,High
+23,TCP,Telnet,Open,0.52,External,1,8.2,Cleartext Auth,0,Critical
+143,TCP,IMAP,Open,0.74,External,0,5.4,Obsolete Cipher,0,High
+161,UDP,SNMP,Open,0.77,Internal,1,6.4,Default Credentials Risk,0,High
+24451,TCP,Microservice,Open,0.74,DMZ,0,4.5,Anonymized,0,High
+465,TCP,SMTPS,Open,0.1,External,0,2.6,None,1,Low
+53,UDP,DNS,Filtered,0.94,Internal,0,4.3,None,0,Low
+53012,UDP,Custom-Service,Open,0.63,External,0,5.1,Obsolete Cipher,0,High
+9200,TCP,Elasticsearch,Open,0.87,External,1,9.2,Default Credentials Risk,0,Critical
+123,UDP,NTP,Open,0.36,Internal,0,4.2,None,0,Medium
+445,TCP,SMB,Open,0.76,External,0,9.3,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Closed,0.61,External,1,9.6,Cleartext Auth,0,Safe
+8080,TCP,HTTP-Proxy,Closed,0.37,External,0,5.7,Obsolete Cipher,0,Safe
+135,TCP,MSRPC,Open,0.51,Internal,1,6.8,Obsolete Cipher,0,High
+161,UDP,SNMP,Open,0.71,Internal,1,8.2,Default Credentials Risk,0,High
+389,TCP,LDAP,Closed,0.37,Internal,1,7.0,Cleartext Auth,0,Safe
+445,TCP,SMB,Open,0.47,External,0,9.0,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Open,0.35,External,1,8.3,Default Credentials Risk,0,Critical
+502,TCP,Modbus,Open,0.92,External,1,7.5,Cleartext Auth,0,Critical
+3389,TCP,RDP,Open,0.66,Internal,1,7.4,Obsolete Cipher,0,High
+502,TCP,Modbus,Open,0.39,External,1,9.9,Cleartext Auth,0,Critical
+445,TCP,SMB,Open,0.74,External,0,9.9,Default Credentials Risk,0,Critical
+110,TCP,POP3,Open,0.2,External,1,7.5,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.58,External,1,8.9,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.12,Internal,1,7.8,Cleartext Auth,0,High
+28146,UDP,Custom-Service,Closed,0.28,Internal,1,9.5,Obsolete Cipher,0,Safe
+9833,TCP,Unknown-App,Open,0.9,External,0,5.8,Anonymized,0,High
+3389,TCP,RDP,Open,0.62,External,0,7.1,Obsolete Cipher,1,High
+3389,TCP,RDP,Open,0.4,External,0,8.5,Obsolete Cipher,1,High
+135,TCP,MSRPC,Open,0.85,Internal,1,7.6,Default Credentials Risk,0,High
+587,TCP,SMTP-Submission,Open,0.38,External,0,3.3,None,1,Medium
+110,TCP,POP3,Open,0.9,DMZ,1,6.5,Cleartext Auth,0,Critical
+993,TCP,IMAPS,Open,0.44,External,0,0.0,None,1,Low
+18240,TCP,Web-Hook,Open,0.97,Internal,0,2.1,Anonymized,0,Medium
+993,TCP,IMAPS,Filtered,0.78,External,0,3.0,None,1,Low
+502,TCP,Modbus,Open,0.18,External,1,8.5,Cleartext Auth,0,Critical
+21,TCP,FTP,Open,0.93,External,0,6.6,Cleartext Auth,0,Critical
+69,UDP,TFTP,Open,0.36,Internal,0,7.5,Cleartext Auth,0,High
+5432,TCP,PostgreSQL,Open,0.13,External,1,7.8,Default Credentials Risk,0,Critical
+636,TCP,LDAPS,Open,0.51,Internal,0,3.1,None,1,Low
+8443,TCP,HTTPS-Alt,Open,0.24,External,0,3.1,Anonymized,1,Medium
+69,UDP,TFTP,Open,0.53,Internal,0,7.5,Cleartext Auth,0,High
+21,TCP,FTP,Open,0.62,External,1,6.1,Cleartext Auth,0,Critical
+3306,TCP,MySQL,Open,0.64,External,1,10.0,Default Credentials Risk,0,Critical
+3306,TCP,MySQL,Filtered,0.07,External,1,9.2,Default Credentials Risk,0,High
+143,TCP,IMAP,Closed,0.43,Internal,0,5.6,Cleartext Auth,1,Safe
+993,TCP,IMAPS,Open,0.29,External,0,2.0,None,1,Low
+502,TCP,Modbus,Open,0.08,External,1,7.2,Cleartext Auth,0,Critical
+123,UDP,NTP,Filtered,0.21,Internal,0,2.9,None,1,Safe
+123,UDP,NTP,Open,0.32,Internal,0,1.5,None,0,Low
+39500,TCP,Unknown-App,Open,0.1,Internal,0,3.5,Cleartext Auth,0,Medium
+23,TCP,Telnet,Open,0.22,Internal,0,7.4,Cleartext Auth,0,Medium
+139,TCP,NetBIOS,Open,0.21,Internal,0,6.3,Cleartext Auth,0,Medium
+993,TCP,IMAPS,Open,0.3,External,0,3.0,None,1,Medium
+587,TCP,SMTP-Submission,Filtered,0.17,External,0,2.2,None,1,Low
+3306,TCP,MySQL,Open,0.58,External,1,10.0,Default Credentials Risk,0,Critical
+5432,TCP,PostgreSQL,Filtered,0.28,External,1,7.7,Default Credentials Risk,0,Medium
+1433,TCP,MSSQL,Open,0.77,External,1,6.9,Default Credentials Risk,0,Critical
+1521,TCP,Oracle-DB,Open,0.07,External,1,7.3,Default Credentials Risk,0,Critical
+63967,TCP,Web-Hook,Closed,0.42,DMZ,0,4.9,Anonymized,0,Safe
+5900,TCP,VNC,Filtered,0.7,External,0,9.7,Cleartext Auth,0,High
+51975,UDP,RPC-Node,Open,0.56,DMZ,0,3.0,Cleartext Auth,1,Low
+2375,TCP,Docker-Daemon,Open,0.34,External,0,9.6,Cleartext Auth,0,Critical
+1521,TCP,Oracle-DB,Open,0.08,External,1,7.9,Default Credentials Risk,0,Critical
+46757,UDP,Unknown-App,Open,0.33,External,0,2.6,Default Credentials Risk,0,Medium
+443,TCP,HTTPS,Open,0.3,Internal,0,2.0,None,1,Safe
+443,TCP,HTTPS,Filtered,0.08,External,0,2.3,None,1,Low
+389,TCP,LDAP,Open,0.69,Internal,0,7.3,Anonymized,0,High
+6379,TCP,Redis,Open,0.17,External,1,10.0,Default Credentials Risk,0,Critical
+80,TCP,HTTP,Closed,0.9,External,0,6.1,Obsolete Cipher,0,Safe
+26360,UDP,Peer2Peer,Closed,0.4,Internal,0,1.3,None,0,Safe
+587,TCP,SMTP-Submission,Filtered,0.75,External,0,1.5,Default Credentials Risk,1,Low
+42497,TCP,RPC-Node,Closed,0.19,External,0,7.1,Cleartext Auth,1,Safe
+587,TCP,SMTP-Submission,Open,0.66,External,0,2.4,None,0,Medium
+8222,TCP,Microservice,Open,0.09,DMZ,1,8.7,Default Credentials Risk,1,High
+2700,UDP,Microservice,Open,0.1,Internal,0,3.1,Anonymized,0,Low
+135,TCP,MSRPC,Filtered,0.25,Internal,1,7.5,Obsolete Cipher,0,Medium
+23,TCP,Telnet,Closed,0.22,Internal,1,7.8,Cleartext Auth,0,Safe
+5900,TCP,VNC,Filtered,0.28,DMZ,1,7.5,Cleartext Auth,0,Medium
+445,TCP,SMB,Open,0.22,Internal,0,9.6,Default Credentials Risk,1,Medium
+9200,TCP,Elasticsearch,Open,0.71,External,1,8.7,Default Credentials Risk,1,Critical
+22,TCP,SSH,Open,0.91,External,0,3.0,None,0,High
+27017,TCP,MongoDB,Open,0.92,External,1,8.2,Default Credentials Risk,0,Critical
+53,UDP,DNS,Open,0.95,Internal,0,3.3,None,0,Medium
+445,TCP,SMB,Open,0.89,External,1,8.4,Default Credentials Risk,0,Critical
+143,TCP,IMAP,Open,0.49,External,1,6.9,Cleartext Auth,1,High
+161,UDP,SNMP,Open,0.7,Internal,0,8.5,Obsolete Cipher,0,High
+161,UDP,SNMP,Closed,0.82,Internal,0,5.7,Default Credentials Risk,0,Safe
+20911,UDP,Microservice,Open,0.66,Internal,0,9.2,Anonymized,0,High
+9200,TCP,Elasticsearch,Closed,0.93,External,0,7.8,Default Credentials Risk,0,Safe
+14991,UDP,RPC-Node,Open,0.07,External,0,3.6,Obsolete Cipher,1,Medium
+69,UDP,TFTP,Closed,0.66,Internal,0,5.3,Cleartext Auth,1,Safe
+502,TCP,Modbus,Filtered,0.08,External,0,8.3,Default Credentials Risk,0,Medium
+15297,UDP,Custom-Service,Open,0.41,DMZ,0,6.3,Cleartext Auth,1,Medium
+135,TCP,MSRPC,Open,0.08,DMZ,0,7.1,Default Credentials Risk,0,High
+6379,TCP,Redis,Open,0.7,DMZ,0,7.8,Default Credentials Risk,0,High
+995,TCP,POP3S,Closed,0.6,External,0,1.0,None,1,Safe
+3031,UDP,Custom-Service,Open,0.36,External,0,4.3,Obsolete Cipher,1,Medium
+123,UDP,NTP,Open,0.39,DMZ,0,1.5,None,0,Medium
+1433,TCP,MSSQL,Open,0.66,External,0,8.8,Default Credentials Risk,0,Critical
+43878,UDP,Custom-Service,Open,0.96,Internal,1,9.4,Obsolete Cipher,0,Critical
+23,TCP,Telnet,Open,0.01,External,1,8.9,Cleartext Auth,0,Critical
+28015,UDP,Peer2Peer,Open,0.54,DMZ,0,2.6,None,0,Medium
+2375,TCP,Docker-Daemon,Filtered,0.66,External,0,9.1,Default Credentials Risk,0,High
+123,UDP,NTP,Open,0.47,Internal,0,2.7,None,0,Medium
+35496,TCP,Web-Hook,Open,0.75,Internal,0,0.0,None,1,Safe
+88,TCP,Kerberos,Closed,0.35,Internal,0,2.5,None,1,Safe
+636,TCP,LDAPS,Closed,0.16,Internal,0,1.7,None,1,Safe
+110,TCP,POP3,Open,0.94,External,1,8.7,Cleartext Auth,0,Critical
+23,TCP,Telnet,Open,0.54,External,1,10.0,Cleartext Auth,0,Critical
+587,TCP,SMTP-Submission,Closed,0.24,External,0,1.5,None,1,Safe
+993,TCP,IMAPS,Open,0.66,DMZ,0,2.7,None,1,Low
+27017,TCP,MongoDB,Open,0.55,External,0,9.8,Default Credentials Risk,0,Critical
+27017,TCP,MongoDB,Open,0.98,External,1,7.9,Default Credentials Risk,0,Critical
+22,TCP,SSH,Open,0.15,DMZ,0,3.8,None,1,Low
+3389,TCP,RDP,Open,0.6,External,0,9.3,Obsolete Cipher,1,High
+27017,TCP,MongoDB,Open,0.57,External,1,7.9,Default Credentials Risk,0,Critical
+465,TCP,SMTPS,Open,0.43,External,0,1.3,Obsolete Cipher,1,Low
+587,TCP,SMTP-Submission,Open,0.38,DMZ,0,3.8,None,1,Low
+1521,TCP,Oracle-DB,Filtered,0.37,External,1,8.7,Default Credentials Risk,0,High
+636,TCP,LDAPS,Open,0.56,Internal,0,2.6,None,1,Low
+27017,TCP,MongoDB,Open,0.19,External,1,9.3,Default Credentials Risk,1,Critical
+135,TCP,MSRPC,Open,0.77,Internal,1,7.6,Default Credentials Risk,0,High
+22199,TCP,Peer2Peer,Closed,0.17,DMZ,0,1.7,Cleartext Auth,1,Safe
+21,TCP,FTP,Open,0.11,External,1,6.2,Cleartext Auth,0,Critical
+2049,TCP,NFS,Open,0.85,Internal,1,8.0,None,0,High
+139,TCP,NetBIOS,Open,0.16,Internal,1,9.0,Cleartext Auth,0,High
+161,UDP,SNMP,Open,0.18,External,0,7.3,Default Credentials Risk,0,High
+9200,TCP,Elasticsearch,Open,0.91,External,0,8.7,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.1,Internal,0,6.3,Cleartext Auth,0,Medium
+110,TCP,POP3,Open,0.77,Internal,1,7.5,Cleartext Auth,0,High
+443,TCP,HTTPS,Open,0.86,External,0,2.4,None,1,Medium
+2049,TCP,NFS,Closed,0.12,External,0,6.9,None,0,Safe
+23,TCP,Telnet,Open,0.15,External,1,9.9,Cleartext Auth,0,Critical
+25,TCP,SMTP,Open,0.49,Internal,0,5.2,None,0,Medium
+25,TCP,SMTP,Open,0.43,External,1,6.1,Anonymized,1,High
+993,TCP,IMAPS,Open,0.51,External,0,0.9,None,1,Low
+587,TCP,SMTP-Submission,Filtered,0.14,External,0,2.8,None,0,Low
+995,TCP,POP3S,Open,0.39,External,0,1.7,Cleartext Auth,1,Low
+5432,TCP,PostgreSQL,Open,0.44,External,0,8.4,Default Credentials Risk,0,Critical
+21,TCP,FTP,Open,0.68,External,1,7.1,Cleartext Auth,0,Critical
+69,UDP,TFTP,Open,0.43,Internal,0,6.7,Cleartext Auth,0,Medium
+5900,TCP,VNC,Filtered,0.16,External,0,9.3,None,0,Medium
+636,TCP,LDAPS,Open,0.13,DMZ,0,1.6,Anonymized,1,Low
+88,TCP,Kerberos,Open,0.39,Internal,0,1.4,None,1,Safe
+3306,TCP,MySQL,Open,0.36,Internal,0,10.0,Obsolete Cipher,0,High
+25832,UDP,Microservice,Open,0.29,External,0,2.1,Obsolete Cipher,1,Low
+587,TCP,SMTP-Submission,Filtered,0.77,DMZ,0,4.2,None,1,Low
+9200,TCP,Elasticsearch,Open,0.07,External,0,7.4,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Closed,0.75,External,1,7.5,Obsolete Cipher,0,Safe
+6379,TCP,Redis,Open,0.07,DMZ,1,8.7,Default Credentials Risk,0,High
+61274,TCP,Custom-Service,Filtered,0.8,Internal,0,7.4,None,0,Medium
+502,TCP,Modbus,Open,0.89,External,0,9.3,Cleartext Auth,0,Critical
+139,TCP,NetBIOS,Closed,0.91,Internal,1,8.1,Cleartext Auth,0,Safe
+2049,TCP,NFS,Closed,0.26,Internal,1,6.8,None,0,Safe
+3306,TCP,MySQL,Open,0.37,External,0,8.1,Default Credentials Risk,0,Critical
+110,TCP,POP3,Closed,0.42,External,1,6.3,Cleartext Auth,0,Safe
+57302,TCP,Unknown-App,Filtered,0.71,External,0,7.3,Obsolete Cipher,0,Medium
+49500,UDP,Microservice,Open,0.88,DMZ,0,4.2,Cleartext Auth,0,High
+5804,TCP,Peer2Peer,Closed,0.19,External,0,4.2,Default Credentials Risk,0,Safe
+502,TCP,Modbus,Open,0.85,External,1,8.1,Cleartext Auth,0,Critical
+502,TCP,Modbus,Open,0.88,External,1,8.2,Cleartext Auth,0,Critical
+20115,TCP,RPC-Node,Open,0.09,Internal,0,2.2,Anonymized,0,Low
+123,UDP,NTP,Open,0.06,DMZ,0,2.4,None,0,Medium
+465,TCP,SMTPS,Open,0.73,External,0,1.5,None,1,Medium
+143,TCP,IMAP,Filtered,0.81,Internal,1,6.7,Cleartext Auth,0,Medium
+53,UDP,DNS,Open,0.95,Internal,0,5.0,None,0,Medium
+8443,TCP,HTTPS-Alt,Filtered,0.87,External,0,1.9,Default Credentials Risk,1,Low
+161,UDP,SNMP,Open,0.79,Internal,0,7.7,Default Credentials Risk,0,High
+36430,UDP,RPC-Node,Filtered,0.64,DMZ,0,2.0,None,0,Low
+502,TCP,Modbus,Open,0.99,External,1,9.5,Cleartext Auth,0,Critical
+25,TCP,SMTP,Filtered,0.09,External,0,6.0,None,0,Medium
+161,UDP,SNMP,Filtered,0.08,Internal,1,7.6,Default Credentials Risk,0,Medium
+88,TCP,Kerberos,Open,0.71,Internal,0,3.7,None,1,Low
+25,TCP,SMTP,Open,0.73,External,0,6.0,None,0,High
+445,TCP,SMB,Open,0.41,Internal,1,8.1,Default Credentials Risk,0,High
+161,UDP,SNMP,Open,0.65,DMZ,1,8.4,Default Credentials Risk,0,Critical
+995,TCP,POP3S,Open,0.4,DMZ,0,2.8,None,1,Low
+26021,UDP,RPC-Node,Open,0.04,External,1,8.0,Obsolete Cipher,0,Critical
+123,UDP,NTP,Open,0.61,Internal,0,1.7,None,0,Medium
+161,UDP,SNMP,Closed,0.42,Internal,1,7.5,Anonymized,0,Safe
+8417,TCP,Peer2Peer,Open,0.52,External,0,4.2,Anonymized,1,Medium
+135,TCP,MSRPC,Filtered,0.33,Internal,1,7.9,Default Credentials Risk,0,Medium
+143,TCP,IMAP,Open,0.44,External,0,5.8,Default Credentials Risk,0,High
+1433,TCP,MSSQL,Open,0.59,External,1,9.7,Default Credentials Risk,0,Critical
+135,TCP,MSRPC,Open,0.04,Internal,1,9.6,Obsolete Cipher,0,High
+465,TCP,SMTPS,Filtered,0.0,External,0,1.4,None,1,Safe
+14288,TCP,Unknown-App,Open,0.75,Internal,0,1.5,Obsolete Cipher,1,Low
+27017,TCP,MongoDB,Filtered,0.71,External,0,7.6,Default Credentials Risk,0,High
+8443,TCP,HTTPS-Alt,Open,0.54,External,0,2.8,Cleartext Auth,1,Medium
+21,TCP,FTP,Filtered,0.84,External,1,8.2,Cleartext Auth,0,High
+389,TCP,LDAP,Filtered,0.47,Internal,0,6.0,Obsolete Cipher,0,Low
+63291,TCP,Custom-Service,Open,0.92,Internal,0,3.0,Obsolete Cipher,1,Low
+25,TCP,SMTP,Filtered,0.72,External,0,7.0,None,1,Medium
+502,TCP,Modbus,Open,0.66,External,1,7.7,Cleartext Auth,0,Critical
+3389,TCP,RDP,Filtered,0.9,DMZ,1,8.5,Obsolete Cipher,1,Medium
+5900,TCP,VNC,Open,0.4,External,1,7.9,Cleartext Auth,0,Critical
+23,TCP,Telnet,Filtered,0.19,External,1,10.0,Cleartext Auth,0,High
+1433,TCP,MSSQL,Closed,0.99,External,1,10.0,Default Credentials Risk,0,Safe
+143,TCP,IMAP,Open,0.84,External,0,5.2,Cleartext Auth,0,High
+445,TCP,SMB,Open,0.28,External,1,8.8,None,0,Critical
+88,TCP,Kerberos,Open,0.94,Internal,0,3.9,None,1,Low
+80,TCP,HTTP,Open,0.01,External,1,6.1,Obsolete Cipher,1,Medium
+995,TCP,POP3S,Filtered,0.91,External,0,1.9,None,1,Low
+27017,TCP,MongoDB,Open,0.21,External,1,9.0,Default Credentials Risk,0,Critical
+139,TCP,NetBIOS,Open,0.25,Internal,0,5.9,Cleartext Auth,0,Medium
+8080,TCP,HTTP-Proxy,Open,0.83,External,1,6.8,Obsolete Cipher,0,Critical
+161,UDP,SNMP,Open,0.66,Internal,1,6.8,Default Credentials Risk,1,Medium
+8443,TCP,HTTPS-Alt,Filtered,0.59,External,0,2.0,None,1,Low
+6379,TCP,Redis,Open,0.73,External,1,10.0,None,0,Critical
+2049,TCP,NFS,Filtered,0.32,DMZ,0,5.7,None,0,Medium
+27017,TCP,MongoDB,Open,0.11,External,1,9.8,Default Credentials Risk,0,Critical
+25,TCP,SMTP,Open,0.42,External,0,5.2,Cleartext Auth,0,High
+161,UDP,SNMP,Open,0.01,Internal,1,7.2,Default Credentials Risk,0,High
+23,TCP,Telnet,Open,0.55,External,1,9.6,Cleartext Auth,0,Critical
+587,TCP,SMTP-Submission,Open,0.95,External,0,3.1,Anonymized,1,Medium
+465,TCP,SMTPS,Filtered,0.62,External,0,2.8,None,0,Medium
+389,TCP,LDAP,Open,0.42,Internal,0,7.2,Cleartext Auth,1,Medium
+135,TCP,MSRPC,Filtered,0.14,Internal,0,6.9,Default Credentials Risk,0,Low
+8443,TCP,HTTPS-Alt,Open,0.78,External,0,1.9,None,0,Medium
+65340,UDP,RPC-Node,Open,0.83,External,1,8.7,Cleartext Auth,0,Critical
+995,TCP,POP3S,Open,0.01,External,0,0.8,None,1,Low
+6379,TCP,Redis,Open,0.14,External,1,8.4,Default Credentials Risk,0,Critical
+49979,UDP,Unknown-App,Open,0.36,DMZ,0,2.2,Obsolete Cipher,1,Low
+80,TCP,HTTP,Filtered,0.51,External,1,9.4,Obsolete Cipher,0,High
+9233,TCP,RPC-Node,Open,0.73,External,0,5.2,Default Credentials Risk,0,High
+135,TCP,MSRPC,Open,0.43,Internal,1,8.4,Default Credentials Risk,0,High
+8080,TCP,HTTP-Proxy,Open,0.4,External,0,5.4,Obsolete Cipher,1,Medium
+135,TCP,MSRPC,Filtered,0.54,Internal,0,5.9,Default Credentials Risk,0,Low
+5432,TCP,PostgreSQL,Open,0.11,External,1,8.7,Default Credentials Risk,0,Critical
+5900,TCP,VNC,Filtered,0.38,External,0,9.0,Cleartext Auth,0,High
+27017,TCP,MongoDB,Closed,0.92,External,1,9.5,None,0,Safe
+3389,TCP,RDP,Open,0.58,External,1,7.5,Obsolete Cipher,1,High
+10138,UDP,RPC-Node,Open,0.11,Internal,0,5.1,Obsolete Cipher,1,Low
+35468,UDP,Custom-Service,Open,0.6,DMZ,0,3.4,None,0,Medium
+139,TCP,NetBIOS,Open,0.64,Internal,1,7.7,Cleartext Auth,0,High
+22,TCP,SSH,Open,0.15,External,0,3.3,None,1,Medium
+53,UDP,DNS,Open,0.17,Internal,0,3.6,None,0,Medium
+22,TCP,SSH,Closed,0.16,External,0,0.8,None,1,Safe
+27767,TCP,Custom-Service,Open,0.95,External,0,1.6,None,0,High
+22,TCP,SSH,Closed,0.65,External,0,2.8,None,1,Safe
+445,TCP,SMB,Open,0.79,External,1,8.4,Default Credentials Risk,0,Critical
+46721,UDP,RPC-Node,Open,0.66,DMZ,1,7.2,Default Credentials Risk,0,Critical
+45476,UDP,Web-Hook,Filtered,0.36,DMZ,0,3.6,Obsolete Cipher,0,Low
+1433,TCP,MSSQL,Open,0.9,External,1,8.8,Obsolete Cipher,0,Critical
+2375,TCP,Docker-Daemon,Open,0.79,External,1,10.0,Default Credentials Risk,0,Critical
+44366,UDP,Microservice,Filtered,0.22,DMZ,0,1.5,Obsolete Cipher,1,Safe
+55410,UDP,Peer2Peer,Open,0.52,Internal,0,1.5,Obsolete Cipher,1,Low
+8080,TCP,HTTP-Proxy,Filtered,0.61,External,0,7.2,Obsolete Cipher,0,Medium
+445,TCP,SMB,Closed,0.69,External,1,9.0,Default Credentials Risk,0,Safe
+22,TCP,SSH,Open,0.99,External,0,3.9,None,1,Medium
+139,TCP,NetBIOS,Open,0.2,Internal,0,8.3,None,0,High
+40575,TCP,Peer2Peer,Closed,0.49,DMZ,0,4.4,Cleartext Auth,0,Safe
+636,TCP,LDAPS,Open,0.69,Internal,0,2.4,None,1,Low
+22,TCP,SSH,Open,0.04,DMZ,0,3.6,None,0,Medium
+21,TCP,FTP,Closed,0.09,External,0,9.6,Cleartext Auth,0,Safe
+53,UDP,DNS,Open,0.67,Internal,0,2.4,None,0,Medium
+389,TCP,LDAP,Open,0.08,Internal,1,6.7,Cleartext Auth,0,High
+8342,TCP,Unknown-App,Open,0.18,DMZ,0,0.3,Cleartext Auth,1,Safe
+445,TCP,SMB,Closed,0.81,External,1,8.4,Default Credentials Risk,0,Safe
+8443,TCP,HTTPS-Alt,Open,0.35,Internal,0,3.1,None,1,Low
+69,UDP,TFTP,Filtered,0.82,Internal,0,5.9,Cleartext Auth,0,Medium
